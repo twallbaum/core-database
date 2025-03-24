@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Charts</title>
+    <script src="https://cdn.plot.ly/plotly-2.18.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-cloud/build/d3.layout.cloud.min.js"></script>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f8f9fa;
+            color: #201B3F;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #chart, #chart2, #chart3, #chart4 {
+            width: 100%;
+            max-width: 900px;
+            height: 600px;
+            margin-bottom: 50px;
+        }
+        .back-link {
+            margin-bottom: 20px;
+        }
+        .back-link a {
+            text-decoration: none;
+            color: #2b86be;
+        }
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+        #wordcloud {
+            width: 100%;
+            max-width: 900px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="back-link">
+        <a href="/papers">← Back to Papers List</a>
+    </div>
+    <h1>Interactive Charts</h1>
+    <p>Explore the dataset using visualizations.</p>
+
+    <!-- Chart 1: Papers by Year -->
+    <h2>Papers by Year</h2>
+    <div id="chart"></div>
+
+    <!-- Chart 2: Papers by Design Strategy -->
+    <h2>Papers by Design Strategy</h2>
+    <div id="chart2"></div>
+
+    <!-- Chart 3: Relationship Types vs. Design Strategies -->
+    <h2>Relationship Types vs. Design Strategies</h2>
+    <div id="chart3"></div>
+
+    <!-- Chart 4: Word Cloud of Tags -->
+    <h2>Word Cloud of Tags</h2>
+    <div id="wordcloud"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const response = await fetch('/index.json');
+            const rawData = await response.json();
+
+            // Debugging raw data
+            console.log("Raw Data:", rawData);
+
+            // Define a color palette
+            const colorPalette = [
+                "#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd",
+                "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf"
+            ];
+
+            // Normalize strategies
+            const normalizationMap = {
+                "Gift-Giving": "Gift-Giving",
+                "Gift-giving": "Gift-Giving",
+            };
+
+            // Extract unique strategies for consistent color mapping
+            const uniqueStrategies = [...new Set(
+                rawData.flatMap(d =>
+                    d.design_strategy
+                        ? d.design_strategy.split(';').map(s => normalizationMap[s.trim()] || s.trim())
+                        : []
+                )
+            )];
+
+            // Assign a color for each strategy
+            const strategyColors = uniqueStrategies.reduce((acc, strategy, index) => {
+                acc[strategy] = colorPalette[index % colorPalette.length];
+                return acc;
+            }, {});
+
+            // ============================
+            // Chart 1: Papers by Year
+            // ============================
+            const yearData = rawData.filter(d => {
+                const year = parseInt(d.publication_year, 10);
+                return !isNaN(year) && d.design_strategy;
+            });
+
+            const x = yearData.map(d => parseInt(d.publication_year, 10));
+            const y = yearData.map((_, index) => index);
+            const text = yearData.map(d => {
+                const strategies = d.design_strategy ? d.design_strategy.split(';').map(s => normalizationMap[s.trim()] || s.trim()) : [];
+                return `<b>${d.name || "Unknown Title"}</b><br>Strategy: ${strategies.join(', ') || "Unknown"}<br>Year: ${d.publication_year || "N/A"}`;
+            });
+            const links = yearData.map(d => d.relpermalink || "#");
+            const colors = yearData.map(d => {
+                const strategies = d.design_strategy ? d.design_strategy.split(';').map(s => normalizationMap[s.trim()] || s.trim()) : [];
+                return strategyColors[strategies[0]] || '#cccccc';
+            });
+
+            const trace1 = {
+                x,
+                y,
+                mode: 'markers',
+                type: 'scatter',
+                text,
+                hoverinfo: 'text',
+                marker: { size: 10, color: colors },
+            };
+
+            Plotly.newPlot('chart', [trace1], {
+                title: 'Papers by Year',
+                xaxis: { title: 'Publication Year' },
+                yaxis: { showticklabels: false },
+            });
+
+            // Handle clicks on Chart 1
+            document.getElementById('chart').on('plotly_click', function(eventData) {
+                const pointIndex = eventData.points[0].pointIndex;
+                const link = links[pointIndex];
+                if (link && link !== "#") {
+                    window.location.href = link;
+                }
+            });
+
+            // ============================
+            // Chart 2: Strategy Distribution
+            // ============================
+            const strategyCounts = rawData.reduce((acc, d) => {
+                const firstStrategy = d.design_strategy
+                    ? normalizationMap[d.design_strategy.split(';')[0].trim()] || d.design_strategy.split(';')[0].trim()
+                    : null;
+                if (firstStrategy) {
+                    acc[firstStrategy] = (acc[firstStrategy] || 0) + 1;
+                }
+                return acc;
+            }, {});
+
+            const strategyLabels = Object.keys(strategyCounts);
+            const strategyValues = Object.values(strategyCounts);
+
+            const trace2 = {
+                x: strategyLabels,
+                y: strategyValues,
+                type: 'bar',
+                marker: { color: strategyLabels.map(label => strategyColors[label] || '#cccccc') },
+            };
+
+            Plotly.newPlot('chart2', [trace2], {
+                title: 'Papers by Design Strategy',
+                xaxis: { title: 'Design Strategy', automargin: true },
+                yaxis: { title: 'Number of Papers' },
+            });
+
+            // ============================
+            // Chart 3: Sankey Diagram
+            // ============================
+
+            // Dynamically normalize relationship types to merge all "Family - ..." into "Family" and "Friends - ..." into "Friends"
+            const normalizeRelationship = (relationship) => {
+                if (relationship.trim().startsWith("Family")) {
+                    return "Family";
+                }
+                if (relationship.trim().startsWith("Friends")) {
+                    return "Friends";
+                }
+                return relationship.trim();
+            };
+
+            // Normalize relationship types and design strategies
+            const relationshipStrategies = rawData.flatMap(d => {
+                if (d.type_of_relationship && d.design_strategy) {
+                    const relationships = d.type_of_relationship.split(';').map(normalizeRelationship);
+                    const strategies = d.design_strategy.split(';').map(s => normalizationMap[s.trim()] || s.trim());
+                    return relationships.flatMap(r => strategies.map(s => [r, s]));
+                }
+                return [];
+            });
+
+            // Count occurrences of each relationship-strategy pair
+            const pairCounts = relationshipStrategies.reduce((acc, pair) => {
+                const key = pair.join('->');
+                acc[key] = (acc[key] || 0) + 1;
+                return acc;
+            }, {});
+
+            // Filter out pairs with fewer than 5 occurrences
+            const filteredPairs = relationshipStrategies.filter(pair => pairCounts[pair.join('->')] >= 5);
+
+            // Extract unique nodes (relationships and strategies)
+            const uniqueNodes = [
+                ...new Set(filteredPairs.flat().map(n => n.trim())),
+            ];
+            const nodeIndices = uniqueNodes.reduce((acc, node, i) => {
+                acc[node] = i;
+                return acc;
+            }, {});
+
+            // Generate source, target, and value arrays for Sankey diagram
+            const source = filteredPairs.map(([r]) => nodeIndices[r]);
+            const target = filteredPairs.map(([, s]) => nodeIndices[s]);
+            const values3 = filteredPairs.map(() => 1);
+
+            // Define Sankey trace
+            const trace3 = {
+                type: 'sankey',
+                orientation: 'h',
+                node: { pad: 15, thickness: 20, label: uniqueNodes },
+                link: { source, target, value: values3 },
+            };
+
+            // Plot Sankey diagram
+            Plotly.newPlot('chart3', [trace3], {
+                title: 'Relationship Types vs. Design Strategies',
+            });
+
+
+
+            // ============================
+            // Chart 4: Word Cloud
+            // ============================
+            const tagCounts = rawData.reduce((acc, d) => {
+                if (d.tags) {
+                    d.tags.forEach(tag => {
+                        tag = tag.trim().toLowerCase(); // Normalize case
+                        acc[tag] = (acc[tag] || 0) + 1;
+                    });
+                }
+                return acc;
+            }, {});
+
+            const tags = Object.keys(tagCounts);
+            const frequencies = Object.values(tagCounts);
+
+            // Generate word cloud data
+            const wordCloudData = tags.map((tag, i) => ({
+                text: tag,
+                size: Math.sqrt(frequencies[i]) * 10, // Adjust size scaling
+            }));
+
+            const svg = d3.select("#wordcloud")
+                .append("svg")
+                .attr("width", 900)
+                .attr("height", 600);
+
+            const layout = d3.layout.cloud()
+                .size([900, 600])
+                .words(wordCloudData)
+                .padding(5)
+                .rotate(() => (Math.random() > 0.5 ? 90 : 0)) // Random rotation
+                .fontSize(d => d.size)
+                .on("end", drawWordCloud);
+
+            layout.start();
+
+            function drawWordCloud(words) {
+                svg.append("g")
+                    .attr("transform", "translate(450,300)") // Center the cloud
+                    .selectAll("text")
+                    .data(words)
+                    .enter().append("text")
+                    .style("font-size", d => `${d.size}px`)
+                    .style("fill", () => `hsl(${Math.random() * 360}, 80%, 50%)`) // Random colors
+                    .attr("text-anchor", "middle")
+                    .attr("transform", d => `translate(${d.x},${d.y})rotate(${d.rotate})`)
+                    .text(d => d.text);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORE - COmpendium of RElatedness Technologies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .active-link {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+
+    <title>Papers</title>
+    <style>
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            color: #201B3F;
+        }
+        #search {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        table {
+            width: 95%;
+            max-width: 1600px;
+            border-collapse: collapse;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 15px 20px;
+            text-align: left;
+        }
+        th {
+            background-color: #201B3F;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.7em;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e9ecef;
+        }
+        td {
+            border-bottom: 1px solid #dee2e6;
+        }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .tag {
+            background-color: #C681AE;
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+        }
+
+        .tag2 {
+            background-color: #9BF0DF;
+            color: #2A286C;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+        }
+
+        .tag3 {
+            background-color: #FEFBB3;
+            color: #BD85AC;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+        }
+
+        a {
+            color: #2b86be;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .pagination {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .pagination a {
+            background-color: #201B3F;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+        .pagination a:hover {
+            background-color: #2b86be;
+        }
+
+        .pagination .disabled {
+            background-color: #8a8c8d;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            table, th, td {
+                display: block;
+            }
+            th, td {
+                padding: 10px;
+                text-align: right;
+                position: relative;
+            }
+            th::before, td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                width: calc(100% - 20px);
+                text-align: left;
+                font-weight: bold;
+            }
+            th, td {
+                text-align: left;
+                padding-left: 30%;
+            }
+        }
+    </style>
+    <script src="/js/fuse.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const items = document.querySelectorAll('#papers-list tr');
+            const itemsPerLoad = 20;
+            let currentCount = itemsPerLoad;
+        
+            items.forEach((item, index) => {
+                item.style.display = index < itemsPerLoad ? '' : 'none';
+            });
+        
+            window.addEventListener('scroll', () => {
+                if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200) {
+                    for (let i = currentCount; i < currentCount + itemsPerLoad && i < items.length; i++) {
+                        items[i].style.display = '';
+                    }
+                    currentCount += itemsPerLoad;
+                }
+            });
+        });
+        </script>        
+
+</head>
+
+<body class="bg-gray-100 text-gray-900 font-sans">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            
+            <div>
+                <a href="/" class="text-3xl font-bold text-pink-600">CORE</a>
+                <p class="text-xs text-gray-600">Compendium of Relatedness Technologies</p>
+            </div>
+            
+            <nav>
+                <ul class="flex space-x-6">
+                    <li>
+                        <a href="/papers/" class="hover:text-pink-600 active-link">EXPLORE CORE</a>
+                    </li>
+                    <li><a href="/how-to-use/" class="hover:text-pink-600 ">HOW TO USE CORE?</a></li>
+                    <li><a href="/how-to-cite/" class="hover:text-pink-600 ">HOW TO CITE CORE?</a></li>
+                    <li><a href="/contribute/" class="hover:text-pink-600 ">HOW TO CONTRIBUTE?</a></li>
+                    <li><a href="/team/" class="hover:text-pink-600 ">CORE TEAM</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    
+    <div class="flex justify-center items-center gap-2 mt-2">
+        <input type="text" id="search" placeholder="Search papers..." class="w-[400px] p-2 border border-gray-300 rounded">
+        <span id="result-count" class="text-sm text-gray-600"></span>
+    </div>    
+
+    <div style="margin-bottom: 20px; text-align: center;">
+        <a href="/papers/chart/" style="text-decoration: none; color: #2b86be; font-size: 1.2em;">📊 View Interactive Chart</a>
+    </div>
+       
+    
+    
+    <table id="main-table">
+        <thead>
+            <tr>
+                <th data-label="Name">Name</th>
+                <th data-label="Publication Year">Publication Year</th>
+                <th data-label="Short Description">Short Description</th>
+                <th data-label="Tags">Tags</th>
+                <th data-label="Type of Relationship">Type of Relationship</th>
+                <th data-label="Design Strategy">Design Strategy</th>
+                <th data-label="Role of Technology">Role of Technology</th>
+                <th data-label="Type of Study">Type of Study</th>
+            </tr>
+        </thead>
+        <tbody id="papers-list">
+            
+            
+            
+
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/18_eating_alone_together/">Eating Alone, Together</a></td>
+                <td data-label="Publication Year">2012</td>
+                <td data-label="Short Description">Eating Alone, Together provides a group of friends with basic information about their peers&#39;...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Display</span>
+                            
+                                <span class="tag">Kitchen</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Friends, peers</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Ritual Formation</span>
+                            
+                                <span class="tag3"> Awareness</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Triggering imagination; Stimulating further interaction</td>
+                <td data-label="Type of Study">Field study: in-home user testing</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/197_mecasa/">MeCasa</a></td>
+                <td data-label="Publication Year">2012</td>
+                <td data-label="Short Description">MeCasa provides distributed family members with a virtual home consisting of different rooms with...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Application</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Family</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Expressivity</span>
+                            
+                                <span class="tag3"> Joint Action</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Enabling complex practices</td>
+                <td data-label="Type of Study">Lab study: user testing</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/225_cheektouch/">CheekTouch</a></td>
+                <td data-label="Publication Year">2012</td>
+                <td data-label="Short Description">CheekTouch enables the transmission of multi-finger touch gestures applied on a partner&#39;s mobile...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Augmented smartphone</span>
+                            
+                                <span class="tag">Tangible interaction</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Romantic couples</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Physicalness</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Enabling existing embodied interaction</td>
+                <td data-label="Type of Study">Lab study: user testing</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/235_augmento/">Augmento</a></td>
+                <td data-label="Publication Year">2012</td>
+                <td data-label="Short Description">Augmento is a mobile application that strengthens bonds with family and friends by sharing emotions...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Application</span>
+                            
+                                <span class="tag">Behavioral data</span>
+                            
+                                <span class="tag">Biometric data</span>
+                            
+                                <span class="tag">Special places</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Romantic couples</span>
+                            
+                                <span class="tag2"> Family</span>
+                            
+                                <span class="tag2"> Friends, peers</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Memories</span>
+                            
+                                <span class="tag3"> Physicalness</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Providing an individual experience</td>
+                <td data-label="Type of Study">N/A</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/240_sleepywhispers/">sleepyWhispers</a></td>
+                <td data-label="Publication Year">2012</td>
+                <td data-label="Short Description">sleepyWhispers is a device for long-distance couples to exchange goodnight messages, consisting of a...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Pillow</span>
+                            
+                                <span class="tag">Picture frame</span>
+                            
+                                <span class="tag">Audio-mediated interaction</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Romantic couples</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Expressivity</span>
+                            
+                                <span class="tag3"> Gift-giving</span>
+                            
+                                <span class="tag3"> Ritual Formation</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Providing an individual experience; Enabling complex practices</td>
+                <td data-label="Type of Study">Field study: in-home user testing</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/30_hothands/">HotHands</a></td>
+                <td data-label="Publication Year">2012</td>
+                <td data-label="Short Description">HotHands is a device for holding hands over distance based on a warm hand model.</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Object</span>
+                            
+                                <span class="tag">Tangible interaction</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Romantic couples</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Physicalness</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Enabling existing embodied interaction</td>
+                <td data-label="Type of Study">Lab Study: user confrontation</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/31_hotmits/">HotMits</a></td>
+                <td data-label="Publication Year">2012</td>
+                <td data-label="Short Description">HotMits is a device for holding hands over distance based on a warm hand imprint.</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Object</span>
+                            
+                                <span class="tag">Tangible interaction</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Romantic couples</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Physicalness</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Enabling existing embodied interaction</td>
+                <td data-label="Type of Study">Lab Study: user confrontation</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/32_yourgloves/">YourGloves</a></td>
+                <td data-label="Publication Year">2012</td>
+                <td data-label="Short Description">YourGloves is a device for holding hands over distance based on hand movement.</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Object</span>
+                            
+                                <span class="tag">Tangible interaction</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Romantic couples</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Physicalness</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Enabling existing embodied interaction</td>
+                <td data-label="Type of Study">Lab Study: user confrontation</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/47_feelybean/">Feelybean</a></td>
+                <td data-label="Publication Year">2012</td>
+                <td data-label="Short Description">Feelybean is a touch device that allows people to feel the other person&#39;s touch during a video...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Handheld object</span>
+                            
+                                <span class="tag">Cushion</span>
+                            
+                                <span class="tag">Tangible interaction</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Romantic couples</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Physicalness</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Enabling existing embodied interaction</td>
+                <td data-label="Type of Study">Lab study: user testing</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/81_kissenger_samani_et_al/">Kissenger (Samani et al.)</a></td>
+                <td data-label="Publication Year">2012</td>
+                <td data-label="Short Description">Kissenger is an interactive device that provides a physical interface for transmitting a kiss...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Object(s)</span>
+                            
+                                <span class="tag">Tangible interaction</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Romantic couples</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Physicalness</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Enabling existing embodied interaction</td>
+                <td data-label="Type of Study">Lab study: user testing</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/88_videoconferencing_system_for_2_groups_of_people_space_alert/">Videoconferencing system for 2 groups of people (Space Alert)</a></td>
+                <td data-label="Publication Year">2012</td>
+                <td data-label="Short Description">The Video Conferencing System for Two Groups of People supports high-quality interpersonal...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Video-mediated interaction</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Any close relationship</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Joint Action</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Enabling complex practices</td>
+                <td data-label="Type of Study">Lab study: user testing</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/89_anchor/">Anchor</a></td>
+                <td data-label="Publication Year">2012</td>
+                <td data-label="Short Description">Anchor is a tablet application that uses asynchronous messaging to synthesize synchronous...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Application</span>
+                            
+                                <span class="tag">Messaging</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Romantic couples</span>
+                            
+                                <span class="tag2"> Family</span>
+                            
+                                <span class="tag2"> Friends, peers</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Expressivity</span>
+                            
+                                <span class="tag3"> Genuine Conversation</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Dissolving space and/or time</td>
+                <td data-label="Type of Study">Lab study: user testing</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/114_carpe_diemeye-based_video_conferencing_system/">Carpe Diem/Eye-based video conferencing system</a></td>
+                <td data-label="Publication Year">2011</td>
+                <td data-label="Short Description">Carpe Diem is a near-eye conferencing system that lets conversation partners see only one of each...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Video-mediated interaction</span>
+                            
+                                <span class="tag">Wearable</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Any close relationship</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Genuine Conversation</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Enabling complex practices</td>
+                <td data-label="Type of Study">Lab study: user testing</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/126_memory_jar/">Memory Jar</a></td>
+                <td data-label="Publication Year">2011</td>
+                <td data-label="Short Description">Memory Jar is a specially designed object that allows children to collect everyday memories captured...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Object(s)</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Family – children and parent(s)</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Memories</span>
+                            
+                                <span class="tag3"> Genuine Conversation</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Stimulating further interaction</td>
+                <td data-label="Type of Study">N/A</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/142_io_stickers/">I/O Stickers</a></td>
+                <td data-label="Publication Year">2011</td>
+                <td data-label="Short Description">I/O Stickers are designed for children to handcraft personalized remote communication interfaces to...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">DIY</span>
+                            
+                                <span class="tag">IoT-enabled object(s)</span>
+                            
+                                <span class="tag">Stickers</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Family – children and grandparent(s), adult family members</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Expressivity</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Enabling lightweight communication</td>
+                <td data-label="Type of Study">Lab study: user confrontation</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/156_myvideos/">MyVideos</a></td>
+                <td data-label="Publication Year">2011</td>
+                <td data-label="Short Description">MyVideos is a socially aware video editing tool that allows a designated group of people to navigate...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Application</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Any close relationship</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Memories</span>
+                            
+                                <span class="tag3"> Gift-giving</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Intervening; Providing an individual experience</td>
+                <td data-label="Type of Study">Field study: user testing in natural environment; Lab study: user testing</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/189_family_portals/">Family Portals</a></td>
+                <td data-label="Publication Year">2011</td>
+                <td data-label="Short Description">Family Portals is an always-on, multi-party media space that provides a continuous video connection...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Video-mediated interaction</span>
+                            
+                                <span class="tag">Media space</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Family</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Awareness</span>
+                            
+                                <span class="tag3"> Expressivity</span>
+                            
+                                <span class="tag3"> Genuine Conversation</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Dissolving space and/or time</td>
+                <td data-label="Type of Study">Field study: in-home user testing</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/199_vital/">VITAL</a></td>
+                <td data-label="Publication Year">2011</td>
+                <td data-label="Short Description">VITAL is a TV-based platform that provides remote assistance to older adults to improve their...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Service platform</span>
+                            
+                                <span class="tag">TV</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Older adults</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Joint Action</span>
+                            
+                                <span class="tag3"> Acts of Care</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Enabling complex practices</td>
+                <td data-label="Type of Study">Field study: user confrontation in natural environment</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/208_tech-care/">Tech-care</a></td>
+                <td data-label="Publication Year">2011</td>
+                <td data-label="Short Description">Tech-Care is designed to provide remote care in situations where older adults and children are at...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Object(s)</span>
+                            
+                                <span class="tag">Video-mediated interaction</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Family – children and parent(s)</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Acts of Care</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Enabling complex practices</td>
+                <td data-label="Type of Study">N/A</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/29_magic_sock_drawer/">Magic Sock Drawer</a></td>
+                <td data-label="Publication Year">2011</td>
+                <td data-label="Short Description">Magic Sock Drawer allows close persons to send each other drawn or typed digital love notes that are...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Application</span>
+                            
+                                <span class="tag">Object</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Romantic couples</span>
+                            
+                                <span class="tag2"> Friends, peers</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Expressivity</span>
+                            
+                                <span class="tag3"> Gift-giving</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Providing an individual experience</td>
+                <td data-label="Type of Study">Field study: in-home user testing</td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    
+    <div class="pagination">
+        
+            <a href="/papers/page/10/">Previous</a>
+        
+        
+            <a href="/papers/page/12/">Next</a>
+        
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('/index.json')
+                .then(response => response.json())
+                .then(data => {
+                    const fuse = new Fuse(data, {
+                        keys: ["name", "short_description", "tags", "type_of_relationship", "design_strategy", "role_of_technology", "type_of_study"],
+                        threshold: 0.4
+                    });
+    
+                    const searchInput = document.getElementById('search');
+                    const resultCount = document.getElementById('result-count');
+                    const papersList = document.getElementById('papers-list');
+                    const pagination = document.querySelector('.pagination');
+    
+                    const resetToOriginalList = () => {
+                        
+                        papersList.innerHTML = `
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/18_eating_alone_together\/">Eating Alone, Together</a></td>
+                                <td data-label="Publication Year">2012</td>
+                                <td data-label="Short Description">Eating Alone, Together provides a group of friends with basic information about their peers\u0026#39;...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Display</span>
+                                            
+                                                <span class="tag">Kitchen</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Ritual Formation</span>
+                                            
+                                                <span class="tag3"> Awareness</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Triggering imagination; Stimulating further interaction</td>
+                                <td data-label="Type of Study">Field study: in-home user testing</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/197_mecasa\/">MeCasa</a></td>
+                                <td data-label="Publication Year">2012</td>
+                                <td data-label="Short Description">MeCasa provides distributed family members with a virtual home consisting of different rooms with...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Application</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Expressivity</span>
+                                            
+                                                <span class="tag3"> Joint Action</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Enabling complex practices</td>
+                                <td data-label="Type of Study">Lab study: user testing</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/225_cheektouch\/">CheekTouch</a></td>
+                                <td data-label="Publication Year">2012</td>
+                                <td data-label="Short Description">CheekTouch enables the transmission of multi-finger touch gestures applied on a partner\u0026#39;s mobile...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Augmented smartphone</span>
+                                            
+                                                <span class="tag">Tangible interaction</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Physicalness</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Enabling existing embodied interaction</td>
+                                <td data-label="Type of Study">Lab study: user testing</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/235_augmento\/">Augmento</a></td>
+                                <td data-label="Publication Year">2012</td>
+                                <td data-label="Short Description">Augmento is a mobile application that strengthens bonds with family and friends by sharing emotions...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Application</span>
+                                            
+                                                <span class="tag">Behavioral data</span>
+                                            
+                                                <span class="tag">Biometric data</span>
+                                            
+                                                <span class="tag">Special places</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Memories</span>
+                                            
+                                                <span class="tag3"> Physicalness</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Providing an individual experience</td>
+                                <td data-label="Type of Study">N\/A</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/240_sleepywhispers\/">sleepyWhispers</a></td>
+                                <td data-label="Publication Year">2012</td>
+                                <td data-label="Short Description">sleepyWhispers is a device for long-distance couples to exchange goodnight messages, consisting of a...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Pillow</span>
+                                            
+                                                <span class="tag">Picture frame</span>
+                                            
+                                                <span class="tag">Audio-mediated interaction</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Expressivity</span>
+                                            
+                                                <span class="tag3"> Gift-giving</span>
+                                            
+                                                <span class="tag3"> Ritual Formation</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Providing an individual experience; Enabling complex practices</td>
+                                <td data-label="Type of Study">Field study: in-home user testing</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/30_hothands\/">HotHands</a></td>
+                                <td data-label="Publication Year">2012</td>
+                                <td data-label="Short Description">HotHands is a device for holding hands over distance based on a warm hand model.</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Object</span>
+                                            
+                                                <span class="tag">Tangible interaction</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Physicalness</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Enabling existing embodied interaction</td>
+                                <td data-label="Type of Study">Lab Study: user confrontation</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/31_hotmits\/">HotMits</a></td>
+                                <td data-label="Publication Year">2012</td>
+                                <td data-label="Short Description">HotMits is a device for holding hands over distance based on a warm hand imprint.</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Object</span>
+                                            
+                                                <span class="tag">Tangible interaction</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Physicalness</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Enabling existing embodied interaction</td>
+                                <td data-label="Type of Study">Lab Study: user confrontation</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/32_yourgloves\/">YourGloves</a></td>
+                                <td data-label="Publication Year">2012</td>
+                                <td data-label="Short Description">YourGloves is a device for holding hands over distance based on hand movement.</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Object</span>
+                                            
+                                                <span class="tag">Tangible interaction</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Physicalness</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Enabling existing embodied interaction</td>
+                                <td data-label="Type of Study">Lab Study: user confrontation</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/47_feelybean\/">Feelybean</a></td>
+                                <td data-label="Publication Year">2012</td>
+                                <td data-label="Short Description">Feelybean is a touch device that allows people to feel the other person\u0026#39;s touch during a video...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Handheld object</span>
+                                            
+                                                <span class="tag">Cushion</span>
+                                            
+                                                <span class="tag">Tangible interaction</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Physicalness</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Enabling existing embodied interaction</td>
+                                <td data-label="Type of Study">Lab study: user testing</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/81_kissenger_samani_et_al\/">Kissenger (Samani et al.)</a></td>
+                                <td data-label="Publication Year">2012</td>
+                                <td data-label="Short Description">Kissenger is an interactive device that provides a physical interface for transmitting a kiss...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Object(s)</span>
+                                            
+                                                <span class="tag">Tangible interaction</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Physicalness</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Enabling existing embodied interaction</td>
+                                <td data-label="Type of Study">Lab study: user testing</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/88_videoconferencing_system_for_2_groups_of_people_space_alert\/">Videoconferencing system for 2 groups of people (Space Alert)</a></td>
+                                <td data-label="Publication Year">2012</td>
+                                <td data-label="Short Description">The Video Conferencing System for Two Groups of People supports high-quality interpersonal...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Video-mediated interaction</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Joint Action</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Enabling complex practices</td>
+                                <td data-label="Type of Study">Lab study: user testing</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/89_anchor\/">Anchor</a></td>
+                                <td data-label="Publication Year">2012</td>
+                                <td data-label="Short Description">Anchor is a tablet application that uses asynchronous messaging to synthesize synchronous...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Application</span>
+                                            
+                                                <span class="tag">Messaging</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Expressivity</span>
+                                            
+                                                <span class="tag3"> Genuine Conversation</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Dissolving space and\/or time</td>
+                                <td data-label="Type of Study">Lab study: user testing</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/114_carpe_diemeye-based_video_conferencing_system\/">Carpe Diem\/Eye-based video conferencing system</a></td>
+                                <td data-label="Publication Year">2011</td>
+                                <td data-label="Short Description">Carpe Diem is a near-eye conferencing system that lets conversation partners see only one of each...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Video-mediated interaction</span>
+                                            
+                                                <span class="tag">Wearable</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Genuine Conversation</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Enabling complex practices</td>
+                                <td data-label="Type of Study">Lab study: user testing</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/126_memory_jar\/">Memory Jar</a></td>
+                                <td data-label="Publication Year">2011</td>
+                                <td data-label="Short Description">Memory Jar is a specially designed object that allows children to collect everyday memories captured...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Object(s)</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Memories</span>
+                                            
+                                                <span class="tag3"> Genuine Conversation</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Stimulating further interaction</td>
+                                <td data-label="Type of Study">N\/A</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/142_io_stickers\/">I\/O Stickers</a></td>
+                                <td data-label="Publication Year">2011</td>
+                                <td data-label="Short Description">I\/O Stickers are designed for children to handcraft personalized remote communication interfaces to...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">DIY</span>
+                                            
+                                                <span class="tag">IoT-enabled object(s)</span>
+                                            
+                                                <span class="tag">Stickers</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Expressivity</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Enabling lightweight communication</td>
+                                <td data-label="Type of Study">Lab study: user confrontation</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/156_myvideos\/">MyVideos</a></td>
+                                <td data-label="Publication Year">2011</td>
+                                <td data-label="Short Description">MyVideos is a socially aware video editing tool that allows a designated group of people to navigate...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Application</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Memories</span>
+                                            
+                                                <span class="tag3"> Gift-giving</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Intervening; Providing an individual experience</td>
+                                <td data-label="Type of Study">Field study: user testing in natural environment; Lab study: user testing</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/189_family_portals\/">Family Portals</a></td>
+                                <td data-label="Publication Year">2011</td>
+                                <td data-label="Short Description">Family Portals is an always-on, multi-party media space that provides a continuous video connection...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Video-mediated interaction</span>
+                                            
+                                                <span class="tag">Media space</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Awareness</span>
+                                            
+                                                <span class="tag3"> Expressivity</span>
+                                            
+                                                <span class="tag3"> Genuine Conversation</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Dissolving space and\/or time</td>
+                                <td data-label="Type of Study">Field study: in-home user testing</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/199_vital\/">VITAL</a></td>
+                                <td data-label="Publication Year">2011</td>
+                                <td data-label="Short Description">VITAL is a TV-based platform that provides remote assistance to older adults to improve their...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Service platform</span>
+                                            
+                                                <span class="tag">TV</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Joint Action</span>
+                                            
+                                                <span class="tag3"> Acts of Care</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Enabling complex practices</td>
+                                <td data-label="Type of Study">Field study: user confrontation in natural environment</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/208_tech-care\/">Tech-care</a></td>
+                                <td data-label="Publication Year">2011</td>
+                                <td data-label="Short Description">Tech-Care is designed to provide remote care in situations where older adults and children are at...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Object(s)</span>
+                                            
+                                                <span class="tag">Video-mediated interaction</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Acts of Care</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Enabling complex practices</td>
+                                <td data-label="Type of Study">N\/A</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/29_magic_sock_drawer\/">Magic Sock Drawer</a></td>
+                                <td data-label="Publication Year">2011</td>
+                                <td data-label="Short Description">Magic Sock Drawer allows close persons to send each other drawn or typed digital love notes that are...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Application</span>
+                                            
+                                                <span class="tag">Object</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Expressivity</span>
+                                            
+                                                <span class="tag3"> Gift-giving</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Providing an individual experience</td>
+                                <td data-label="Type of Study">Field study: in-home user testing</td>
+                            </tr>
+                            
+                        `;
+    
+                        
+                        pagination.style.display = 'flex';
+    
+                        
+                        resultCount.textContent = '';
+                    };
+    
+                    searchInput.addEventListener('input', function (e) {
+                        const searchTerm = e.target.value.trim();
+    
+                        if (searchTerm) {
+                            const results = fuse.search(searchTerm);
+    
+                            
+                            resultCount.textContent = `(${results.length} results)`;
+    
+                            
+                            papersList.innerHTML = '';
+                            pagination.style.display = 'none'; 
+    
+                            if (results.length > 0) {
+                                results.forEach(result => {
+                                    const item = result.item || result; 
+                                    papersList.innerHTML += `
+                                        <tr>
+                                            <td data-label="Name"><a href="${item.relpermalink}">${item.name || 'N/A'}</a></td>
+                                            <td data-label="Publication Year">${item.publication_year || 'N/A'}</td>
+                                            <td data-label="Short Description">${item.short_description ? item.short_description.substring(0, 100) + '...' : 'N/A'}</td>
+                                            <td data-label="Tags">
+                                                <div class="tags">
+                                                    ${item.tags ? item.tags.map(tag => `<span class="tag">${tag}</span>`).join('') : 'N/A'}
+                                                </div>
+                                            </td>
+                                            <td data-label="Type of Relationship">${item.type_of_relationship || 'N/A'}</td>
+                                            <td data-label="Design Strategy">${item.design_strategy || 'N/A'}</td>
+                                            <td data-label="Role of Technology">${item.role_of_technology || 'N/A'}</td>
+                                            <td data-label="Type of Study">${item.type_of_study || 'N/A'}</td>
+                                        </tr>
+                                    `;
+                                });
+                            } else {
+                                papersList.innerHTML = `<tr><td colspan="8">No results found</td></tr>`;
+                            }
+                        } else {
+                            
+                            resetToOriginalList();
+                        }
+                    });
+                });
+        });
+    </script>    
+
+</body>
+</html>

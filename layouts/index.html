@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORE - COmpendium of RElatedness Technologies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .active-link {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- CORE Logo -->
+            <div>
+                <a href="/" class="text-3xl font-bold text-pink-600">CORE</a>
+                <p class="text-xs text-gray-600">Compendium of Relatedness Technologies</p>
+            </div>
+            <!-- Navigation Menu -->
+            <nav>
+                <ul class="flex space-x-6">
+                    <li>
+                        <a href="/papers/" class="hover:text-pink-600 {{ if eq .Page.RelPermalink "/papers/" }}active-link{{ end }}">EXPLORE CORE</a>
+                    </li>
+                    <li><a href="/how-to-use/" class="hover:text-pink-600 {{ if eq .Page.RelPermalink "/how-to-use/" }}active-link{{ end }}">HOW TO USE CORE?</a></li>
+                    <li><a href="/how-to-cite/" class="hover:text-pink-600 {{ if eq .Page.RelPermalink "/how-to-cite/" }}active-link{{ end }}">HOW TO CITE CORE?</a></li>
+                    <li><a href="/contribute/" class="hover:text-pink-600 {{ if eq .Page.RelPermalink "/contribute/" }}active-link{{ end }}">HOW TO CONTRIBUTE?</a></li>
+                    <li><a href="/team/" class="hover:text-pink-600 {{ if eq .Page.RelPermalink "/team/" }}active-link{{ end }}">CORE TEAM</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <!-- About CORE Section -->
+        <section class="bg-white p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold mb-4">About CORE – Discover the COmpendium of RElatedness Technologies</h2>
+            <p class="mb-4">CORE is a free-access, interactive database designed for researchers and designers, to explore relatedness technologies in a structured and engaging way. The comprehensive collection encompasses concepts and prototypes that have been explicitly designed to promote relatedness (i.e., emotional closeness, intimacy, and connectedness between people in a social relationship across distance). It includes a diverse set of technologies.</p>
+        </section>
+
+        <!-- Inspiration Section -->
+        <section class="bg-white p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold mb-4">Inspiration and Insights for Designers and Researchers</h2>
+            <p class="mb-4">CORE provides an accessible way to explore the diversity and trends in relatedness technologies and to navigate this field. Whether for inspiration, detailed exploration of specific topics like input modalities, strategies, or ethics, or finding relevant work, CORE is a comprehensive resource for you.</p>
+        </section>
+
+        <!-- CORE Database Section -->
+        <section class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold mb-4">The CORE Database</h2>
+            <ul class="list-disc pl-6 mb-4">
+                <li>Currently contains 241 concepts and prototypes from 208 papers published in the ACM Digital Library between 2010 and May 2024.</li>
+                <li>Technologies are described with key data and systematically categorized by target population, theoretical grounding, design, evaluation, and ethics.</li>
+                <li>Relevant papers identified using PRISMA, a methodology for systematic literature reviews.</li>
+                <li>Updated annually.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="bg-gray-200 py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm">&copy; 2025 CORE - Compendium of Relatedness Technologies</p>
+        </div>
+    </footer>
+</body>
+</html>

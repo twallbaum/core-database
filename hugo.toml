@@ -1,0 +1,18 @@
+baseURL = "https://core.thehxlab.com"
+languageCode = 'en-us'
+title = 'COmpendium of RElatedness Technologies (CORE) '
+theme = "ananke"
+
+[pagination]
+  pagerSize = 20
+
+relativeURLs = true
+canonifyURLs = true
+
+[outputs]
+home = ["HTML", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

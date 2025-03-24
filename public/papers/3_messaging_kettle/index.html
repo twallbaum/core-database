@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CORE - COmpendium of RElatedness Technologies</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/tablesort@5.2.1/dist/tablesort.min.js"></script>
+  <style>
+     
+    h1 {
+      margin-bottom: 1.5rem;
+      font-size: 3rem;  
+      font-weight: bold;
+      color: #ec4899;  
+    }
+    #search {
+      width: 100%;
+      max-width: 400px;
+      padding: 0.625rem;
+      margin-bottom: 1.25rem;
+      border: 1px solid #ccc;
+      border-radius: 0.375rem;
+    }
+    table {
+      width: 95%;
+      max-width: 1600px;
+      border-collapse: collapse;
+      margin: 0 auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background-color: #fff;
+      border-radius: 0.5rem;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 0.9375rem 1.25rem;
+      text-align: left;
+    }
+    th {
+      background-color: #201B3F;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.7rem;
+      cursor: pointer;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    tr:hover {
+      background-color: #e9ecef;
+    }
+    td {
+      border-bottom: 1px solid #dee2e6;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.625rem;
+    }
+    .tag {
+      background-color: #C681AE;
+      color: #fff;
+      padding: 0.3125rem 0.625rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+    }
+    .tag2 {
+      background-color: #9BF0DF;
+      color: #2A286C;
+      padding: 0.3125rem 0.625rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+    }
+    .tag3 {
+      background-color: #FEFBB3;
+      color: #BD85AC;
+      padding: 0.3125rem 0.625rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+    }
+    a {
+      color: #2b86be;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+     
+    @media (max-width: 768px) {
+      table, th, td {
+        display: block;
+      }
+      th, td {
+        padding: 0.625rem;
+        text-align: right;
+        position: relative;
+      }
+      th::before, td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0.625rem;
+        width: calc(100% - 1.25rem);
+        text-align: left;
+        font-weight: bold;
+      }
+      th, td {
+        text-align: left;
+        padding-left: 30%;
+      }
+    }
+  </style>
+  
+  <script src="/js/fuse.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+  
+  <header class="bg-white shadow-md border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      
+      <div>
+        <a href="/" class="text-3xl font-bold text-pink-600">CORE</a>
+        <p class="text-sm text-gray-500">Compendium of Relatedness Technologies</p>
+      </div>
+      
+      <nav>
+        <ul class="flex space-x-6">
+          <li>
+            <a href="/papers/" class="transition-colors hover:text-pink-600 ">EXPLORE CORE</a>
+          </li>
+          <li>
+            <a href="/how-to-use/" class="transition-colors hover:text-pink-600 ">HOW TO USE CORE?</a>
+          </li>
+          <li>
+            <a href="/how-to-cite/" class="transition-colors hover:text-pink-600 ">HOW TO CITE CORE?</a>
+          </li>
+          <li>
+            <a href="/contribute/" class="transition-colors hover:text-pink-600 ">HOW TO CONTRIBUTE?</a>
+          </li>
+          <li>
+            <a href="/team/" class="transition-colors hover:text-pink-600 ">CORE TEAM</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+  <main class="max-w-4xl mx-auto px-6 py-8">
+    
+    <div class="mb-4">
+      <a id="backLink" class="text-blue-600 hover:underline" href="/papers/">← Back to Search Results</a>
+    </div>
+
+    
+    <h1 class="text-4xl font-bold text-pink-600">Messaging Kettle</h1></br>
+
+    
+    <div class="mb-6 space-y-2">
+      <p><span class="font-bold">Publication Year:</span> <span>2022</span></p>
+      <p><span class="font-bold">Publication Type:</span> <span>Research Article</span></p>
+      <p><span class="font-bold">Short Description:</span> <span>The Messaging Kettle augments the everyday kettles of two households. It is composed of the Kettle Mate and the Smart Tea Box. The Kettle Mate is equipped with a temperature sensor and paired with the existing kettle. Upon detecting heat from its kettle, the Kettle Mate sends a signal to its counterpart in the other kitchen, which then produces an animated glow for ten minutes. It also allows to exchange voice messages. Additionally, the Smart Tea Box permits the exchange of brief, handwritten messages or sketches via a stylus pen.</span></p>
+      <p><span class="font-bold">Reference:</span>
+        
+          
+            
+            Aloha Hufana Ambe, Alessandro Soro, Daniel Johnson, and Margot Brereton. 2022. From Collaborative Habituation to Everyday Togetherness: A Long-Term Study of Use of the Messaging Kettle. ACMTrans. Comput.-Hum. Interact. 29, 1, Article 3 (January 2022), 47 pages.  <a class="text-blue-600 hover:underline" href="https://doi.org/10.1145/3470973" target="_blank">https://doi.org/10.1145/3470973</a>
+          
+        
+      </p>
+    </div>
+
+    
+    <div class="overflow-x-auto">
+      <table class="w-full bg-white shadow rounded-lg">
+        <tbody class="divide-y divide-gray-200">
+          <tr>
+            <td class="py-3 font-bold">Tags</td>
+            <td class="py-3">IoT-enabled domestic object(s), Tea/coffee, Messaging board, Kitchen</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Type of Relationship</td>
+            <td class="py-3">Family; Friends, peers</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Additional Specification</td>
+            <td class="py-3">In different time zones</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Aim and Designer's Intention</td>
+            <td class="py-3">Connect distant loved ones to their families. Support a sense of connection between distant loved ones around the routine of boiling a kettle.</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Psychological Constructs with Reference</td>
+            <td class="py-3">Social Presence (Biocca et al., 2001; Lombard &amp; Ditton, 2006)</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Constructs and Terms Without Reference</td>
+            <td class="py-3">Closeness; Relatedness; Togetherness; Connection</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Design Strategy</td>
+            <td class="py-3">Awareness; Ritual Formation; Expressivity</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Role of Technology</td>
+            <td class="py-3">Triggering imagination; Enabling lightweight communication</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Input Modalities</td>
+            <td class="py-3">Behavioral data; Handwriting/drawing; Audio</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Output Modalities</td>
+            <td class="py-3">Light, colors; Handwriting/drawing; Audio</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Evaluation Methodology</td>
+            <td class="py-3">Qualitative, autobiographic</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Type of Study</td>
+            <td class="py-3">Field study: in-home user testing</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Number of Participants</td>
+            <td class="py-3">8</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Ethical Concerns</td>
+            <td class="py-3">
+              
+                Yes
+              
+            </td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Consideration of Ethical Issues in Design Decisions</td>
+            <td class="py-3">
+              
+                Yes
+              
+            </td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Ethical Issues Addressed</td>
+            <td class="py-3">
+              
+                Privacy; Potential negative aspects and impacts of the technology; Agency; Morality
+              
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const backLink = document.getElementById('backLink');
+      const searchTerm = localStorage.getItem("papersSearchTerm");
+      if (searchTerm) {
+        backLink.href = "/papers/?q=" + encodeURIComponent(searchTerm);
+      } else {
+        backLink.href = "/papers/";
+      }
+    });
+  </script>
+</body>
+</html>

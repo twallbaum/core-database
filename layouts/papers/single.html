@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ block "title" . }}CORE - COmpendium of RElatedness Technologies{{ end }}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tablesort for row sorting on header click (if needed in the detail page, remove if not necessary) -->
+  <script src="https://cdn.jsdelivr.net/npm/tablesort@5.2.1/dist/tablesort.min.js"></script>
+  <style>
+    /* Global styles and adjustments */
+    h1 {
+      margin-bottom: 1.5rem;
+      font-size: 3rem; /* Bigger title */
+      font-weight: bold;
+      color: #ec4899; /* CORE brand pink */
+    }
+    #search {
+      width: 100%;
+      max-width: 400px;
+      padding: 0.625rem;
+      margin-bottom: 1.25rem;
+      border: 1px solid #ccc;
+      border-radius: 0.375rem;
+    }
+    table {
+      width: 95%;
+      max-width: 1600px;
+      border-collapse: collapse;
+      margin: 0 auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background-color: #fff;
+      border-radius: 0.5rem;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 0.9375rem 1.25rem;
+      text-align: left;
+    }
+    th {
+      background-color: #201B3F;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.7rem;
+      cursor: pointer;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    tr:hover {
+      background-color: #e9ecef;
+    }
+    td {
+      border-bottom: 1px solid #dee2e6;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.625rem;
+    }
+    .tag {
+      background-color: #C681AE;
+      color: #fff;
+      padding: 0.3125rem 0.625rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+    }
+    .tag2 {
+      background-color: #9BF0DF;
+      color: #2A286C;
+      padding: 0.3125rem 0.625rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+    }
+    .tag3 {
+      background-color: #FEFBB3;
+      color: #BD85AC;
+      padding: 0.3125rem 0.625rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+    }
+    a {
+      color: #2b86be;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      table, th, td {
+        display: block;
+      }
+      th, td {
+        padding: 0.625rem;
+        text-align: right;
+        position: relative;
+      }
+      th::before, td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0.625rem;
+        width: calc(100% - 1.25rem);
+        text-align: left;
+        font-weight: bold;
+      }
+      th, td {
+        text-align: left;
+        padding-left: 30%;
+      }
+    }
+  </style>
+  <!-- Fuse.js for search functionality (used on your search page) -->
+  <script src="/js/fuse.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+  <!-- Header with modern styling -->
+  <header class="bg-white shadow-md border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <!-- CORE Logo -->
+      <div>
+        <a href="/" class="text-3xl font-bold text-pink-600">CORE</a>
+        <p class="text-sm text-gray-500">Compendium of Relatedness Technologies</p>
+      </div>
+      <!-- Navigation Menu -->
+      <nav>
+        <ul class="flex space-x-6">
+          <li>
+            <a href="/papers/" class="transition-colors hover:text-pink-600 {{ if eq .Page.RelPermalink "/papers/" }}font-bold underline{{ end }}">EXPLORE CORE</a>
+          </li>
+          <li>
+            <a href="/how-to-use/" class="transition-colors hover:text-pink-600 {{ if eq .Page.RelPermalink "/how-to-use/" }}font-bold underline{{ end }}">HOW TO USE CORE?</a>
+          </li>
+          <li>
+            <a href="/how-to-cite/" class="transition-colors hover:text-pink-600 {{ if eq .Page.RelPermalink "/how-to-cite/" }}font-bold underline{{ end }}">HOW TO CITE CORE?</a>
+          </li>
+          <li>
+            <a href="/contribute/" class="transition-colors hover:text-pink-600 {{ if eq .Page.RelPermalink "/contribute/" }}font-bold underline{{ end }}">HOW TO CONTRIBUTE?</a>
+          </li>
+          <li>
+            <a href="/team/" class="transition-colors hover:text-pink-600 {{ if eq .Page.RelPermalink "/team/" }}font-bold underline{{ end }}">CORE TEAM</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto px-6 py-8">
+    <!-- Back to Search Results Link -->
+    <div class="mb-4">
+      <a id="backLink" class="text-blue-600 hover:underline" href="/papers/">← Back to Search Results</a>
+    </div>
+
+    <!-- Title -->
+    <h1 class="text-4xl font-bold text-pink-600">{{ .Params.name }}</h1></br>
+
+    <!-- General Information -->
+    <div class="mb-6 space-y-2">
+      <p><span class="font-bold">Publication Year:</span> <span>{{ .Params.publication_year }}</span></p>
+      <p><span class="font-bold">Publication Type:</span> <span>{{ .Params.publication_type }}</span></p>
+      <p><span class="font-bold">Short Description:</span> <span>{{ .Params.short_description }}</span></p>
+      <p><span class="font-bold">Reference:</span>
+        {{ with .Params.reference }}
+          {{ if in . "https://doi.org" }}
+            {{ $parts := split . "https://doi.org" }}
+            {{ index $parts 0 }} <a class="text-blue-600 hover:underline" href="https://doi.org{{ index $parts 1 }}" target="_blank">https://doi.org{{ index $parts 1 }}</a>
+          {{ else }}
+            {{ . }}
+          {{ end }}
+        {{ else }}
+          N/A
+        {{ end }}
+      </p>
+    </div>
+
+    <!-- Detailed Information Table -->
+    <div class="overflow-x-auto">
+      <table class="w-full bg-white shadow rounded-lg">
+        <tbody class="divide-y divide-gray-200">
+          <tr>
+            <td class="py-3 font-bold">Tags</td>
+            <td class="py-3">{{ delimit .Params.tags ", " }}</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Type of Relationship</td>
+            <td class="py-3">{{ .Params.target_group_of_people__target_group }}</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Additional Specification</td>
+            <td class="py-3">{{ .Params.target_group_of_people___additional_specification}}</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Aim and Designer's Intention</td>
+            <td class="py-3">{{ .Params.aim_and_designers_intention }}</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Psychological Constructs with Reference</td>
+            <td class="py-3">{{ .Params.psychological_constructs_with_reference }}</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Constructs and Terms Without Reference</td>
+            <td class="py-3">{{ .Params.constructs_and_terms_used_without_reference}}</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Design Strategy</td>
+            <td class="py-3">{{ .Params.design___strategy_ }}</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Role of Technology</td>
+            <td class="py-3">{{ .Params.design___role_of_technology }}</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Input Modalities</td>
+            <td class="py-3">{{ .Params.design___input_modalities}}</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Output Modalities</td>
+            <td class="py-3">{{ .Params.design____output_modalities}}</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Evaluation Methodology</td>
+            <td class="py-3">{{ .Params.evaluation___methodology}}</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Type of Study</td>
+            <td class="py-3">{{ .Params.evaluation___type_of_study }}</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Number of Participants</td>
+            <td class="py-3">{{ .Params.evaluation___number_of_participants__n }}</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Ethical Concerns</td>
+            <td class="py-3">
+              {{ with .Params.ethical_concerns }}
+                {{ . }}
+              {{ else }}
+                N/A
+              {{ end }}
+            </td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Consideration of Ethical Issues in Design Decisions</td>
+            <td class="py-3">
+              {{ with .Params.consideration_of_ethical_issues_in_design_descisions }}
+                {{ . }}
+              {{ else }}
+                N/A
+              {{ end }}
+            </td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Ethical Issues Addressed</td>
+            <td class="py-3">
+              {{ with .Params.ethical_issues_addressed }}
+                {{ . }}
+              {{ else }}
+                N/A
+              {{ end }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <!-- Script to set Back Link from localStorage (if a search term was used) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const backLink = document.getElementById('backLink');
+      const searchTerm = localStorage.getItem("papersSearchTerm");
+      if (searchTerm) {
+        backLink.href = "/papers/?q=" + encodeURIComponent(searchTerm);
+      } else {
+        backLink.href = "/papers/";
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ block "title" . }}CORE - COmpendium of RElatedness Technologies{{ end }}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tablesort for row sorting on header click -->
+  <script src="https://cdn.jsdelivr.net/npm/tablesort@5.2.1/dist/tablesort.min.js"></script>
+  <style>
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.5em;
+      color: #201B3F;
+    }
+    #search {
+      width: 100%;
+      max-width: 400px;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    table {
+      width: 95%;
+      max-width: 1600px;
+      border-collapse: collapse;
+      margin: 0 auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 15px 20px;
+      text-align: left;
+    }
+    th {
+      background-color: #201B3F;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.7em;
+      cursor: pointer;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    tr:hover {
+      background-color: #e9ecef;
+    }
+    td {
+      border-bottom: 1px solid #dee2e6;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .tag {
+      background-color: #C681AE;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 15px;
+      font-size: 0.8em;
+    }
+    .tag2 {
+      background-color: #9BF0DF;
+      color: #2A286C;
+      padding: 5px 10px;
+      border-radius: 15px;
+      font-size: 0.8em;
+    }
+    .tag3 {
+      background-color: #FEFBB3;
+      color: #BD85AC;
+      padding: 5px 10px;
+      border-radius: 15px;
+      font-size: 0.8em;
+    }
+    a {
+      color: #2b86be;
+      text-decoration: none;
+    }
+    
+    @media (max-width: 768px) {
+      table, th, td {
+        display: block;
+      }
+      th, td {
+        padding: 10px;
+        text-align: right;
+        position: relative;
+      }
+      th::before, td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: calc(100% - 20px);
+        text-align: left;
+        font-weight: bold;
+      }
+      th, td {
+        text-align: left;
+        padding-left: 30%;
+      }
+    }
+  </style>
+
+  <!-- Fuse.js for search functionality -->
+  <script src="/js/fuse.js"></script>
+
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- CORE Logo -->
+      <div>
+        <a href="/" class="text-3xl font-bold text-pink-600">CORE</a>
+        <p class="text-xs text-gray-600">Compendium of Relatedness Technologies</p>
+      </div>
+      <!-- Navigation Menu -->
+      <nav>
+        <ul class="flex space-x-6">
+          <li>
+            <a href="/papers/" class="hover:text-pink-600 {{ if eq .Page.RelPermalink "/papers/" }}active-link{{ end }}">EXPLORE CORE</a>
+          </li>
+          <li>
+            <a href="/how-to-use/" class="hover:text-pink-600 {{ if eq .Page.RelPermalink "/how-to-use/" }}active-link{{ end }}">HOW TO USE CORE?</a>
+          </li>
+          <li>
+            <a href="/how-to-cite/" class="hover:text-pink-600 {{ if eq .Page.RelPermalink "/how-to-cite/" }}active-link{{ end }}">HOW TO CITE CORE?</a>
+          </li>
+          <li>
+            <a href="/contribute/" class="hover:text-pink-600 {{ if eq .Page.RelPermalink "/contribute/" }}active-link{{ end }}">HOW TO CONTRIBUTE?</a>
+          </li>
+          <li>
+            <a href="/team/" class="hover:text-pink-600 {{ if eq .Page.RelPermalink "/team/" }}active-link{{ end }}">CORE TEAM</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Search Field -->
+  <div class="flex justify-center items-center gap-2 mt-2">
+    <input type="text" id="search" placeholder="Search papers..." class="w-[400px] p-2 border border-gray-300 rounded">
+    <span id="result-count" class="text-sm text-gray-600"></span>
+  </div>
+
+  <div style="margin-bottom: 20px; text-align: center;">
+    <a href="/papers/chart/" style="text-decoration: none; color: #2b86be; font-size: 1.2em;">📊 View Interactive Chart</a>
+  </div>
+    
+  <!-- Main Table: All entries are loaded statically. Each row is clickable. -->
+  <table id="main-table">
+    <thead>
+      <tr>
+        <th data-label="Name">Name</th>
+        <!-- Numerically sort Publication Year -->
+        <th data-label="Publication Year" class="sorttable_numeric">Publication Year</th>
+        <th data-label="Short Description">Short Description</th>
+        <th data-label="Tags">Tags</th>
+        <th data-label="Type of Relationship">Type of Relationship</th>
+        <th data-label="Design Strategy">Design Strategy</th>
+        <th data-label="Role of Technology">Role of Technology</th>
+        <th data-label="Evaluation">Evaluation (yes/no)</th>
+      </tr>
+    </thead>
+    <tbody id="papers-list">
+      {{ $allPapers := where .Site.RegularPages "Section" "papers" }}
+      {{ $sortedPapers := sort $allPapers ".Params.publication_year" "desc" }}
+      {{ range $sortedPapers }}
+      <tr onclick="window.location='{{ .RelPermalink }}'" style="cursor:pointer;">
+        <td data-label="Name">{{ .Params.name }}</td>
+        <td data-label="Publication Year">{{ with .Params.publication_year }}{{ . }}{{ else }}N/A{{ end }}</td>
+        <td data-label="Short Description">{{ with .Params.short_description }}{{ . | truncate 100 "..." }}{{ else }}N/A{{ end }}</td>
+        <td data-label="Tags">
+          <div class="tags">
+            {{ with .Params.tags }}
+              {{ range . }}
+                <span class="tag">{{ . }}</span>
+              {{ end }}
+            {{ else }}N/A{{ end }}
+          </div>
+        </td>
+        <td data-label="Type of Relationship">
+          <div class="tags">
+            {{ with .Params.target_group_of_people__target_group }}
+              {{ range (split . ";") }}
+                <span class="tag2">{{ . }}</span>
+              {{ end }}
+            {{ else }}N/A{{ end }}
+          </div>
+        </td>
+        <td data-label="Design Strategy">
+          <div class="tags">
+            {{ with .Params.design___strategy_ }}
+              {{ range (split . ";") }}
+                <span class="tag3">{{ . }}</span>
+              {{ end }}
+            {{ else }}N/A{{ end }}
+          </div>
+        </td>
+        <td data-label="Role of Technology">{{ with .Params.design___role_of_technology }}{{ . }}{{ else }}N/A{{ end }}</td>
+        <td data-label="Evaluation">
+          {{ with .Params.evaluation_ }}{{ . }}{{ else }}N/A{{ end }}
+        </td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+
+  <!-- Fuse.js Search Functionality -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        fetch('/index.json')
+        .then(response => response.json())
+        .then(data => {
+          const fuse = new Fuse(data, {
+            keys: [
+              "name", 
+              "short_description", 
+              "tags", 
+              "target_group_of_people__target_group", 
+              "design___strategy_", 
+              "design___role_of_technology", 
+              "evaluation_"
+            ],
+            threshold: 0.4
+          });
+  
+          const searchInput = document.getElementById('search');
+          const resultCount = document.getElementById('result-count');
+          const papersList = document.getElementById('papers-list');
+  
+          const resetToOriginalList = () => {
+            papersList.innerHTML = `
+              {{ range $sortedPapers }}
+              <tr onclick="window.location='{{ .RelPermalink }}'" style="cursor:pointer;">
+                <td data-label="Name">{{ .Params.name }}</td>
+                <td data-label="Publication Year">{{ with .Params.publication_year }}{{ . }}{{ else }}N/A{{ end }}</td>
+                <td data-label="Short Description">{{ with .Params.short_description }}{{ . | truncate 100 "..." }}{{ else }}N/A{{ end }}</td>
+                <td data-label="Tags">
+                  <div class="tags">
+                    {{ with .Params.tags }}
+                      {{ range . }}
+                        <span class="tag">{{ . }}</span>
+                      {{ end }}
+                    {{ else }}N/A{{ end }}
+                  </div>
+                </td>
+                <td data-label="Type of Relationship">
+                  <div class="tags">
+                    {{ with .Params.target_group_of_people__target_group }}
+                      {{ range (split . ";") }}
+                        <span class="tag2">{{ . }}</span>
+                      {{ end }}
+                    {{ else }}N/A{{ end }}
+                  </div>
+                </td>
+                <td data-label="Design Strategy">
+                  <div class="tags">
+                    {{ with .Params.design___strategy_ }}
+                      {{ range (split . ";") }}
+                        <span class="tag3">{{ . }}</span>
+                      {{ end }}
+                    {{ else }}N/A{{ end }}
+                  </div>
+                </td>
+                <td data-label="Role of Technology">{{ with .Params.design___role_of_technology }}{{ . }}{{ else }}N/A{{ end }}</td>
+                <td data-label="Evaluation">
+                  {{ with .Params.evaluation_ }}{{ . }}{{ else }}N/A{{ end }}
+                </td>
+              </tr>
+              {{ end }}
+            `;
+          };
+  
+          searchInput.addEventListener('input', function (e) {
+            const searchTerm = e.target.value.trim();
+
+            localStorage.setItem("papersSearchTerm", searchTerm);
+  
+            if (searchTerm) {
+              const results = fuse.search(searchTerm);
+              resultCount.textContent = `(${results.length} results)`;
+              papersList.innerHTML = '';
+  
+              if (results.length > 0) {
+                results.forEach(result => {
+                  const item = result.item || result;
+                  papersList.innerHTML += `
+                    <tr onclick="window.location='${item.relpermalink}'" style="cursor:pointer;">
+                      <td data-label="Name">${item.name || 'N/A'}</td>
+                      <td data-label="Publication Year">${item.publication_year || 'N/A'}</td>
+                      <td data-label="Short Description">${item.short_description ? item.short_description.substring(0, 100) + '...' : 'N/A'}</td>
+                      <td data-label="Tags">
+                        <div class="tags">
+                          ${item.tags ? item.tags.map(tag => `<span class="tag">${tag}</span>`).join('') : 'N/A'}
+                        </div>
+                      </td>
+                      <td data-label="Type of Relationship">
+                        <div class="tags">
+                          ${item.target_group_of_people__target_group ? item.target_group_of_people__target_group.split(";").map(val => `<span class="tag2">${val.trim()}</span>`).join('') : 'N/A'}
+                        </div>
+                      </td>
+                      <td data-label="Design Strategy">
+                        <div class="tags">
+                          ${item.design___strategy_ ? item.design___strategy_.split(";").map(val => `<span class="tag3">${val.trim()}</span>`).join('') : 'N/A'}
+                        </div>
+                      </td>
+                      <td data-label="Role of Technology">${item.design___role_of_technology || 'N/A'}</td>
+                      <td data-label="Evaluation">${item.evaluation_ || 'N/A'}</td>
+                    </tr>
+                  `;
+                });
+              } else {
+                papersList.innerHTML = `<tr><td colspan="8">No results found</td></tr>`;
+              }
+            } else {
+              resetToOriginalList();
+              resultCount.textContent = '';
+            }
+          });
+        });
+    });
+  </script>
+
+  <!-- Initialize Tablesort for clickable header sorting -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Tablesort(document.getElementById('main-table'));
+    });
+  </script>
+</body>
+</html>

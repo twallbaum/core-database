@@ -1,0 +1,44 @@
+{{- $pages := .Site.RegularPages -}}
+[
+  {{- range $index, $page := $pages -}}
+  {{- if $index }},{{ end -}}
+  {
+    "date": {{ $page.Date | jsonify }},
+    "draft": {{ $page.Draft | jsonify }},
+    "corpus_version": {{ $page.Params.corpus_version | jsonify }},
+    "name": {{ $page.Params.name | jsonify }},
+    "relpermalink": {{ $page.RelPermalink | jsonify }},
+    "short_description": {{ $page.Params.short_description | jsonify }},
+    "publication_year": {{ $page.Params.publication_year | jsonify }},
+    "publication_type": {{ $page.Params.publication_type | jsonify }},
+    "reference": {{ $page.Params.reference | jsonify }},
+    "tags": {{ $page.Params.tags | jsonify }},
+    "target_group_of_people__target_group": {{ $page.Params.target_group_of_people__target_group | jsonify }},
+    "target_group_of_people___additional_specification": {{ $page.Params.target_group_of_people___additional_specification | jsonify }},
+    "aim_and_designers_intention": {{ $page.Params.aim_and_designers_intention | jsonify }},
+    "psychological_constructs_with_reference": {{ $page.Params.psychological_constructs_with_reference | jsonify }},
+    "psychological_constructs_with_reference___references": {{ $page.Params.psychological_constructs_with_reference___references | jsonify }},
+    "constructs_and_terms_used_without_reference": {{ $page.Params.constructs_and_terms_used_without_reference | jsonify }},
+    "design___strategy_": {{ $page.Params.design___strategy_ | jsonify }},
+    "design___role_of_technology": {{ $page.Params.design___role_of_technology | jsonify }},
+    "design___form_factor": {{ $page.Params.design___form_factor | jsonify }},
+    "design___symmetry_of_interaction_devices": {{ $page.Params.design___symmetry_of_interaction_devices | jsonify }},
+    "design___input_modalities": {{ $page.Params.design___input_modalities | jsonify }},
+    "design____output_modalities": {{ $page.Params.design____output_modalities | jsonify }},
+    "design___synchronicity_of_interaction": {{ $page.Params.design___synchronicity_of_interaction | jsonify }},
+    "evaluation_": {{ $page.Params.evaluation_ | jsonify }},
+    "evaluation___methodology": {{ $page.Params.evaluation___methodology | jsonify }},
+    "evaluation___type_of_study": {{ $page.Params.evaluation___type_of_study | jsonify }},
+    "evaluation___experimental_design": {{ $page.Params.evaluation___experimental_design | jsonify }},
+    "evaluation___duration_of_data_collection": {{ $page.Params.evaluation___duration_of_data_collection | jsonify }},
+    "evaluation___number_of_participants__n": {{ $page.Params.evaluation___number_of_participants__n | jsonify }},
+    "evaluation____selected_participants": {{ $page.Params.evaluation____selected_participants | jsonify }},
+    "evaluation______selection_criteria_of_participants": {{ $page.Params.evaluation______selection_criteria_of_participants | jsonify }},
+    "evaluation____measurements_and_instruments_with_reference": {{ $page.Params.evaluation____measurements_and_instruments_with_reference | jsonify }},
+    "evaluation____measurements_and_instruments___references": {{ $page.Params.evaluation____measurements_and_instruments___references | jsonify }},
+    "ethical_concerns": {{ $page.Params.ethical_concerns | jsonify }},
+    "consideration_of_ethical_issues_in_design_descisions": {{ $page.Params.consideration_of_ethical_issues_in_design_descisions | jsonify }},
+    "ethical_issues_addressed": {{ $page.Params.ethical_issues_addressed | jsonify }}
+  }
+  {{- end -}}
+]

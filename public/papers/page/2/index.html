@@ -1,0 +1,1849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORE - COmpendium of RElatedness Technologies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .active-link {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+
+    <title>Papers</title>
+    <style>
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            color: #201B3F;
+        }
+        #search {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        table {
+            width: 95%;
+            max-width: 1600px;
+            border-collapse: collapse;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 15px 20px;
+            text-align: left;
+        }
+        th {
+            background-color: #201B3F;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.7em;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e9ecef;
+        }
+        td {
+            border-bottom: 1px solid #dee2e6;
+        }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .tag {
+            background-color: #C681AE;
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+        }
+
+        .tag2 {
+            background-color: #9BF0DF;
+            color: #2A286C;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+        }
+
+        .tag3 {
+            background-color: #FEFBB3;
+            color: #BD85AC;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+        }
+
+        a {
+            color: #2b86be;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .pagination {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .pagination a {
+            background-color: #201B3F;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+        .pagination a:hover {
+            background-color: #2b86be;
+        }
+
+        .pagination .disabled {
+            background-color: #8a8c8d;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            table, th, td {
+                display: block;
+            }
+            th, td {
+                padding: 10px;
+                text-align: right;
+                position: relative;
+            }
+            th::before, td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                width: calc(100% - 20px);
+                text-align: left;
+                font-weight: bold;
+            }
+            th, td {
+                text-align: left;
+                padding-left: 30%;
+            }
+        }
+    </style>
+    <script src="/js/fuse.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const items = document.querySelectorAll('#papers-list tr');
+            const itemsPerLoad = 20;
+            let currentCount = itemsPerLoad;
+        
+            items.forEach((item, index) => {
+                item.style.display = index < itemsPerLoad ? '' : 'none';
+            });
+        
+            window.addEventListener('scroll', () => {
+                if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200) {
+                    for (let i = currentCount; i < currentCount + itemsPerLoad && i < items.length; i++) {
+                        items[i].style.display = '';
+                    }
+                    currentCount += itemsPerLoad;
+                }
+            });
+        });
+        </script>        
+
+</head>
+
+<body class="bg-gray-100 text-gray-900 font-sans">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            
+            <div>
+                <a href="/" class="text-3xl font-bold text-pink-600">CORE</a>
+                <p class="text-xs text-gray-600">Compendium of Relatedness Technologies</p>
+            </div>
+            
+            <nav>
+                <ul class="flex space-x-6">
+                    <li>
+                        <a href="/papers/" class="hover:text-pink-600 active-link">EXPLORE CORE</a>
+                    </li>
+                    <li><a href="/how-to-use/" class="hover:text-pink-600 ">HOW TO USE CORE?</a></li>
+                    <li><a href="/how-to-cite/" class="hover:text-pink-600 ">HOW TO CITE CORE?</a></li>
+                    <li><a href="/contribute/" class="hover:text-pink-600 ">HOW TO CONTRIBUTE?</a></li>
+                    <li><a href="/team/" class="hover:text-pink-600 ">CORE TEAM</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    
+    <div class="flex justify-center items-center gap-2 mt-2">
+        <input type="text" id="search" placeholder="Search papers..." class="w-[400px] p-2 border border-gray-300 rounded">
+        <span id="result-count" class="text-sm text-gray-600"></span>
+    </div>    
+
+    <div style="margin-bottom: 20px; text-align: center;">
+        <a href="/papers/chart/" style="text-decoration: none; color: #2b86be; font-size: 1.2em;">📊 View Interactive Chart</a>
+    </div>
+       
+    
+    
+    <table id="main-table">
+        <thead>
+            <tr>
+                <th data-label="Name">Name</th>
+                <th data-label="Publication Year">Publication Year</th>
+                <th data-label="Short Description">Short Description</th>
+                <th data-label="Tags">Tags</th>
+                <th data-label="Type of Relationship">Type of Relationship</th>
+                <th data-label="Design Strategy">Design Strategy</th>
+                <th data-label="Role of Technology">Role of Technology</th>
+                <th data-label="Type of Study">Type of Study</th>
+            </tr>
+        </thead>
+        <tbody id="papers-list">
+            
+            
+            
+
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/202_chatterbox_opener/">Chatterbox Opener</a></td>
+                <td data-label="Publication Year">2023</td>
+                <td data-label="Short Description">Chatterbox Opener is a game for couples and family members that provides tasks to encourage...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Game</span>
+                            
+                                <span class="tag">Application</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Romantic couples</span>
+                            
+                                <span class="tag2"> Family</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Genuine Conversation</span>
+                            
+                                <span class="tag3"> Joint Action</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Stimulating further interaction</td>
+                <td data-label="Type of Study">Field study: user testing in natural environment</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/203_light_touch/">Light Touch</a></td>
+                <td data-label="Publication Year">2023</td>
+                <td data-label="Short Description">Light Touch allows distributed people to send colored lights by simply tapping the button. The...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">DIY</span>
+                            
+                                <span class="tag">IoT-enabled domestic object(s)</span>
+                            
+                                <span class="tag">Lamp</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Any close relationship</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Expressivity</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Enabling lightweight communication</td>
+                <td data-label="Type of Study">Field study: in-home user testing</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/20_mini_robot_gestures/">Mini Robot Gestures</a></td>
+                <td data-label="Publication Year">2023</td>
+                <td data-label="Short Description">Mini Robot Gestures allows people to send and receive emotional signals using a pair of small...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Object</span>
+                            
+                                <span class="tag">Application</span>
+                            
+                                <span class="tag">Robot</span>
+                            
+                                <span class="tag">Avatar</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Friends, peers</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Expressivity</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Stimulating further interaction</td>
+                <td data-label="Type of Study">N/A</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/212_intimasea/">IntimaSea</a></td>
+                <td data-label="Publication Year">2023</td>
+                <td data-label="Short Description">IntimaSea is a collective stress display that integrates automatically collected stress data from a...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Application</span>
+                            
+                                <span class="tag">Biometric data</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Friends, peers</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Awareness</span>
+                            
+                                <span class="tag3"> Acts of Care</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Prompting for interaction</td>
+                <td data-label="Type of Study">Field study: user testing in natural environment</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/227_synchrobots/">Synchrobots</a></td>
+                <td data-label="Publication Year">2023</td>
+                <td data-label="Short Description">Synchrobot is a furry, animal-like robot that augments videoconferencing conversations between...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Object</span>
+                            
+                                <span class="tag">Biometric data</span>
+                            
+                                <span class="tag">Robot</span>
+                            
+                                <span class="tag">Tangible interaction</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Colleagues, team</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Physicalness</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Enriching existing technology</td>
+                <td data-label="Type of Study">N/A</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/234_etc_embodied_telepresent_connection/">ETC (Embodied Telepresent Connection)</a></td>
+                <td data-label="Publication Year">2023</td>
+                <td data-label="Short Description">ETC allows two people to interact remotely through pseudo-haptic touch via their abstract aura...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Avatar</span>
+                            
+                                <span class="tag">Behavioral data</span>
+                            
+                                <span class="tag">VR (Virtual Reality)</span>
+                            
+                                <span class="tag">Biometric data</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Any close relationship</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Joint Action</span>
+                            
+                                <span class="tag3"> Physicalness</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Dissolving space and/or time; Enabling existing embodied interaction</td>
+                <td data-label="Type of Study">Field study: user testing as part of an exhibition</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/4_kepein/">KEPEIN</a></td>
+                <td data-label="Publication Year">2023</td>
+                <td data-label="Short Description">KEPEIN is an interface in the form of a coffee maker to enhance remote communication while sharing a...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Tea/Coffee</span>
+                            
+                                <span class="tag">IoT-enabled domestic object(s)</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Family</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Ritual Formation</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Enabling complex practices</td>
+                <td data-label="Type of Study">Lab study: user testing</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/60_magibricks/">MagiBricks</a></td>
+                <td data-label="Publication Year">2023</td>
+                <td data-label="Short Description">MagiBricks are 3D-printed smart toy bricks and base plates that provide feedback on how they are...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Toy object</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Family – children and grandparent(s), adult family members</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Joint Action</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Dissolving space and/or time</td>
+                <td data-label="Type of Study">Lab study: user testing</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/119_auggie/">Auggie</a></td>
+                <td data-label="Publication Year">2022</td>
+                <td data-label="Short Description">Auggie is an application to craft personalized AR experiences that can be sent to remote partners.</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Augmented Reality (AR)</span>
+                            
+                                <span class="tag">Application</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Any close relationship</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Gift-giving</span>
+                            
+                                <span class="tag3"> Expressivity</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Providing an individual experience</td>
+                <td data-label="Type of Study">Field study: user testing in natural environment</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/125_virtual_visit_system/">Virtual Visit System</a></td>
+                <td data-label="Publication Year">2022</td>
+                <td data-label="Short Description">Virtual Visit is a photorealistic AR-based video communication tool for life-size, immersive video...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Augmented Reality (AR)</span>
+                            
+                                <span class="tag">Video-mediated interaction</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Any close relationship</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Physicalness</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Dissolving space and/or time</td>
+                <td data-label="Type of Study">Lab study: user testing</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/128_qude/">Qude</a></td>
+                <td data-label="Publication Year">2022</td>
+                <td data-label="Short Description">Qude is a vibro-tactile wearable for long-distance couples to tap and send a rhythm to their...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Wearable</span>
+                            
+                                <span class="tag">Application</span>
+                            
+                                <span class="tag">Tangible interaction</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Romantic couples</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Physicalness</span>
+                            
+                                <span class="tag3"> Expressivity</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Enabling existing embodied interaction</td>
+                <td data-label="Type of Study">Lab Study: user confrontation</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/13_ember/">EmbER</a></td>
+                <td data-label="Publication Year">2022</td>
+                <td data-label="Short Description">EmbER (Embodied Experience Remotely) is a wearable that subtly augments conventional video calls...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Wearable</span>
+                            
+                                <span class="tag">Biometric data</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Any close relationship</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Physicalness</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Enabling existing embodied interaction</td>
+                <td data-label="Type of Study">Lab study: user testing</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/140_kidconnect_vr/">KidConnect VR</a></td>
+                <td data-label="Publication Year">2022</td>
+                <td data-label="Short Description">KidConnect VR is a concept that allows children to connect with others through an immersive virtual...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Virtual Reality (VR)</span>
+                            
+                                <span class="tag">Video-mediated interaction</span>
+                            
+                                <span class="tag">Wearable</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Friends, peers – children</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Joint Action</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Dissolving space and/or time</td>
+                <td data-label="Type of Study">N/A</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/204_yo-yo_machines_knock_knock/">Yo-Yo Machines: Knock Knock</a></td>
+                <td data-label="Publication Year">2022</td>
+                <td data-label="Short Description">Yo-Yo Machines are playful communication devices in four distinct designs, each connecting a pair of...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">DIY</span>
+                            
+                                <span class="tag">IoT-enabled domestic object(s)</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Any close relationship</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Expressivity</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Triggering imagination</td>
+                <td data-label="Type of Study">N/A</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/205_yo-yo_machines_speed_dial/">Yo-Yo Machines: Speed Dial</a></td>
+                <td data-label="Publication Year">2022</td>
+                <td data-label="Short Description">Yo-Yo Machines are playful communication devices in four distinct designs, each connecting a pair of...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">DIY</span>
+                            
+                                <span class="tag">IoT-enabled domestic object(s)</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Any close relationship</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Expressivity</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Triggering imagination</td>
+                <td data-label="Type of Study">N/A</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/206_yo-yo_machines_flutter_by/">Yo-Yo Machines: Flutter By</a></td>
+                <td data-label="Publication Year">2022</td>
+                <td data-label="Short Description">Yo-Yo Machines are playful communication devices in four distinct designs, each connecting a pair of...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">DIY</span>
+                            
+                                <span class="tag">IoT-enabled domestic object(s)</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Any close relationship</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Awareness</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Triggering imagination</td>
+                <td data-label="Type of Study">N/A</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/209_shared_wind/">Shared Wind</a></td>
+                <td data-label="Publication Year">2022</td>
+                <td data-label="Short Description">Shared Wind is a nature-based design system for subtle emotional communication between long-distance...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">IoT-enabled domestic object(s)</span>
+                            
+                                <span class="tag">Window</span>
+                            
+                                <span class="tag">Contextual data</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Romantic couples</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Expressivity</span>
+                            
+                                <span class="tag3"> Ritual Formation</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Triggering imagination</td>
+                <td data-label="Type of Study">Field study: in-home user testing</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/22_spatial_hypertext/">Spatial Hypertext</a></td>
+                <td data-label="Publication Year">2022</td>
+                <td data-label="Short Description">The intelligent, NLP- and recommendation-based Spatial Hypertext system promotes emotional closeness...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Spatial hypertext system</span>
+                            
+                                <span class="tag">Natural Language Processing</span>
+                            
+                                <span class="tag">Biometric data</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Family</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Memories</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Prompting for interaction</td>
+                <td data-label="Type of Study">N/A</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/230_wearable_biosignal_sharing_system/">Wearable Biosignal Sharing System</a></td>
+                <td data-label="Publication Year">2022</td>
+                <td data-label="Short Description">The Wearable Biosignal Sharing System visualizes the emotional state of a group of people in an...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Biometric data</span>
+                            
+                                <span class="tag">Wearable</span>
+                            
+                                <span class="tag">Smartwatch</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Any close relationship</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Awareness</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Triggering imagination</td>
+                <td data-label="Type of Study">N/A</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/24_skin_hunger/">Skin Hunger</a></td>
+                <td data-label="Publication Year">2022</td>
+                <td data-label="Short Description">Skin Hunger is a web-based interactive system for a telematic installation in which people can...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Video-mediated interaction</span>
+                            
+                                <span class="tag">Machine learning</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Any close relationship</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Joint Action</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Enabling existing embodied interaction</td>
+                <td data-label="Type of Study">N/A</td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    
+    <div class="pagination">
+        
+            <a href="/papers/">Previous</a>
+        
+        
+            <a href="/papers/page/3/">Next</a>
+        
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('/index.json')
+                .then(response => response.json())
+                .then(data => {
+                    const fuse = new Fuse(data, {
+                        keys: ["name", "short_description", "tags", "type_of_relationship", "design_strategy", "role_of_technology", "type_of_study"],
+                        threshold: 0.4
+                    });
+    
+                    const searchInput = document.getElementById('search');
+                    const resultCount = document.getElementById('result-count');
+                    const papersList = document.getElementById('papers-list');
+                    const pagination = document.querySelector('.pagination');
+    
+                    const resetToOriginalList = () => {
+                        
+                        papersList.innerHTML = `
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/202_chatterbox_opener\/">Chatterbox Opener</a></td>
+                                <td data-label="Publication Year">2023</td>
+                                <td data-label="Short Description">Chatterbox Opener is a game for couples and family members that provides tasks to encourage...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Game</span>
+                                            
+                                                <span class="tag">Application</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Genuine Conversation</span>
+                                            
+                                                <span class="tag3"> Joint Action</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Stimulating further interaction</td>
+                                <td data-label="Type of Study">Field study: user testing in natural environment</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/203_light_touch\/">Light Touch</a></td>
+                                <td data-label="Publication Year">2023</td>
+                                <td data-label="Short Description">Light Touch allows distributed people to send colored lights by simply tapping the button. The...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">DIY</span>
+                                            
+                                                <span class="tag">IoT-enabled domestic object(s)</span>
+                                            
+                                                <span class="tag">Lamp</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Expressivity</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Enabling lightweight communication</td>
+                                <td data-label="Type of Study">Field study: in-home user testing</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/20_mini_robot_gestures\/">Mini Robot Gestures</a></td>
+                                <td data-label="Publication Year">2023</td>
+                                <td data-label="Short Description">Mini Robot Gestures allows people to send and receive emotional signals using a pair of small...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Object</span>
+                                            
+                                                <span class="tag">Application</span>
+                                            
+                                                <span class="tag">Robot</span>
+                                            
+                                                <span class="tag">Avatar</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Expressivity</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Stimulating further interaction</td>
+                                <td data-label="Type of Study">N\/A</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/212_intimasea\/">IntimaSea</a></td>
+                                <td data-label="Publication Year">2023</td>
+                                <td data-label="Short Description">IntimaSea is a collective stress display that integrates automatically collected stress data from a...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Application</span>
+                                            
+                                                <span class="tag">Biometric data</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Awareness</span>
+                                            
+                                                <span class="tag3"> Acts of Care</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Prompting for interaction</td>
+                                <td data-label="Type of Study">Field study: user testing in natural environment</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/227_synchrobots\/">Synchrobots</a></td>
+                                <td data-label="Publication Year">2023</td>
+                                <td data-label="Short Description">Synchrobot is a furry, animal-like robot that augments videoconferencing conversations between...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Object</span>
+                                            
+                                                <span class="tag">Biometric data</span>
+                                            
+                                                <span class="tag">Robot</span>
+                                            
+                                                <span class="tag">Tangible interaction</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Physicalness</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Enriching existing technology</td>
+                                <td data-label="Type of Study">N\/A</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/234_etc_embodied_telepresent_connection\/">ETC (Embodied Telepresent Connection)</a></td>
+                                <td data-label="Publication Year">2023</td>
+                                <td data-label="Short Description">ETC allows two people to interact remotely through pseudo-haptic touch via their abstract aura...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Avatar</span>
+                                            
+                                                <span class="tag">Behavioral data</span>
+                                            
+                                                <span class="tag">VR (Virtual Reality)</span>
+                                            
+                                                <span class="tag">Biometric data</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Joint Action</span>
+                                            
+                                                <span class="tag3"> Physicalness</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Dissolving space and\/or time; Enabling existing embodied interaction</td>
+                                <td data-label="Type of Study">Field study: user testing as part of an exhibition</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/4_kepein\/">KEPEIN</a></td>
+                                <td data-label="Publication Year">2023</td>
+                                <td data-label="Short Description">KEPEIN is an interface in the form of a coffee maker to enhance remote communication while sharing a...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Tea\/Coffee</span>
+                                            
+                                                <span class="tag">IoT-enabled domestic object(s)</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Ritual Formation</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Enabling complex practices</td>
+                                <td data-label="Type of Study">Lab study: user testing</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/60_magibricks\/">MagiBricks</a></td>
+                                <td data-label="Publication Year">2023</td>
+                                <td data-label="Short Description">MagiBricks are 3D-printed smart toy bricks and base plates that provide feedback on how they are...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Toy object</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Joint Action</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Dissolving space and\/or time</td>
+                                <td data-label="Type of Study">Lab study: user testing</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/119_auggie\/">Auggie</a></td>
+                                <td data-label="Publication Year">2022</td>
+                                <td data-label="Short Description">Auggie is an application to craft personalized AR experiences that can be sent to remote partners.</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Augmented Reality (AR)</span>
+                                            
+                                                <span class="tag">Application</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Gift-giving</span>
+                                            
+                                                <span class="tag3"> Expressivity</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Providing an individual experience</td>
+                                <td data-label="Type of Study">Field study: user testing in natural environment</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/125_virtual_visit_system\/">Virtual Visit System</a></td>
+                                <td data-label="Publication Year">2022</td>
+                                <td data-label="Short Description">Virtual Visit is a photorealistic AR-based video communication tool for life-size, immersive video...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Augmented Reality (AR)</span>
+                                            
+                                                <span class="tag">Video-mediated interaction</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Physicalness</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Dissolving space and\/or time</td>
+                                <td data-label="Type of Study">Lab study: user testing</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/128_qude\/">Qude</a></td>
+                                <td data-label="Publication Year">2022</td>
+                                <td data-label="Short Description">Qude is a vibro-tactile wearable for long-distance couples to tap and send a rhythm to their...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Wearable</span>
+                                            
+                                                <span class="tag">Application</span>
+                                            
+                                                <span class="tag">Tangible interaction</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Physicalness</span>
+                                            
+                                                <span class="tag3"> Expressivity</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Enabling existing embodied interaction</td>
+                                <td data-label="Type of Study">Lab Study: user confrontation</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/13_ember\/">EmbER</a></td>
+                                <td data-label="Publication Year">2022</td>
+                                <td data-label="Short Description">EmbER (Embodied Experience Remotely) is a wearable that subtly augments conventional video calls...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Wearable</span>
+                                            
+                                                <span class="tag">Biometric data</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Physicalness</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Enabling existing embodied interaction</td>
+                                <td data-label="Type of Study">Lab study: user testing</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/140_kidconnect_vr\/">KidConnect VR</a></td>
+                                <td data-label="Publication Year">2022</td>
+                                <td data-label="Short Description">KidConnect VR is a concept that allows children to connect with others through an immersive virtual...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Virtual Reality (VR)</span>
+                                            
+                                                <span class="tag">Video-mediated interaction</span>
+                                            
+                                                <span class="tag">Wearable</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Joint Action</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Dissolving space and\/or time</td>
+                                <td data-label="Type of Study">N\/A</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/204_yo-yo_machines_knock_knock\/">Yo-Yo Machines: Knock Knock</a></td>
+                                <td data-label="Publication Year">2022</td>
+                                <td data-label="Short Description">Yo-Yo Machines are playful communication devices in four distinct designs, each connecting a pair of...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">DIY</span>
+                                            
+                                                <span class="tag">IoT-enabled domestic object(s)</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Expressivity</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Triggering imagination</td>
+                                <td data-label="Type of Study">N\/A</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/205_yo-yo_machines_speed_dial\/">Yo-Yo Machines: Speed Dial</a></td>
+                                <td data-label="Publication Year">2022</td>
+                                <td data-label="Short Description">Yo-Yo Machines are playful communication devices in four distinct designs, each connecting a pair of...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">DIY</span>
+                                            
+                                                <span class="tag">IoT-enabled domestic object(s)</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Expressivity</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Triggering imagination</td>
+                                <td data-label="Type of Study">N\/A</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/206_yo-yo_machines_flutter_by\/">Yo-Yo Machines: Flutter By</a></td>
+                                <td data-label="Publication Year">2022</td>
+                                <td data-label="Short Description">Yo-Yo Machines are playful communication devices in four distinct designs, each connecting a pair of...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">DIY</span>
+                                            
+                                                <span class="tag">IoT-enabled domestic object(s)</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Awareness</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Triggering imagination</td>
+                                <td data-label="Type of Study">N\/A</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/209_shared_wind\/">Shared Wind</a></td>
+                                <td data-label="Publication Year">2022</td>
+                                <td data-label="Short Description">Shared Wind is a nature-based design system for subtle emotional communication between long-distance...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">IoT-enabled domestic object(s)</span>
+                                            
+                                                <span class="tag">Window</span>
+                                            
+                                                <span class="tag">Contextual data</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Expressivity</span>
+                                            
+                                                <span class="tag3"> Ritual Formation</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Triggering imagination</td>
+                                <td data-label="Type of Study">Field study: in-home user testing</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/22_spatial_hypertext\/">Spatial Hypertext</a></td>
+                                <td data-label="Publication Year">2022</td>
+                                <td data-label="Short Description">The intelligent, NLP- and recommendation-based Spatial Hypertext system promotes emotional closeness...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Spatial hypertext system</span>
+                                            
+                                                <span class="tag">Natural Language Processing</span>
+                                            
+                                                <span class="tag">Biometric data</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Memories</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Prompting for interaction</td>
+                                <td data-label="Type of Study">N\/A</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/230_wearable_biosignal_sharing_system\/">Wearable Biosignal Sharing System</a></td>
+                                <td data-label="Publication Year">2022</td>
+                                <td data-label="Short Description">The Wearable Biosignal Sharing System visualizes the emotional state of a group of people in an...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Biometric data</span>
+                                            
+                                                <span class="tag">Wearable</span>
+                                            
+                                                <span class="tag">Smartwatch</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Awareness</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Triggering imagination</td>
+                                <td data-label="Type of Study">N\/A</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/24_skin_hunger\/">Skin Hunger</a></td>
+                                <td data-label="Publication Year">2022</td>
+                                <td data-label="Short Description">Skin Hunger is a web-based interactive system for a telematic installation in which people can...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Video-mediated interaction</span>
+                                            
+                                                <span class="tag">Machine learning</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Joint Action</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Enabling existing embodied interaction</td>
+                                <td data-label="Type of Study">N\/A</td>
+                            </tr>
+                            
+                        `;
+    
+                        
+                        pagination.style.display = 'flex';
+    
+                        
+                        resultCount.textContent = '';
+                    };
+    
+                    searchInput.addEventListener('input', function (e) {
+                        const searchTerm = e.target.value.trim();
+    
+                        if (searchTerm) {
+                            const results = fuse.search(searchTerm);
+    
+                            
+                            resultCount.textContent = `(${results.length} results)`;
+    
+                            
+                            papersList.innerHTML = '';
+                            pagination.style.display = 'none'; 
+    
+                            if (results.length > 0) {
+                                results.forEach(result => {
+                                    const item = result.item || result; 
+                                    papersList.innerHTML += `
+                                        <tr>
+                                            <td data-label="Name"><a href="${item.relpermalink}">${item.name || 'N/A'}</a></td>
+                                            <td data-label="Publication Year">${item.publication_year || 'N/A'}</td>
+                                            <td data-label="Short Description">${item.short_description ? item.short_description.substring(0, 100) + '...' : 'N/A'}</td>
+                                            <td data-label="Tags">
+                                                <div class="tags">
+                                                    ${item.tags ? item.tags.map(tag => `<span class="tag">${tag}</span>`).join('') : 'N/A'}
+                                                </div>
+                                            </td>
+                                            <td data-label="Type of Relationship">${item.type_of_relationship || 'N/A'}</td>
+                                            <td data-label="Design Strategy">${item.design_strategy || 'N/A'}</td>
+                                            <td data-label="Role of Technology">${item.role_of_technology || 'N/A'}</td>
+                                            <td data-label="Type of Study">${item.type_of_study || 'N/A'}</td>
+                                        </tr>
+                                    `;
+                                });
+                            } else {
+                                papersList.innerHTML = `<tr><td colspan="8">No results found</td></tr>`;
+                            }
+                        } else {
+                            
+                            resetToOriginalList();
+                        }
+                    });
+                });
+        });
+    </script>    
+
+</body>
+</html>

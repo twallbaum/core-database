@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORE - COmpendium of RElatedness Technologies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .active-link {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+
+    <title>Papers</title>
+    <style>
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            color: #201B3F;
+        }
+        #search {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        table {
+            width: 95%;
+            max-width: 1600px;
+            border-collapse: collapse;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 15px 20px;
+            text-align: left;
+        }
+        th {
+            background-color: #201B3F;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.7em;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e9ecef;
+        }
+        td {
+            border-bottom: 1px solid #dee2e6;
+        }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .tag {
+            background-color: #C681AE;
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+        }
+
+        .tag2 {
+            background-color: #9BF0DF;
+            color: #2A286C;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+        }
+
+        .tag3 {
+            background-color: #FEFBB3;
+            color: #BD85AC;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+        }
+
+        a {
+            color: #2b86be;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .pagination {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .pagination a {
+            background-color: #201B3F;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+        .pagination a:hover {
+            background-color: #2b86be;
+        }
+
+        .pagination .disabled {
+            background-color: #8a8c8d;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            table, th, td {
+                display: block;
+            }
+            th, td {
+                padding: 10px;
+                text-align: right;
+                position: relative;
+            }
+            th::before, td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                width: calc(100% - 20px);
+                text-align: left;
+                font-weight: bold;
+            }
+            th, td {
+                text-align: left;
+                padding-left: 30%;
+            }
+        }
+    </style>
+    <script src="/js/fuse.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const items = document.querySelectorAll('#papers-list tr');
+            const itemsPerLoad = 20;
+            let currentCount = itemsPerLoad;
+        
+            items.forEach((item, index) => {
+                item.style.display = index < itemsPerLoad ? '' : 'none';
+            });
+        
+            window.addEventListener('scroll', () => {
+                if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200) {
+                    for (let i = currentCount; i < currentCount + itemsPerLoad && i < items.length; i++) {
+                        items[i].style.display = '';
+                    }
+                    currentCount += itemsPerLoad;
+                }
+            });
+        });
+        </script>        
+
+</head>
+
+<body class="bg-gray-100 text-gray-900 font-sans">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            
+            <div>
+                <a href="/" class="text-3xl font-bold text-pink-600">CORE</a>
+                <p class="text-xs text-gray-600">Compendium of Relatedness Technologies</p>
+            </div>
+            
+            <nav>
+                <ul class="flex space-x-6">
+                    <li>
+                        <a href="/papers/" class="hover:text-pink-600 active-link">EXPLORE CORE</a>
+                    </li>
+                    <li><a href="/how-to-use/" class="hover:text-pink-600 ">HOW TO USE CORE?</a></li>
+                    <li><a href="/how-to-cite/" class="hover:text-pink-600 ">HOW TO CITE CORE?</a></li>
+                    <li><a href="/contribute/" class="hover:text-pink-600 ">HOW TO CONTRIBUTE?</a></li>
+                    <li><a href="/team/" class="hover:text-pink-600 ">CORE TEAM</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    
+    <div class="flex justify-center items-center gap-2 mt-2">
+        <input type="text" id="search" placeholder="Search papers..." class="w-[400px] p-2 border border-gray-300 rounded">
+        <span id="result-count" class="text-sm text-gray-600"></span>
+    </div>    
+
+    <div style="margin-bottom: 20px; text-align: center;">
+        <a href="/papers/chart/" style="text-decoration: none; color: #2b86be; font-size: 1.2em;">📊 View Interactive Chart</a>
+    </div>
+       
+    
+    
+    <table id="main-table">
+        <thead>
+            <tr>
+                <th data-label="Name">Name</th>
+                <th data-label="Publication Year">Publication Year</th>
+                <th data-label="Short Description">Short Description</th>
+                <th data-label="Tags">Tags</th>
+                <th data-label="Type of Relationship">Type of Relationship</th>
+                <th data-label="Design Strategy">Design Strategy</th>
+                <th data-label="Role of Technology">Role of Technology</th>
+                <th data-label="Type of Study">Type of Study</th>
+            </tr>
+        </thead>
+        <tbody id="papers-list">
+            
+            
+            
+
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/80_cu-later/">CU-Later</a></td>
+                <td data-label="Publication Year">2010</td>
+                <td data-label="Short Description">CU-Later allows to share activities across time zones. It captures activities, such as eating,...</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag">Video-mediated interaction</span>
+                            
+                                <span class="tag">Domestic object</span>
+                            
+                                <span class="tag">Dinner table</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag2">Family</span>
+                            
+                                <span class="tag2"> Romantic couples</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            
+                                <span class="tag3">Joint Action</span>
+                            
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">Dissolving space and/or time</td>
+                <td data-label="Type of Study">Field study: in-home user testing</td>
+            </tr>
+            
+
+            <tr>
+                <td data-label="Name"><a href="/papers/chart/"></a></td>
+                <td data-label="Publication Year">N/A</td>
+                <td data-label="Short Description">N/A</td>
+                <td data-label="Tags">
+                    <div class="tags">
+                        
+                            N/A
+                        
+                    </div>
+                </td>
+                <td data-label="Type of Relationship">
+                    <div class="tags">
+                        
+                            N/A
+                        
+                    </div>
+                </td>
+                <td data-label="Design Strategy">
+                    <div class="tags">
+                        
+                            N/A
+                        
+                    </div>
+                </td>
+                <td data-label="Role of Technology">N/A</td>
+                <td data-label="Type of Study">N/A</td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    
+    <div class="pagination">
+        
+            <a href="/papers/page/12/">Previous</a>
+        
+        
+            <span class="disabled">Next</span>
+        
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('/index.json')
+                .then(response => response.json())
+                .then(data => {
+                    const fuse = new Fuse(data, {
+                        keys: ["name", "short_description", "tags", "type_of_relationship", "design_strategy", "role_of_technology", "type_of_study"],
+                        threshold: 0.4
+                    });
+    
+                    const searchInput = document.getElementById('search');
+                    const resultCount = document.getElementById('result-count');
+                    const papersList = document.getElementById('papers-list');
+                    const pagination = document.querySelector('.pagination');
+    
+                    const resetToOriginalList = () => {
+                        
+                        papersList.innerHTML = `
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/80_cu-later\/">CU-Later</a></td>
+                                <td data-label="Publication Year">2010</td>
+                                <td data-label="Short Description">CU-Later allows to share activities across time zones. It captures activities, such as eating,...</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag">Video-mediated interaction</span>
+                                            
+                                                <span class="tag">Domestic object</span>
+                                            
+                                                <span class="tag">Dinner table</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            
+                                                <span class="tag3">Joint Action</span>
+                                            
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">Dissolving space and\/or time</td>
+                                <td data-label="Type of Study">Field study: in-home user testing</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-label="Name"><a href="\/papers\/chart\/"></a></td>
+                                <td data-label="Publication Year">N/A</td>
+                                <td data-label="Short Description">N/A</td>
+                                <td data-label="Tags">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Type of Relationship">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Design Strategy">
+                                    <div class="tags">
+                                        
+                                            N/A
+                                        
+                                    </div>
+                                </td>
+                                <td data-label="Role of Technology">N/A</td>
+                                <td data-label="Type of Study">N/A</td>
+                            </tr>
+                            
+                        `;
+    
+                        
+                        pagination.style.display = 'flex';
+    
+                        
+                        resultCount.textContent = '';
+                    };
+    
+                    searchInput.addEventListener('input', function (e) {
+                        const searchTerm = e.target.value.trim();
+    
+                        if (searchTerm) {
+                            const results = fuse.search(searchTerm);
+    
+                            
+                            resultCount.textContent = `(${results.length} results)`;
+    
+                            
+                            papersList.innerHTML = '';
+                            pagination.style.display = 'none'; 
+    
+                            if (results.length > 0) {
+                                results.forEach(result => {
+                                    const item = result.item || result; 
+                                    papersList.innerHTML += `
+                                        <tr>
+                                            <td data-label="Name"><a href="${item.relpermalink}">${item.name || 'N/A'}</a></td>
+                                            <td data-label="Publication Year">${item.publication_year || 'N/A'}</td>
+                                            <td data-label="Short Description">${item.short_description ? item.short_description.substring(0, 100) + '...' : 'N/A'}</td>
+                                            <td data-label="Tags">
+                                                <div class="tags">
+                                                    ${item.tags ? item.tags.map(tag => `<span class="tag">${tag}</span>`).join('') : 'N/A'}
+                                                </div>
+                                            </td>
+                                            <td data-label="Type of Relationship">${item.type_of_relationship || 'N/A'}</td>
+                                            <td data-label="Design Strategy">${item.design_strategy || 'N/A'}</td>
+                                            <td data-label="Role of Technology">${item.role_of_technology || 'N/A'}</td>
+                                            <td data-label="Type of Study">${item.type_of_study || 'N/A'}</td>
+                                        </tr>
+                                    `;
+                                });
+                            } else {
+                                papersList.innerHTML = `<tr><td colspan="8">No results found</td></tr>`;
+                            }
+                        } else {
+                            
+                            resetToOriginalList();
+                        }
+                    });
+                });
+        });
+    </script>    
+
+</body>
+</html>

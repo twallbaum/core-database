@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CORE - COmpendium of RElatedness Technologies</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/tablesort@5.2.1/dist/tablesort.min.js"></script>
+  <style>
+     
+    h1 {
+      margin-bottom: 1.5rem;
+      font-size: 3rem;  
+      font-weight: bold;
+      color: #ec4899;  
+    }
+    #search {
+      width: 100%;
+      max-width: 400px;
+      padding: 0.625rem;
+      margin-bottom: 1.25rem;
+      border: 1px solid #ccc;
+      border-radius: 0.375rem;
+    }
+    table {
+      width: 95%;
+      max-width: 1600px;
+      border-collapse: collapse;
+      margin: 0 auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background-color: #fff;
+      border-radius: 0.5rem;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 0.9375rem 1.25rem;
+      text-align: left;
+    }
+    th {
+      background-color: #201B3F;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.7rem;
+      cursor: pointer;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    tr:hover {
+      background-color: #e9ecef;
+    }
+    td {
+      border-bottom: 1px solid #dee2e6;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.625rem;
+    }
+    .tag {
+      background-color: #C681AE;
+      color: #fff;
+      padding: 0.3125rem 0.625rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+    }
+    .tag2 {
+      background-color: #9BF0DF;
+      color: #2A286C;
+      padding: 0.3125rem 0.625rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+    }
+    .tag3 {
+      background-color: #FEFBB3;
+      color: #BD85AC;
+      padding: 0.3125rem 0.625rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+    }
+    a {
+      color: #2b86be;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+     
+    @media (max-width: 768px) {
+      table, th, td {
+        display: block;
+      }
+      th, td {
+        padding: 0.625rem;
+        text-align: right;
+        position: relative;
+      }
+      th::before, td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0.625rem;
+        width: calc(100% - 1.25rem);
+        text-align: left;
+        font-weight: bold;
+      }
+      th, td {
+        text-align: left;
+        padding-left: 30%;
+      }
+    }
+  </style>
+  
+  <script src="/js/fuse.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+  
+  <header class="bg-white shadow-md border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      
+      <div>
+        <a href="/" class="text-3xl font-bold text-pink-600">CORE</a>
+        <p class="text-sm text-gray-500">Compendium of Relatedness Technologies</p>
+      </div>
+      
+      <nav>
+        <ul class="flex space-x-6">
+          <li>
+            <a href="/papers/" class="transition-colors hover:text-pink-600 ">EXPLORE CORE</a>
+          </li>
+          <li>
+            <a href="/how-to-use/" class="transition-colors hover:text-pink-600 ">HOW TO USE CORE?</a>
+          </li>
+          <li>
+            <a href="/how-to-cite/" class="transition-colors hover:text-pink-600 ">HOW TO CITE CORE?</a>
+          </li>
+          <li>
+            <a href="/contribute/" class="transition-colors hover:text-pink-600 ">HOW TO CONTRIBUTE?</a>
+          </li>
+          <li>
+            <a href="/team/" class="transition-colors hover:text-pink-600 ">CORE TEAM</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+  <main class="max-w-4xl mx-auto px-6 py-8">
+    
+    <div class="mb-4">
+      <a id="backLink" class="text-blue-600 hover:underline" href="/papers/">← Back to Search Results</a>
+    </div>
+
+    
+    <h1 class="text-4xl font-bold text-pink-600">ABRA System</h1></br>
+
+    
+    <div class="mb-6 space-y-2">
+      <p><span class="font-bold">Publication Year:</span> <span>2010</span></p>
+      <p><span class="font-bold">Publication Type:</span> <span>Research Article</span></p>
+      <p><span class="font-bold">Short Description:</span> <span>The ABRA (Affect and Behavior-Related Assistance) system enables easy communication between generations and enables unobtrusive recognition and response to relevant states of older adults. It consists of components for sensor-based assessment of a person&#39;s mental and physical state, for reasoning about an appropriate response, and for communication and interaction. Real-time information about the older adult is continuously available to selected people on a web page; conversely, family members can post pictures or trigger text messages on a picture frame.</span></p>
+      <p><span class="font-bold">Reference:</span>
+        
+          
+            
+            Christian Peter, Gerald Bieber, and Bodo Urban. 2010. Affect- and behaviour-related assistance for families in the home environment. In Proceedings of the 3rd International Conference on PErvasive Technologies Related to Assistive Environments (PETRA &#39;10). Association for Computing Machinery, New York, NY, USA, Article 47, 1–5.  <a class="text-blue-600 hover:underline" href="https://doi.org/10.1145/1839294.1839351" target="_blank">https://doi.org/10.1145/1839294.1839351</a>
+          
+        
+      </p>
+    </div>
+
+    
+    <div class="overflow-x-auto">
+      <table class="w-full bg-white shadow rounded-lg">
+        <tbody class="divide-y divide-gray-200">
+          <tr>
+            <td class="py-3 font-bold">Tags</td>
+            <td class="py-3">Picture frame, Application, Biometric data, Behavioral data</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Type of Relationship</td>
+            <td class="py-3">Older adults</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Additional Specification</td>
+            <td class="py-3">No</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Aim and Designer's Intention</td>
+            <td class="py-3">Bridge the digital gap between the generations, helping to stay in touch and giving a stronger sense of presence to each other.</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Psychological Constructs with Reference</td>
+            <td class="py-3">No</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Constructs and Terms Without Reference</td>
+            <td class="py-3">Social Togetherness; Sense of Presence</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Design Strategy</td>
+            <td class="py-3">Acts of Care; Awareness</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Role of Technology</td>
+            <td class="py-3">Prompting for interaction; Enabling lightweight communication</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Input Modalities</td>
+            <td class="py-3">Behavioral data; Physiological – various; Touch – non-typing via display; Media content; Typing/text entry</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Output Modalities</td>
+            <td class="py-3">Graphics, visuals, icons, animations; Text; Media content</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Evaluation Methodology</td>
+            <td class="py-3">Qualitative</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Type of Study</td>
+            <td class="py-3">Field study: user testing in natural environment</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Number of Participants</td>
+            <td class="py-3">No further details</td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Ethical Concerns</td>
+            <td class="py-3">
+              
+                No
+              
+            </td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Consideration of Ethical Issues in Design Decisions</td>
+            <td class="py-3">
+              
+                No
+              
+            </td>
+          </tr>
+          <tr>
+            <td class="py-3 font-bold">Ethical Issues Addressed</td>
+            <td class="py-3">
+              
+                N/A
+              
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const backLink = document.getElementById('backLink');
+      const searchTerm = localStorage.getItem("papersSearchTerm");
+      if (searchTerm) {
+        backLink.href = "/papers/?q=" + encodeURIComponent(searchTerm);
+      } else {
+        backLink.href = "/papers/";
+      }
+    });
+  </script>
+</body>
+</html>
