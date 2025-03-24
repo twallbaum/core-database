@@ -14,4 +14,4 @@
 
 </br>
 
-<p>You can find all versions of CORE on <a href="#" target="_blank" class="text-pink-600 hover:underline">GitHub</a>, and each new version of the database will be forked, so you can always access and cite earlier versions if needed.</p>
+<p>You can find all versions of CORE on <a href="https://github.com/twallbaum/core-database" target="_blank" class="text-pink-600 hover:underline">GitHub</a>, and each new version of the database will be forked, so you can always access and cite earlier versions if needed.</p>

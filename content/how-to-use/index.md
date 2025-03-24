@@ -21,6 +21,6 @@
 <img src="categorySystem.jpeg" alt="categories used in Core" width="70%"/></br>
 
 
-<a href="/path/to/download.zip" class="inline-block text-white bg-pink-600 hover:bg-pink-700 font-semibold px-4 py-2 rounded">
+<a href="https://github.com/twallbaum/core-database" class="inline-block text-white bg-pink-600 hover:bg-pink-700 font-semibold px-4 py-2 rounded">
     Download the Database
 </a></br>
