@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Augmented Reality (AR) on COmpendium of RElatedness Technologies (CORE) </title>
-    <link>https://core.thehxlab.com/tags/augmented-reality-ar/</link>
+    <link>http://localhost:1313/tags/augmented-reality-ar/</link>
     <description>Recent content in Augmented Reality (AR) on COmpendium of RElatedness Technologies (CORE) </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Nov 2024 13:55:21 +0100</lastBuildDate>
-    <atom:link href="https://core.thehxlab.com/tags/augmented-reality-ar/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/augmented-reality-ar/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/119_auggie/</link>
+      <link>http://localhost:1313/papers/119_auggie/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/119_auggie/</guid>
+      <guid>http://localhost:1313/papers/119_auggie/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/125_virtual_visit_system/</link>
+      <link>http://localhost:1313/papers/125_virtual_visit_system/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/125_virtual_visit_system/</guid>
+      <guid>http://localhost:1313/papers/125_virtual_visit_system/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/132_handing_gesture_system/</link>
+      <link>http://localhost:1313/papers/132_handing_gesture_system/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/132_handing_gesture_system/</guid>
+      <guid>http://localhost:1313/papers/132_handing_gesture_system/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/176_checkmate/</link>
+      <link>http://localhost:1313/papers/176_checkmate/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/176_checkmate/</guid>
+      <guid>http://localhost:1313/papers/176_checkmate/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/183_xrmas/</link>
+      <link>http://localhost:1313/papers/183_xrmas/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/183_xrmas/</guid>
+      <guid>http://localhost:1313/papers/183_xrmas/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/185_xr_communication/</link>
+      <link>http://localhost:1313/papers/185_xr_communication/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/185_xr_communication/</guid>
+      <guid>http://localhost:1313/papers/185_xr_communication/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/215_tablet-based_ar_system/</link>
+      <link>http://localhost:1313/papers/215_tablet-based_ar_system/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/215_tablet-based_ar_system/</guid>
+      <guid>http://localhost:1313/papers/215_tablet-based_ar_system/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/40_planet_runner/</link>
+      <link>http://localhost:1313/papers/40_planet_runner/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/40_planet_runner/</guid>
+      <guid>http://localhost:1313/papers/40_planet_runner/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/90_mobileportation/</link>
+      <link>http://localhost:1313/papers/90_mobileportation/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/90_mobileportation/</guid>
+      <guid>http://localhost:1313/papers/90_mobileportation/</guid>
       <description></description>
     </item>
   </channel>

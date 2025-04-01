@@ -13,10 +13,10 @@
 </p></br>
 
 <h3 class="text-m font-semibold mb-2">Offline Access</h3>
-<p>Prefer offline access? Download the database and explore independently without requiring web access.</p></br>
+<p>Prefer offline access? Download the database and explore independently without requiring web access. If you want to filter the database according to specific criteria, or if you want to count, for example, the number of concepts or prototypes that use a certain output modality, a certain psychological construct, or all evaluations in field studies, we recommend that you download the database. There, you can explore it according to your needs.</p></br>
 
 <h3 class="text-m font-semibold mb-2">Categories</h3>
-<p>Core uses various categories that can be used to compare techbnologie. An overview is given in the following chart.</p></br>
+<p>CORE uses various categories that can be used to compare technologies. An overview is given in the following chart.</p></br>
 
 <img src="categorySystem.jpeg" alt="categories used in Core" width="70%"/></br>
 

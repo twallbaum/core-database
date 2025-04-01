@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Charts</title>
@@ -42,17 +42,17 @@
 </head>
 <body>
     <div class="back-link">
-        <a href="/papers">← Back to Papers List</a>
+        <a href="/papers">← Back to the database</a>
     </div>
     <h1>Interactive Charts</h1>
     <p>Explore the dataset using visualizations.</p>
 
     
-    <h2>Papers by Year</h2>
+    <h2>Technologies by Year</h2>
     <div id="chart"></div>
 
     
-    <h2>Papers by Design Strategy</h2>
+    <h2>Technologies by Design Strategy</h2>
     <div id="chart2"></div>
 
     
@@ -86,8 +86,8 @@
             
             const uniqueStrategies = [...new Set(
                 rawData.flatMap(d =>
-                    d.design_strategy
-                        ? d.design_strategy.split(';').map(s => normalizationMap[s.trim()] || s.trim())
+                    d.design___strategy_
+                        ? d.design___strategy_.split(';').map(s => normalizationMap[s.trim()] || s.trim())
                         : []
                 )
             )];
@@ -103,18 +103,18 @@
             
             const yearData = rawData.filter(d => {
                 const year = parseInt(d.publication_year, 10);
-                return !isNaN(year) && d.design_strategy;
+                return !isNaN(year) && d.design___strategy_;
             });
 
             const x = yearData.map(d => parseInt(d.publication_year, 10));
             const y = yearData.map((_, index) => index);
             const text = yearData.map(d => {
-                const strategies = d.design_strategy ? d.design_strategy.split(';').map(s => normalizationMap[s.trim()] || s.trim()) : [];
+                const strategies = d.design___strategy_ ? d.design___strategy_.split(';').map(s => normalizationMap[s.trim()] || s.trim()) : [];
                 return `<b>${d.name || "Unknown Title"}</b><br>Strategy: ${strategies.join(', ') || "Unknown"}<br>Year: ${d.publication_year || "N/A"}`;
             });
             const links = yearData.map(d => d.relpermalink || "#");
             const colors = yearData.map(d => {
-                const strategies = d.design_strategy ? d.design_strategy.split(';').map(s => normalizationMap[s.trim()] || s.trim()) : [];
+                const strategies = d.design___strategy_ ? d.design___strategy_.split(';').map(s => normalizationMap[s.trim()] || s.trim()) : [];
                 return strategyColors[strategies[0]] || '#cccccc';
             });
 
@@ -129,7 +129,7 @@
             };
 
             Plotly.newPlot('chart', [trace1], {
-                title: 'Papers by Year',
+                title: 'Technologies by Year',
                 xaxis: { title: 'Publication Year' },
                 yaxis: { showticklabels: false },
             });
@@ -147,8 +147,8 @@
             
             
             const strategyCounts = rawData.reduce((acc, d) => {
-                const firstStrategy = d.design_strategy
-                    ? normalizationMap[d.design_strategy.split(';')[0].trim()] || d.design_strategy.split(';')[0].trim()
+                const firstStrategy = d.design___strategy_
+                    ? normalizationMap[d.design___strategy_.split(';')[0].trim()] || d.design___strategy_.split(';')[0].trim()
                     : null;
                 if (firstStrategy) {
                     acc[firstStrategy] = (acc[firstStrategy] || 0) + 1;
@@ -167,7 +167,7 @@
             };
 
             Plotly.newPlot('chart2', [trace2], {
-                title: 'Papers by Design Strategy',
+                title: 'Technologies by Design Strategy',
                 xaxis: { title: 'Design Strategy', automargin: true },
                 yaxis: { title: 'Number of Papers' },
             });
@@ -189,9 +189,9 @@
 
             
             const relationshipStrategies = rawData.flatMap(d => {
-                if (d.type_of_relationship && d.design_strategy) {
-                    const relationships = d.type_of_relationship.split(';').map(normalizeRelationship);
-                    const strategies = d.design_strategy.split(';').map(s => normalizationMap[s.trim()] || s.trim());
+                if (d.target_group_of_people__target_group && d.design___strategy_) {
+                    const relationships = d.target_group_of_people__target_group.split(';').map(normalizeRelationship);
+                    const strategies = d.design___strategy_.split(';').map(s => normalizationMap[s.trim()] || s.trim());
                     return relationships.flatMap(r => strategies.map(s => [r, s]));
                 }
                 return [];
