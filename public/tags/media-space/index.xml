@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Media Space on COmpendium of RElatedness Technologies (CORE) </title>
-    <link>http://localhost:1313/tags/media-space/</link>
+    <link>https://core.thehxlab.com/tags/media-space/</link>
     <description>Recent content in Media Space on COmpendium of RElatedness Technologies (CORE) </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Nov 2024 13:55:21 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/media-space/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://core.thehxlab.com/tags/media-space/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/papers/109_homeproxy/</link>
+      <link>https://core.thehxlab.com/papers/109_homeproxy/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>http://localhost:1313/papers/109_homeproxy/</guid>
+      <guid>https://core.thehxlab.com/papers/109_homeproxy/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/papers/121_multisensory_interactive_window/</link>
+      <link>https://core.thehxlab.com/papers/121_multisensory_interactive_window/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>http://localhost:1313/papers/121_multisensory_interactive_window/</guid>
+      <guid>https://core.thehxlab.com/papers/121_multisensory_interactive_window/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/papers/17_peek-a-boo/</link>
+      <link>https://core.thehxlab.com/papers/17_peek-a-boo/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>http://localhost:1313/papers/17_peek-a-boo/</guid>
+      <guid>https://core.thehxlab.com/papers/17_peek-a-boo/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/papers/188_family_window/</link>
+      <link>https://core.thehxlab.com/papers/188_family_window/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>http://localhost:1313/papers/188_family_window/</guid>
+      <guid>https://core.thehxlab.com/papers/188_family_window/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/papers/189_family_portals/</link>
+      <link>https://core.thehxlab.com/papers/189_family_portals/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>http://localhost:1313/papers/189_family_portals/</guid>
+      <guid>https://core.thehxlab.com/papers/189_family_portals/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/papers/23_bump/</link>
+      <link>https://core.thehxlab.com/papers/23_bump/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>http://localhost:1313/papers/23_bump/</guid>
+      <guid>https://core.thehxlab.com/papers/23_bump/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/papers/56_the_window/</link>
+      <link>https://core.thehxlab.com/papers/56_the_window/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>http://localhost:1313/papers/56_the_window/</guid>
+      <guid>https://core.thehxlab.com/papers/56_the_window/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/papers/91_bedtime_window/</link>
+      <link>https://core.thehxlab.com/papers/91_bedtime_window/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>http://localhost:1313/papers/91_bedtime_window/</guid>
+      <guid>https://core.thehxlab.com/papers/91_bedtime_window/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/papers/99_familysong/</link>
+      <link>https://core.thehxlab.com/papers/99_familysong/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>http://localhost:1313/papers/99_familysong/</guid>
+      <guid>https://core.thehxlab.com/papers/99_familysong/</guid>
       <description></description>
     </item>
   </channel>

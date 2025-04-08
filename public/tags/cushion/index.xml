@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cushion on COmpendium of RElatedness Technologies (CORE) </title>
-    <link>http://localhost:1313/tags/cushion/</link>
+    <link>https://core.thehxlab.com/tags/cushion/</link>
     <description>Recent content in Cushion on COmpendium of RElatedness Technologies (CORE) </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Nov 2024 13:55:21 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/cushion/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://core.thehxlab.com/tags/cushion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/papers/134_linked/</link>
+      <link>https://core.thehxlab.com/papers/134_linked/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>http://localhost:1313/papers/134_linked/</guid>
+      <guid>https://core.thehxlab.com/papers/134_linked/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/papers/178_azalea/</link>
+      <link>https://core.thehxlab.com/papers/178_azalea/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>http://localhost:1313/papers/178_azalea/</guid>
+      <guid>https://core.thehxlab.com/papers/178_azalea/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/papers/194_somnia/</link>
+      <link>https://core.thehxlab.com/papers/194_somnia/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>http://localhost:1313/papers/194_somnia/</guid>
+      <guid>https://core.thehxlab.com/papers/194_somnia/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/papers/1_embreathe/</link>
+      <link>https://core.thehxlab.com/papers/1_embreathe/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>http://localhost:1313/papers/1_embreathe/</guid>
+      <guid>https://core.thehxlab.com/papers/1_embreathe/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/papers/201_whisper_pillow/</link>
+      <link>https://core.thehxlab.com/papers/201_whisper_pillow/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>http://localhost:1313/papers/201_whisper_pillow/</guid>
+      <guid>https://core.thehxlab.com/papers/201_whisper_pillow/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/papers/47_feelybean/</link>
+      <link>https://core.thehxlab.com/papers/47_feelybean/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>http://localhost:1313/papers/47_feelybean/</guid>
+      <guid>https://core.thehxlab.com/papers/47_feelybean/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/papers/53_hugbits/</link>
+      <link>https://core.thehxlab.com/papers/53_hugbits/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>http://localhost:1313/papers/53_hugbits/</guid>
+      <guid>https://core.thehxlab.com/papers/53_hugbits/</guid>
       <description></description>
     </item>
   </channel>
