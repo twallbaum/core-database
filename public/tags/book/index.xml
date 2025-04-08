@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Book on COmpendium of RElatedness Technologies (CORE) </title>
-    <link>https://core.thehxlab.com/tags/book/</link>
+    <link>http://localhost:1313/tags/book/</link>
     <description>Recent content in Book on COmpendium of RElatedness Technologies (CORE) </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Nov 2024 13:55:21 +0100</lastBuildDate>
-    <atom:link href="https://core.thehxlab.com/tags/book/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/book/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/175_people_in_books/</link>
+      <link>http://localhost:1313/papers/175_people_in_books/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/175_people_in_books/</guid>
+      <guid>http://localhost:1313/papers/175_people_in_books/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/51_haptic_remembrance_book/</link>
+      <link>http://localhost:1313/papers/51_haptic_remembrance_book/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/51_haptic_remembrance_book/</guid>
+      <guid>http://localhost:1313/papers/51_haptic_remembrance_book/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/75_family_story_play/</link>
+      <link>http://localhost:1313/papers/75_family_story_play/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/75_family_story_play/</guid>
+      <guid>http://localhost:1313/papers/75_family_story_play/</guid>
       <description></description>
     </item>
   </channel>

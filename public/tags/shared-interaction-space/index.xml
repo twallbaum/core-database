@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shared Interaction Space on COmpendium of RElatedness Technologies (CORE) </title>
-    <link>https://core.thehxlab.com/tags/shared-interaction-space/</link>
+    <link>http://localhost:1313/tags/shared-interaction-space/</link>
     <description>Recent content in Shared Interaction Space on COmpendium of RElatedness Technologies (CORE) </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Nov 2024 13:55:21 +0100</lastBuildDate>
-    <atom:link href="https://core.thehxlab.com/tags/shared-interaction-space/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/shared-interaction-space/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/184_sharetable/</link>
+      <link>http://localhost:1313/papers/184_sharetable/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/184_sharetable/</guid>
+      <guid>http://localhost:1313/papers/184_sharetable/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/195_storybox/</link>
+      <link>http://localhost:1313/papers/195_storybox/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/195_storybox/</guid>
+      <guid>http://localhost:1313/papers/195_storybox/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/222_tablecanvas/</link>
+      <link>http://localhost:1313/papers/222_tablecanvas/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/222_tablecanvas/</guid>
+      <guid>http://localhost:1313/papers/222_tablecanvas/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/97_tabletop_teleporter/</link>
+      <link>http://localhost:1313/papers/97_tabletop_teleporter/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/97_tabletop_teleporter/</guid>
+      <guid>http://localhost:1313/papers/97_tabletop_teleporter/</guid>
       <description></description>
     </item>
   </channel>

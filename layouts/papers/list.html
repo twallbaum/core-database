@@ -214,22 +214,47 @@
 
   <!-- Fuse.js Search Functionality -->
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        fetch('/index.json')
-        .then(response => response.json())
-        .then(data => {
-          const fuse = new Fuse(data, {
-            keys: [
-              "name", 
-              "short_description", 
-              "tags", 
-              "target_group_of_people__target_group", 
-              "design___strategy_", 
-              "design___role_of_technology", 
-              "evaluation_"
-            ],
-            threshold: 0.4
-          });
+   document.addEventListener('DOMContentLoaded', function () {
+  fetch('/index.json')
+    .then(response => response.json())
+    .then(data => {
+      const fuse = new Fuse(data, {
+        keys: [
+          "name",
+          "short_description",
+          "publication_year",
+          "publication_type",
+          "reference",
+          "tags",
+          "target_group_of_people__target_group",
+          "target_group_of_people___additional_specification",
+          "aim_and_designers_intention",
+          "psychological_constructs_with_reference",
+          "psychological_constructs_with_reference___references",
+          "constructs_and_terms_used_without_reference",
+          "design___strategy_",
+          "design___role_of_technology",
+          "design___form_factor",
+          "design___symmetry_of_interaction_devices",
+          "design___input_modalities",
+          "design____output_modalities",
+          "design___synchronicity_of_interaction",
+          "evaluation_",
+          "evaluation___methodology",
+          "evaluation___type_of_study",
+          "evaluation___experimental_design",
+          "evaluation___duration_of_data_collection",
+          "evaluation___number_of_participants__n",
+          "evaluation____selected_participants",
+          "evaluation______selection_criteria_of_participants",
+          "evaluation____measurements_and_instruments_with_reference",
+          "evaluation____measurements_and_instruments___references",
+          "ethical_concerns",
+          "consideration_of_ethical_issues_in_design_descisions",
+          "ethical_issues_addressed"
+        ],
+        threshold: 0.3
+      });
   
           const searchInput = document.getElementById('search');
           const resultCount = document.getElementById('result-count');

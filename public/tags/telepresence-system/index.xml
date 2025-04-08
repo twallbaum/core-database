@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Telepresence System on COmpendium of RElatedness Technologies (CORE) </title>
-    <link>https://core.thehxlab.com/tags/telepresence-system/</link>
+    <link>http://localhost:1313/tags/telepresence-system/</link>
     <description>Recent content in Telepresence System on COmpendium of RElatedness Technologies (CORE) </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Nov 2024 13:55:21 +0100</lastBuildDate>
-    <atom:link href="https://core.thehxlab.com/tags/telepresence-system/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/telepresence-system/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/115_ma_petite_ch%C3%A9rie/</link>
+      <link>http://localhost:1313/papers/115_ma_petite_ch%C3%A9rie/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/115_ma_petite_ch%C3%A9rie/</guid>
+      <guid>http://localhost:1313/papers/115_ma_petite_ch%C3%A9rie/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/12_homemeld/</link>
+      <link>http://localhost:1313/papers/12_homemeld/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/12_homemeld/</guid>
+      <guid>http://localhost:1313/papers/12_homemeld/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/183_xrmas/</link>
+      <link>http://localhost:1313/papers/183_xrmas/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/183_xrmas/</guid>
+      <guid>http://localhost:1313/papers/183_xrmas/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/237_bewithme/</link>
+      <link>http://localhost:1313/papers/237_bewithme/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/237_bewithme/</guid>
+      <guid>http://localhost:1313/papers/237_bewithme/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/239_telepresence_home_setup/</link>
+      <link>http://localhost:1313/papers/239_telepresence_home_setup/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/239_telepresence_home_setup/</guid>
+      <guid>http://localhost:1313/papers/239_telepresence_home_setup/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/77_telegame_mediated_by_haru/</link>
+      <link>http://localhost:1313/papers/77_telegame_mediated_by_haru/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/77_telegame_mediated_by_haru/</guid>
+      <guid>http://localhost:1313/papers/77_telegame_mediated_by_haru/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/90_mobileportation/</link>
+      <link>http://localhost:1313/papers/90_mobileportation/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/90_mobileportation/</guid>
+      <guid>http://localhost:1313/papers/90_mobileportation/</guid>
       <description></description>
     </item>
   </channel>
