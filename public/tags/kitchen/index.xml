@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kitchen on COmpendium of RElatedness Technologies (CORE) </title>
-    <link>https://core.thehxlab.com/tags/kitchen/</link>
+    <link>http://localhost:1313/tags/kitchen/</link>
     <description>Recent content in Kitchen on COmpendium of RElatedness Technologies (CORE) </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Nov 2024 13:55:21 +0100</lastBuildDate>
-    <atom:link href="https://core.thehxlab.com/tags/kitchen/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/kitchen/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/136_performance_apron_and_talking_bottle/</link>
+      <link>http://localhost:1313/papers/136_performance_apron_and_talking_bottle/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/136_performance_apron_and_talking_bottle/</guid>
+      <guid>http://localhost:1313/papers/136_performance_apron_and_talking_bottle/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/18_eating_alone_together/</link>
+      <link>http://localhost:1313/papers/18_eating_alone_together/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/18_eating_alone_together/</guid>
+      <guid>http://localhost:1313/papers/18_eating_alone_together/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/39_drinking_together_whilst_apart/</link>
+      <link>http://localhost:1313/papers/39_drinking_together_whilst_apart/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/39_drinking_together_whilst_apart/</guid>
+      <guid>http://localhost:1313/papers/39_drinking_together_whilst_apart/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/3_messaging_kettle/</link>
+      <link>http://localhost:1313/papers/3_messaging_kettle/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/3_messaging_kettle/</guid>
+      <guid>http://localhost:1313/papers/3_messaging_kettle/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/73_sonicair/</link>
+      <link>http://localhost:1313/papers/73_sonicair/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/73_sonicair/</guid>
+      <guid>http://localhost:1313/papers/73_sonicair/</guid>
       <description></description>
     </item>
   </channel>
