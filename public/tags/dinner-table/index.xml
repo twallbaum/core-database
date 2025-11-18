@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dinner Table on COmpendium of RElatedness Technologies (CORE) </title>
-    <link>https://core.thehxlab.com/tags/dinner-table/</link>
+    <link>http://localhost:1313/tags/dinner-table/</link>
     <description>Recent content in Dinner Table on COmpendium of RElatedness Technologies (CORE) </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Nov 2024 13:55:21 +0100</lastBuildDate>
-    <atom:link href="https://core.thehxlab.com/tags/dinner-table/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/dinner-table/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/113_codine/</link>
+      <link>http://localhost:1313/papers/113_codine/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/113_codine/</guid>
+      <guid>http://localhost:1313/papers/113_codine/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/124_kizuna/</link>
+      <link>http://localhost:1313/papers/124_kizuna/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/124_kizuna/</guid>
+      <guid>http://localhost:1313/papers/124_kizuna/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/146_telematic_dinner_party/</link>
+      <link>http://localhost:1313/papers/146_telematic_dinner_party/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/146_telematic_dinner_party/</guid>
+      <guid>http://localhost:1313/papers/146_telematic_dinner_party/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/80_cu-later/</link>
+      <link>http://localhost:1313/papers/80_cu-later/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/80_cu-later/</guid>
+      <guid>http://localhost:1313/papers/80_cu-later/</guid>
       <description></description>
     </item>
   </channel>

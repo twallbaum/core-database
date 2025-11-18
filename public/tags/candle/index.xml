@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Candle on COmpendium of RElatedness Technologies (CORE) </title>
-    <link>https://core.thehxlab.com/tags/candle/</link>
+    <link>http://localhost:1313/tags/candle/</link>
     <description>Recent content in Candle on COmpendium of RElatedness Technologies (CORE) </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Nov 2024 13:55:21 +0100</lastBuildDate>
-    <atom:link href="https://core.thehxlab.com/tags/candle/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/candle/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/110_connected_candles/</link>
+      <link>http://localhost:1313/papers/110_connected_candles/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/110_connected_candles/</guid>
+      <guid>http://localhost:1313/papers/110_connected_candles/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/72_fyro/</link>
+      <link>http://localhost:1313/papers/72_fyro/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/72_fyro/</guid>
+      <guid>http://localhost:1313/papers/72_fyro/</guid>
       <description></description>
     </item>
   </channel>

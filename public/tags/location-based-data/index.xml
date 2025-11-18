@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Location-Based Data on COmpendium of RElatedness Technologies (CORE) </title>
-    <link>https://core.thehxlab.com/tags/location-based-data/</link>
+    <link>http://localhost:1313/tags/location-based-data/</link>
     <description>Recent content in Location-Based Data on COmpendium of RElatedness Technologies (CORE) </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Nov 2024 13:55:21 +0100</lastBuildDate>
-    <atom:link href="https://core.thehxlab.com/tags/location-based-data/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/location-based-data/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/104_social_wormholes/</link>
+      <link>http://localhost:1313/papers/104_social_wormholes/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/104_social_wormholes/</guid>
+      <guid>http://localhost:1313/papers/104_social_wormholes/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/171_friends_egg/</link>
+      <link>http://localhost:1313/papers/171_friends_egg/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/171_friends_egg/</guid>
+      <guid>http://localhost:1313/papers/171_friends_egg/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/233_lega/</link>
+      <link>http://localhost:1313/papers/233_lega/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/233_lega/</guid>
+      <guid>http://localhost:1313/papers/233_lega/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/54_couplevibe/</link>
+      <link>http://localhost:1313/papers/54_couplevibe/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/54_couplevibe/</guid>
+      <guid>http://localhost:1313/papers/54_couplevibe/</guid>
       <description></description>
     </item>
   </channel>

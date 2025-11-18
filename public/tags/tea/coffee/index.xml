@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tea/Coffee on COmpendium of RElatedness Technologies (CORE) </title>
-    <link>https://core.thehxlab.com/tags/tea/coffee/</link>
+    <link>http://localhost:1313/tags/tea/coffee/</link>
     <description>Recent content in Tea/Coffee on COmpendium of RElatedness Technologies (CORE) </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Nov 2024 13:55:21 +0100</lastBuildDate>
-    <atom:link href="https://core.thehxlab.com/tags/tea/coffee/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/tea/coffee/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/170_coasterchat/</link>
+      <link>http://localhost:1313/papers/170_coasterchat/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/170_coasterchat/</guid>
+      <guid>http://localhost:1313/papers/170_coasterchat/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/3_messaging_kettle/</link>
+      <link>http://localhost:1313/papers/3_messaging_kettle/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/3_messaging_kettle/</guid>
+      <guid>http://localhost:1313/papers/3_messaging_kettle/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/4_kepein/</link>
+      <link>http://localhost:1313/papers/4_kepein/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/4_kepein/</guid>
+      <guid>http://localhost:1313/papers/4_kepein/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://core.thehxlab.com/papers/7_nettle/</link>
+      <link>http://localhost:1313/papers/7_nettle/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/7_nettle/</guid>
+      <guid>http://localhost:1313/papers/7_nettle/</guid>
       <description></description>
     </item>
   </channel>
