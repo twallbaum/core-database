@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cup on COmpendium of RElatedness Technologies (CORE) </title>
-    <link>http://localhost:1313/tags/cup/</link>
+    <link>https://core.thehxlab.com/tags/cup/</link>
     <description>Recent content in Cup on COmpendium of RElatedness Technologies (CORE) </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 19 Nov 2025 17:40:54 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/cup/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://core.thehxlab.com/tags/cup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/papers/245_whispercup/</link>
+      <link>https://core.thehxlab.com/papers/245_whispercup/</link>
       <pubDate>Wed, 19 Nov 2025 17:40:54 +0100</pubDate>
-      <guid>http://localhost:1313/papers/245_whispercup/</guid>
+      <guid>https://core.thehxlab.com/papers/245_whispercup/</guid>
       <description></description>
     </item>
   </channel>

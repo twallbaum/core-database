@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Contextual Data on COmpendium of RElatedness Technologies (CORE) </title>
-    <link>http://localhost:1313/tags/contextual-data/</link>
+    <link>https://core.thehxlab.com/tags/contextual-data/</link>
     <description>Recent content in Contextual Data on COmpendium of RElatedness Technologies (CORE) </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Nov 2024 13:55:21 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/contextual-data/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://core.thehxlab.com/tags/contextual-data/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/papers/15_lifelines/</link>
+      <link>https://core.thehxlab.com/papers/15_lifelines/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>http://localhost:1313/papers/15_lifelines/</guid>
+      <guid>https://core.thehxlab.com/papers/15_lifelines/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/papers/166_shake-a-memory_calendar/</link>
+      <link>https://core.thehxlab.com/papers/166_shake-a-memory_calendar/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>http://localhost:1313/papers/166_shake-a-memory_calendar/</guid>
+      <guid>https://core.thehxlab.com/papers/166_shake-a-memory_calendar/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/papers/209_shared_wind/</link>
+      <link>https://core.thehxlab.com/papers/209_shared_wind/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>http://localhost:1313/papers/209_shared_wind/</guid>
+      <guid>https://core.thehxlab.com/papers/209_shared_wind/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/papers/26_contextchat/</link>
+      <link>https://core.thehxlab.com/papers/26_contextchat/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>http://localhost:1313/papers/26_contextchat/</guid>
+      <guid>https://core.thehxlab.com/papers/26_contextchat/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/papers/69_mobile_ambient_presence/</link>
+      <link>https://core.thehxlab.com/papers/69_mobile_ambient_presence/</link>
       <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>http://localhost:1313/papers/69_mobile_ambient_presence/</guid>
+      <guid>https://core.thehxlab.com/papers/69_mobile_ambient_presence/</guid>
       <description></description>
     </item>
   </channel>

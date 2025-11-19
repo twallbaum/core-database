@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Light Panels on COmpendium of RElatedness Technologies (CORE) </title>
-    <link>http://localhost:1313/tags/light-panels/</link>
+    <link>https://core.thehxlab.com/tags/light-panels/</link>
     <description>Recent content in Light Panels on COmpendium of RElatedness Technologies (CORE) </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 19 Nov 2025 17:40:54 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/light-panels/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://core.thehxlab.com/tags/light-panels/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/papers/248_palpalette/</link>
+      <link>https://core.thehxlab.com/papers/248_palpalette/</link>
       <pubDate>Wed, 19 Nov 2025 17:40:54 +0100</pubDate>
-      <guid>http://localhost:1313/papers/248_palpalette/</guid>
+      <guid>https://core.thehxlab.com/papers/248_palpalette/</guid>
       <description></description>
     </item>
   </channel>

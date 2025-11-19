@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IoT-Enabled Workplace Object(s) on COmpendium of RElatedness Technologies (CORE) </title>
-    <link>http://localhost:1313/tags/iot-enabled-workplace-objects/</link>
+    <link>https://core.thehxlab.com/tags/iot-enabled-workplace-objects/</link>
     <description>Recent content in IoT-Enabled Workplace Object(s) on COmpendium of RElatedness Technologies (CORE) </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 19 Nov 2025 17:40:54 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/iot-enabled-workplace-objects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://core.thehxlab.com/tags/iot-enabled-workplace-objects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/papers/258_tangipen/</link>
+      <link>https://core.thehxlab.com/papers/258_tangipen/</link>
       <pubDate>Wed, 19 Nov 2025 17:40:54 +0100</pubDate>
-      <guid>http://localhost:1313/papers/258_tangipen/</guid>
+      <guid>https://core.thehxlab.com/papers/258_tangipen/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/papers/259_cocreate/</link>
+      <link>https://core.thehxlab.com/papers/259_cocreate/</link>
       <pubDate>Wed, 19 Nov 2025 17:40:54 +0100</pubDate>
-      <guid>http://localhost:1313/papers/259_cocreate/</guid>
+      <guid>https://core.thehxlab.com/papers/259_cocreate/</guid>
       <description></description>
     </item>
   </channel>
