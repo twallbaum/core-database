@@ -1,3 +1,7 @@
+---
+title: "How to Use CORE"
+---
+
 <h2 class="text-2xl font-bold text-pink-600">HOW TO USE CORE?</h2></br>
 
 <h3 class="text-m font-semibold mb-2">Explore the Compendium</h3>
