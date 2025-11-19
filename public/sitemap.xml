@@ -2,6 +2,153 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/papers/241_light_bridge/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/papers/242_there_chair/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/papers/243_fragrance_frame/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/papers/244_duet/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/papers/245_whispercup/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/papers/246_sensebot/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/papers/247_picto/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/papers/248_palpalette/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/papers/249_accompany_sleep/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/papers/250_remotechess/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/papers/251_queue_player/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/papers/252_liteco/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/papers/253_vision_pit/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/papers/254_onni/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/papers/255_multi-user_telepresence_robot_system/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/papers/256_fabelhaft/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/papers/257_alarmcare/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/papers/258_tangipen/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/papers/259_cocreate/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/application/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ar-augmented-reality/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/artificial-intelligence-ai/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/biometric-data/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/chair/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/cup/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/domestic-object/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/game/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/hybrid-working/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/iot-enabled-domestic-objects/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/iot-enabled-workplace-objects/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/lamp/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/light-panels/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/location-based-data/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/music/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/object/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/objects/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/papers/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/pen/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/picture-frame/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/remote-brainstorming-session/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/robot/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/smartphone-alarm/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tangible-interaction/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/telepresence-system/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/toy-object/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/video-mediated-interaction/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/virtual-reality-vr/</loc>
+    <lastmod>2025-11-19T17:40:54+01:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/papers/0_tasst/</loc>
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
@@ -731,12 +878,6 @@
     <loc>http://localhost:1313/tags/ai/</loc>
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/application/</loc>
-    <lastmod>2024-11-15T13:55:21+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/ar-augmented-reality/</loc>
-    <lastmod>2024-11-15T13:55:21+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/audio-mediated-interaction/</loc>
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
@@ -755,9 +896,6 @@
     <loc>http://localhost:1313/tags/behavioral-data/</loc>
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/biometric-data/</loc>
-    <lastmod>2024-11-15T13:55:21+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/board-game/</loc>
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
@@ -773,9 +911,6 @@
     <loc>http://localhost:1313/tags/candle/</loc>
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/chair/</loc>
-    <lastmod>2024-11-15T13:55:21+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/chatbot/</loc>
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
@@ -783,9 +918,6 @@
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/contextual-data/</loc>
-    <lastmod>2024-11-15T13:55:21+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/cushion/</loc>
@@ -798,9 +930,6 @@
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/diy/</loc>
-    <lastmod>2024-11-15T13:55:21+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/domestic-object/</loc>
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/domestic-object-application/</loc>
@@ -818,16 +947,10 @@
     <loc>http://localhost:1313/tags/food-mediated-interaction/</loc>
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/game/</loc>
-    <lastmod>2024-11-15T13:55:21+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/handheld-object/</loc>
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/in-car-system/</loc>
-    <lastmod>2024-11-15T13:55:21+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/iot-enabled-domestic-objects/</loc>
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/iot-enabled-domestic-objectss/</loc>
@@ -845,16 +968,10 @@
     <loc>http://localhost:1313/tags/kitchen/</loc>
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/lamp/</loc>
-    <lastmod>2024-11-15T13:55:21+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/letter/</loc>
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/lighting/</loc>
-    <lastmod>2024-11-15T13:55:21+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/location-based-data/</loc>
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/machine-learning/</loc>
@@ -875,34 +992,16 @@
     <loc>http://localhost:1313/tags/mirror/</loc>
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/music/</loc>
-    <lastmod>2024-11-15T13:55:21+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/natural-language-processing/</loc>
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/object/</loc>
-    <lastmod>2024-11-15T13:55:21+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/objects/</loc>
-    <lastmod>2024-11-15T13:55:21+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/objects-tea/coffee/</loc>
-    <lastmod>2024-11-15T13:55:21+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/papers/</loc>
-    <lastmod>2024-11-15T13:55:21+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/picture-frame/</loc>
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/pillow/</loc>
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/recommendation-system/</loc>
-    <lastmod>2024-11-15T13:55:21+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/robot/</loc>
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/service-platform/</loc>
@@ -926,12 +1025,6 @@
     <loc>http://localhost:1313/tags/stickers/</loc>
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-11-15T13:55:21+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/tangible-interaction/</loc>
-    <lastmod>2024-11-15T13:55:21+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/tea/coffee/</loc>
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
@@ -941,22 +1034,10 @@
     <loc>http://localhost:1313/tags/telepresence--system/</loc>
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/telepresence-system/</loc>
-    <lastmod>2024-11-15T13:55:21+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/temperature/</loc>
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/toy-object/</loc>
-    <lastmod>2024-11-15T13:55:21+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/tv/</loc>
-    <lastmod>2024-11-15T13:55:21+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/video-mediated-interaction/</loc>
-    <lastmod>2024-11-15T13:55:21+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/virtual-reality-vr/</loc>
     <lastmod>2024-11-15T13:55:21+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/vr/</loc>
