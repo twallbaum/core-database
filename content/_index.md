@@ -15,10 +15,10 @@ title: "CORE - COmpendium of RElatedness Technologies"
 </section>
 
 <!-- CORE Database Section -->
-<section class="bg-white p-8 rounded-lg shadow-md">
+<section class="bg-white p-8 rounded-lg shadow-md mb-8">
     <h2 class="text-2xl font-bold mb-4">The CORE Database</h2>
     <ul class="list-disc pl-6 mb-4">
-        <li>Currently contains 241 concepts and prototypes from 208 papers published in the ACM Digital Library between 2010 and May 2024.</li>
+        <li>Currently contains 260 concepts and prototypes from 226 papers published in the ACM Digital Library between 2010 and May 2025.</li>
         <li>Technologies are described with key data and systematically categorized by target population, theoretical grounding, design, evaluation, and ethics.</li>
         <li>Relevant papers identified using PRISMA, a methodology for systematic literature reviews.</li>
         <li>Updated annually.</li>
