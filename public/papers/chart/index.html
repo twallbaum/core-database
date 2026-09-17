@@ -84,12 +84,14 @@
             };
 
             
+            
+            const asList = v => Array.isArray(v) ? v : (v ? String(v).split(';') : []);
+            const norm = s => normalizationMap[s.trim()] || s.trim();
+            const strategiesOf = d => asList(d.design_strategy).map(norm);
+
+            
             const uniqueStrategies = [...new Set(
-                rawData.flatMap(d =>
-                    d.design___strategy_
-                        ? d.design___strategy_.split(';').map(s => normalizationMap[s.trim()] || s.trim())
-                        : []
-                )
+                rawData.flatMap(strategiesOf)
             )];
 
             
@@ -103,18 +105,18 @@
             
             const yearData = rawData.filter(d => {
                 const year = parseInt(d.publication_year, 10);
-                return !isNaN(year) && d.design___strategy_;
+                return !isNaN(year) && strategiesOf(d).length;
             });
 
             const x = yearData.map(d => parseInt(d.publication_year, 10));
             const y = yearData.map((_, index) => index);
             const text = yearData.map(d => {
-                const strategies = d.design___strategy_ ? d.design___strategy_.split(';').map(s => normalizationMap[s.trim()] || s.trim()) : [];
+                const strategies = strategiesOf(d);
                 return `<b>${d.name || "Unknown Title"}</b><br>Strategy: ${strategies.join(', ') || "Unknown"}<br>Year: ${d.publication_year || "N/A"}`;
             });
             const links = yearData.map(d => d.relpermalink || "#");
             const colors = yearData.map(d => {
-                const strategies = d.design___strategy_ ? d.design___strategy_.split(';').map(s => normalizationMap[s.trim()] || s.trim()) : [];
+                const strategies = strategiesOf(d);
                 return strategyColors[strategies[0]] || '#cccccc';
             });
 
@@ -147,9 +149,7 @@
             
             
             const strategyCounts = rawData.reduce((acc, d) => {
-                const firstStrategy = d.design___strategy_
-                    ? normalizationMap[d.design___strategy_.split(';')[0].trim()] || d.design___strategy_.split(';')[0].trim()
-                    : null;
+                const firstStrategy = strategiesOf(d)[0] || null;
                 if (firstStrategy) {
                     acc[firstStrategy] = (acc[firstStrategy] || 0) + 1;
                 }
@@ -189,9 +189,9 @@
 
             
             const relationshipStrategies = rawData.flatMap(d => {
-                if (d.target_group_of_people__target_group && d.design___strategy_) {
-                    const relationships = d.target_group_of_people__target_group.split(';').map(normalizeRelationship);
-                    const strategies = d.design___strategy_.split(';').map(s => normalizationMap[s.trim()] || s.trim());
+                const relationships = asList(d.target_group).map(normalizeRelationship);
+                const strategies = strategiesOf(d);
+                if (relationships.length && strategies.length) {
                     return relationships.flatMap(r => strategies.map(s => [r, s]));
                 }
                 return [];
