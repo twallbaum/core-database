@@ -169,43 +169,44 @@
       </tr>
     </thead>
     <tbody id="papers-list">
-      {{ $allPapers := where .Site.RegularPages "Section" "papers" }}
+      {{/* "Section" alone also picks up chart.md, which rendered as a blank row. */}}
+      {{ $allPapers := where (where .Site.RegularPages "Section" "papers") "Params.name" "!=" nil }}
       {{ $sortedPapers := sort $allPapers ".Params.publication_year" "desc" }}
       {{ range $sortedPapers }}
       <tr onclick="window.location='{{ .RelPermalink }}'" style="cursor:pointer;">
         <td data-label="Name">{{ .Params.name }}</td>
-        <td data-label="Publication Year">{{ with .Params.publication_year }}{{ . }}{{ else }}N/A{{ end }}</td>
-        <td data-label="Short Description">{{ with .Params.short_description }}{{ . | truncate 100 "..." }}{{ else }}N/A{{ end }}</td>
+        <td data-label="Publication Year">{{ with .Params.publication_year }}{{ . }}{{ else }}&ndash;{{ end }}</td>
+        <td data-label="Short Description">{{ with .Params.short_description }}{{ . | truncate 100 "..." }}{{ else }}&ndash;{{ end }}</td>
         <td data-label="Tags">
           <div class="tags">
             {{ with .Params.tags }}
               {{ range . }}
                 <span class="tag">{{ . }}</span>
               {{ end }}
-            {{ else }}N/A{{ end }}
+            {{ else }}&ndash;{{ end }}
           </div>
         </td>
         <td data-label="Type of Relationship">
           <div class="tags">
-            {{ with .Params.target_group_of_people__target_group }}
-              {{ range (split . ";") }}
+            {{ with .Params.target_group }}
+              {{ range . }}
                 <span class="tag2">{{ . }}</span>
               {{ end }}
-            {{ else }}N/A{{ end }}
+            {{ else }}&ndash;{{ end }}
           </div>
         </td>
         <td data-label="Design Strategy">
           <div class="tags">
-            {{ with .Params.design___strategy_ }}
-              {{ range (split . ";") }}
+            {{ with .Params.design_strategy }}
+              {{ range . }}
                 <span class="tag3">{{ . }}</span>
               {{ end }}
-            {{ else }}N/A{{ end }}
+            {{ else }}&ndash;{{ end }}
           </div>
         </td>
-        <td data-label="Role of Technology">{{ with .Params.design___role_of_technology }}{{ . }}{{ else }}N/A{{ end }}</td>
+        <td data-label="Role of Technology">{{ with .Params.design_role }}{{ . }}{{ else }}&ndash;{{ end }}</td>
         <td data-label="Evaluation">
-          {{ with .Params.evaluation_ }}{{ . }}{{ else }}N/A{{ end }}
+          {{ with .Params.evaluation }}{{ . }}{{ else }}&ndash;{{ end }}
         </td>
       </tr>
       {{ end }}
@@ -219,40 +220,12 @@
     .then(response => response.json())
     .then(data => {
       const fuse = new Fuse(data, {
-        keys: [
-          "name",
-          "short_description",
-          "publication_year",
-          "publication_type",
-          "reference",
-          "tags",
-          "target_group_of_people__target_group",
-          "target_group_of_people___additional_specification",
-          "aim_and_designers_intention",
-          "psychological_constructs_with_reference",
-          "psychological_constructs_with_reference___references",
-          "constructs_and_terms_used_without_reference",
-          "design___strategy_",
-          "design___role_of_technology",
-          "design___form_factor",
-          "design___symmetry_of_interaction_devices",
-          "design___input_modalities",
-          "design____output_modalities",
-          "design___synchronicity_of_interaction",
-          "evaluation_",
-          "evaluation___methodology",
-          "evaluation___type_of_study",
-          "evaluation___experimental_design",
-          "evaluation___duration_of_data_collection",
-          "evaluation___number_of_participants__n",
-          "evaluation____selected_participants",
-          "evaluation______selection_criteria_of_participants",
-          "evaluation____measurements_and_instruments_with_reference",
-          "evaluation____measurements_and_instruments___references",
-          "ethical_concerns",
-          "consideration_of_ethical_issues_in_design_descisions",
-          "ethical_issues_addressed"
-        ],
+        // Search every field in the index except the bookkeeping ones, so a
+        // schema change in tools/schema.py needs no edit here.
+        keys: Object.keys(data[0] || {}).filter(
+          k => !['relpermalink', 'date', 'lastmod', 'publishdate',
+                 'draft', 'iscjklanguage'].includes(k)
+        ),
         threshold: 0.3
       });
   
@@ -265,38 +238,38 @@
               {{ range $sortedPapers }}
               <tr onclick="window.location='{{ .RelPermalink }}'" style="cursor:pointer;">
                 <td data-label="Name">{{ .Params.name }}</td>
-                <td data-label="Publication Year">{{ with .Params.publication_year }}{{ . }}{{ else }}N/A{{ end }}</td>
-                <td data-label="Short Description">{{ with .Params.short_description }}{{ . | truncate 100 "..." }}{{ else }}N/A{{ end }}</td>
+                <td data-label="Publication Year">{{ with .Params.publication_year }}{{ . }}{{ else }}&ndash;{{ end }}</td>
+                <td data-label="Short Description">{{ with .Params.short_description }}{{ . | truncate 100 "..." }}{{ else }}&ndash;{{ end }}</td>
                 <td data-label="Tags">
                   <div class="tags">
                     {{ with .Params.tags }}
                       {{ range . }}
                         <span class="tag">{{ . }}</span>
                       {{ end }}
-                    {{ else }}N/A{{ end }}
+                    {{ else }}&ndash;{{ end }}
                   </div>
                 </td>
                 <td data-label="Type of Relationship">
                   <div class="tags">
-                    {{ with .Params.target_group_of_people__target_group }}
-                      {{ range (split . ";") }}
+                    {{ with .Params.target_group }}
+                      {{ range . }}
                         <span class="tag2">{{ . }}</span>
                       {{ end }}
-                    {{ else }}N/A{{ end }}
+                    {{ else }}&ndash;{{ end }}
                   </div>
                 </td>
                 <td data-label="Design Strategy">
                   <div class="tags">
-                    {{ with .Params.design___strategy_ }}
-                      {{ range (split . ";") }}
+                    {{ with .Params.design_strategy }}
+                      {{ range . }}
                         <span class="tag3">{{ . }}</span>
                       {{ end }}
-                    {{ else }}N/A{{ end }}
+                    {{ else }}&ndash;{{ end }}
                   </div>
                 </td>
-                <td data-label="Role of Technology">{{ with .Params.design___role_of_technology }}{{ . }}{{ else }}N/A{{ end }}</td>
+                <td data-label="Role of Technology">{{ with .Params.design_role }}{{ . }}{{ else }}&ndash;{{ end }}</td>
                 <td data-label="Evaluation">
-                  {{ with .Params.evaluation_ }}{{ . }}{{ else }}N/A{{ end }}
+                  {{ with .Params.evaluation }}{{ . }}{{ else }}&ndash;{{ end }}
                 </td>
               </tr>
               {{ end }}
@@ -318,26 +291,26 @@
                   const item = result.item || result;
                   papersList.innerHTML += `
                     <tr onclick="window.location='${item.relpermalink}'" style="cursor:pointer;">
-                      <td data-label="Name">${item.name || 'N/A'}</td>
-                      <td data-label="Publication Year">${item.publication_year || 'N/A'}</td>
-                      <td data-label="Short Description">${item.short_description ? item.short_description.substring(0, 100) + '...' : 'N/A'}</td>
+                      <td data-label="Name">${item.name || '&ndash;'}</td>
+                      <td data-label="Publication Year">${item.publication_year || '&ndash;'}</td>
+                      <td data-label="Short Description">${item.short_description ? item.short_description.substring(0, 100) + '...' : '&ndash;'}</td>
                       <td data-label="Tags">
                         <div class="tags">
-                          ${item.tags ? item.tags.map(tag => `<span class="tag">${tag}</span>`).join('') : 'N/A'}
+                          ${(item.tags || []).map(t => `<span class="tag">${t}</span>`).join('') || '&ndash;'}
                         </div>
                       </td>
                       <td data-label="Type of Relationship">
                         <div class="tags">
-                          ${item.target_group_of_people__target_group ? item.target_group_of_people__target_group.split(";").map(val => `<span class="tag2">${val.trim()}</span>`).join('') : 'N/A'}
+                          ${(item.target_group || []).map(v => `<span class="tag2">${v}</span>`).join('') || '&ndash;'}
                         </div>
                       </td>
                       <td data-label="Design Strategy">
                         <div class="tags">
-                          ${item.design___strategy_ ? item.design___strategy_.split(";").map(val => `<span class="tag3">${val.trim()}</span>`).join('') : 'N/A'}
+                          ${(item.design_strategy || []).map(v => `<span class="tag3">${v}</span>`).join('') || '&ndash;'}
                         </div>
                       </td>
-                      <td data-label="Role of Technology">${item.design___role_of_technology || 'N/A'}</td>
-                      <td data-label="Evaluation">${item.evaluation_ || 'N/A'}</td>
+                      <td data-label="Role of Technology">${item.design_role || '&ndash;'}</td>
+                      <td data-label="Evaluation">${item.evaluation || '&ndash;'}</td>
                     </tr>
                   `;
                 });

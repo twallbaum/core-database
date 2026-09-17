@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "SynVoice"
+short_description = "SynVoice is an asynchronous voice messaging app that integrates real-time backchannels. It records listeners' reactions during playback and overlays them onto the original voice message."
+publication_year = "2025"
+publication_type = "Work-in-progress"
+reference = "Saki Fujimura and Jun Rekimoto. 2025. SynVoice: Integrating Synlogic Interactions into Asynchronous Voice Messaging. In Adjunct Proceedings of the 27th International Conference on Mobile Human-Computer Interaction (MobileHCI '25 Adjunct). Association for Computing Machinery, New York, NY, USA, Article 14, 1–7. https://doi.org/10.1145/3737821.3749556"
+tags = ["Application", "Messaging"]
+target_group = ["Any close relationship"]
+target_group_details = ""
+aim = "Enhance interpersonal connections by fostering shared empathy and understanding"
+psych_constructs = "No"
+psych_constructs_refs = ""
+constructs_without_ref = "Interpersonal Closeness; Interpersonal Connection"
+design_strategy = ["Genuine Conversation"]
+design_role = "Dissolving space and/or time"
+design_form_factor = "Smartphone or tablet"
+design_symmetry = "Symmetrical"
+design_input = ["Audio"]
+design_output = ["Audio"]
+design_synchronicity = "Asynchronous"
+evaluation = "Yes"
+eval_methodology = "Mixed-method"
+eval_study_type = "Lab study: user testing"
+eval_experimental_design = "Within-subjects design"
+eval_duration = "One session"
+eval_participants_n = "12"
+eval_participants = "Real-life dyad(s)"
+eval_selection_criteria = "Japanes speaking"
+eval_measurements = "IOS – Inclusion of Other in the Self scale (Aron et al., 1992)"
+eval_measurements_refs = "Arthur Aron, Elaine N. Aron, and Danny Smollan. 1992. Inclusion of Other in the Self Scale and the structure of interpersonal closeness. J Pers Soc Psychol 63, 4 (October 1992), 596–612. https://doi.org/10.1037/0022-3514.63.4.596"
+ethics_concerns = "No"
+ethics_in_design = "No"
+ethics_addressed = ""
++++

@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "PuppetChat"
+short_description = "PuppetChat is a messaging app that augments instant messaging with animated puppet actions, reciprocal action recommendations, and AI-generated micronarratives."
+publication_year = "2026"
+publication_type = "Research Article"
+reference = "Emma Jiren Wang, Siying Hu, and Zhicong Lu. 2026. PuppetChat: Fostering Intimate Communication through Bidirectional Actions and Micronarratives. In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI '26). Association for Computing Machinery, New York, NY, USA, Article 1295, 1–19. https://doi.org/10.1145/3772318.3790685"
+tags = ["Application", "Artificial Intelligence (AI)", "Messaging", "Avatar"]
+target_group = ["Family", "Friends, peers", "Romantic couples"]
+target_group_details = ""
+aim = "Strengthening relatedness in intimate relationships"
+psych_constructs = "No"
+psych_constructs_refs = ""
+constructs_without_ref = "Social Presence; Relatedness; Closeness; Connection"
+design_strategy = ["Genuine Conversation", "Expressivity"]
+design_role = "Enriching existing technology"
+design_form_factor = "Smartphone or tablet"
+design_symmetry = "Symmetrical"
+design_input = ["Typing/text entry", "Touch – non-typing via display", "Audio"]
+design_output = ["Graphics, visuals, icons, animations", "Text"]
+design_synchronicity = "Asynchronous and synchronous"
+evaluation = "Yes"
+eval_methodology = "Mixed-method"
+eval_study_type = "Lab study: user testing; Field study: user testing in natural environment"
+eval_experimental_design = "No"
+eval_duration = "One session; One week to one month: 10 days"
+eval_participants_n = "27"
+eval_participants = "Individuals; Real-life dyad(s)"
+eval_selection_criteria = "Frequent instant messenger users; Dyads: best friends, romantic couples"
+eval_measurements = "SUS – System Usability Scale (Bangor et al., 2009; Brooke; 1996); NASA-TLX – Task Load Index (Hart, 2006)"
+eval_measurements_refs = "Aaron Bangor, Philip Kortum, and James Miller. 2009. Determining what individual SUS scores mean: Adding an adjective rating scale. Journal of Usability Studies 4, 3 (2009), 114–123; John Brooke. 1996. SUS: A quick and dirty usability scale. In Usability Evaluation in Industry, P. W. Jordan, B. Thomas, B. A. Weerdmesster and I. L. McClelland (eds.). Taylor & Francis, London, 189–194; Sandra G Hart. 2006. NASA-task load index (NASA-TLX); 20 years later. In Proceedings of the human factors and ergonomics society annual meeting, Vol. 50. Sage publications Sage CA: Los Angeles, CA, 904–908."
+ethics_concerns = "Yes"
+ethics_in_design = "Yes"
+ethics_addressed = "Agency, control; Surveillance; Self-Disclosure"
++++

@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "FamilyDittos"
+short_description = "FamilyDittos are personalized, embodied AI agents that represent interaction partners during video-call-like interactions when direct communication is difficult. They report the interaction back to the original person."
+publication_year = "2025"
+publication_type = "Research Article"
+reference = "Teerapaun Tanprasert, Jiamin Dai, John Tang, Kori Inkpen, Edward Cutrell, and Joanna McGrenere. 2025. FamilyDittos: Reimagining Intergenerational Interaction through Mimetic Agents. Proc. ACM Hum.-Comput. Interact. 9, 7, Article CSCW419 (November 2025), 31 pages. https://doi.org/10.1145/3757600"
+tags = ["Video-mediated interaction", "Artificial Intelligence (AI)"]
+target_group = ["Family – adult children and grandparent(s), adult family members"]
+target_group_details = "Long-distance relationship"
+aim = "Support meaningful remote communication when direct communication is difficult and enhance intergenerational connection"
+psych_constructs = "No"
+psych_constructs_refs = ""
+constructs_without_ref = "Social Connection; Social Presence"
+design_strategy = ["Genuine Conversation"]
+design_role = "Dissolving space and/or time; Intervening"
+design_form_factor = "PC or laptop; Smartphone or tablet"
+design_symmetry = "Symmetrical"
+design_input = ["Audio and video"]
+design_output = ["Virtual representation, activity", "Audio and video"]
+design_synchronicity = "Asynchronous"
+evaluation = "Yes"
+eval_methodology = "Qualitative"
+eval_study_type = "Internet-mediated: workshop"
+eval_experimental_design = "No"
+eval_duration = "One session"
+eval_participants_n = "27"
+eval_participants = "Real-life dyad(s); Individuals"
+eval_selection_criteria = "Older adults aged 55 and over, younger family members aged 19 and over with an ongoing relationship with a remote family member"
+eval_measurements = "No"
+eval_measurements_refs = ""
+ethics_concerns = "Yes"
+ethics_in_design = "No"
+ethics_addressed = "Privacy; Authenticity; Identity; Autonomy"
++++

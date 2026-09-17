@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "FamilyCanvas"
+short_description = "FamilyCanvas is a digital family calendar for blended families that combines a structured weekly schedule with a flexible whiteboard-style layer ofr notes, drawings, photos etc."
+publication_year = "2026"
+publication_type = "Extended Abstract"
+reference = "Ying Lei, Reese Muntean, and Carman Neustaedter. 2026. FamilyCanvas: Designing a Digital Calendar for Blended Families Through Autobiographical Design and Field Deployment. In Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems (CHI EA '26). Association for Computing Machinery, New York, NY, USA, Article 292, 1–7. https://doi.org/10.1145/3772363.3798753"
+tags = ["Application", "Calendar"]
+target_group = ["Family"]
+target_group_details = "Blended families"
+aim = "Support blended families in scheduling and connection"
+psych_constructs = "No"
+psych_constructs_refs = ""
+constructs_without_ref = "Connection"
+design_strategy = ["Awareness"]
+design_role = "Triggering imagination; Stimulating further interaction"
+design_form_factor = "Smartphone or tablet; PC or laptop"
+design_symmetry = "Symmetrical"
+design_input = ["Handwriting/drawing", "Typing/text entry", "Media content"]
+design_output = ["Handwriting/drawing", "Text", "Media content"]
+design_synchronicity = "Asynchronous"
+evaluation = "Yes"
+eval_methodology = "Qualitative, partially autobiographic"
+eval_study_type = "Field study: in-home user testing"
+eval_experimental_design = "No"
+eval_duration = "Six months and more: 9 months"
+eval_participants_n = "No further details"
+eval_participants = "Real-life group(s)"
+eval_selection_criteria = "Blended families"
+eval_measurements = "No"
+eval_measurements_refs = ""
+ethics_concerns = "Yes"
+ethics_in_design = "No"
+ethics_addressed = "Sensitive relational context"
++++

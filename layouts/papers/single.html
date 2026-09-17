@@ -170,7 +170,7 @@
             {{ . }}
           {{ end }}
         {{ else }}
-          N/A
+          &ndash;
         {{ end }}
       </p>
     </div>
@@ -180,86 +180,68 @@
       <table class="w-full bg-white shadow rounded-lg">
         <tbody class="divide-y divide-gray-200">
           <tr>
-            <td class="py-3 font-bold">Tags</td>
-            <td class="py-3">{{ delimit .Params.tags ", " }}</td>
+            <td class="py-3 font-bold pr-6 align-top w-1/3">Tags</td>
+            <td class="py-3">{{ with delimit .Params.tags ", " }}{{ . }}{{ else }}&ndash;{{ end }}</td>
           </tr>
           <tr>
-            <td class="py-3 font-bold">Type of Relationship</td>
-            <td class="py-3">{{ .Params.target_group_of_people__target_group }}</td>
+            <td class="py-3 font-bold pr-6 align-top w-1/3">Type of Relationship</td>
+            <td class="py-3">{{ with delimit .Params.target_group ", " }}{{ . }}{{ else }}&ndash;{{ end }}</td>
           </tr>
           <tr>
-            <td class="py-3 font-bold">Additional Specification</td>
-            <td class="py-3">{{ .Params.target_group_of_people___additional_specification}}</td>
+            <td class="py-3 font-bold pr-6 align-top w-1/3">Additional Specification</td>
+            <td class="py-3">{{ with .Params.target_group_details }}{{ . }}{{ else }}&ndash;{{ end }}</td>
           </tr>
           <tr>
-            <td class="py-3 font-bold">Aim and Designer's Intention</td>
-            <td class="py-3">{{ .Params.aim_and_designers_intention }}</td>
+            <td class="py-3 font-bold pr-6 align-top w-1/3">Aim and Designer's Intention</td>
+            <td class="py-3">{{ with .Params.aim }}{{ . }}{{ else }}&ndash;{{ end }}</td>
           </tr>
           <tr>
-            <td class="py-3 font-bold">Psychological Constructs with Reference</td>
-            <td class="py-3">{{ .Params.psychological_constructs_with_reference }}</td>
+            <td class="py-3 font-bold pr-6 align-top w-1/3">Psychological Constructs with Reference</td>
+            <td class="py-3">{{ with .Params.psych_constructs }}{{ . }}{{ else }}&ndash;{{ end }}</td>
           </tr>
           <tr>
-            <td class="py-3 font-bold">Constructs and Terms Without Reference</td>
-            <td class="py-3">{{ .Params.constructs_and_terms_used_without_reference}}</td>
+            <td class="py-3 font-bold pr-6 align-top w-1/3">Constructs and Terms Without Reference</td>
+            <td class="py-3">{{ with .Params.constructs_without_ref }}{{ . }}{{ else }}&ndash;{{ end }}</td>
           </tr>
           <tr>
-            <td class="py-3 font-bold">Design Strategy</td>
-            <td class="py-3">{{ .Params.design___strategy_ }}</td>
+            <td class="py-3 font-bold pr-6 align-top w-1/3">Design Strategy</td>
+            <td class="py-3">{{ with delimit .Params.design_strategy ", " }}{{ . }}{{ else }}&ndash;{{ end }}</td>
           </tr>
           <tr>
-            <td class="py-3 font-bold">Role of Technology</td>
-            <td class="py-3">{{ .Params.design___role_of_technology }}</td>
+            <td class="py-3 font-bold pr-6 align-top w-1/3">Role of Technology</td>
+            <td class="py-3">{{ with .Params.design_role }}{{ . }}{{ else }}&ndash;{{ end }}</td>
           </tr>
           <tr>
-            <td class="py-3 font-bold">Input Modalities</td>
-            <td class="py-3">{{ .Params.design___input_modalities}}</td>
+            <td class="py-3 font-bold pr-6 align-top w-1/3">Input Modalities</td>
+            <td class="py-3">{{ with delimit .Params.design_input ", " }}{{ . }}{{ else }}&ndash;{{ end }}</td>
           </tr>
           <tr>
-            <td class="py-3 font-bold">Output Modalities</td>
-            <td class="py-3">{{ .Params.design____output_modalities}}</td>
+            <td class="py-3 font-bold pr-6 align-top w-1/3">Output Modalities</td>
+            <td class="py-3">{{ with delimit .Params.design_output ", " }}{{ . }}{{ else }}&ndash;{{ end }}</td>
           </tr>
           <tr>
-            <td class="py-3 font-bold">Evaluation Methodology</td>
-            <td class="py-3">{{ .Params.evaluation___methodology}}</td>
+            <td class="py-3 font-bold pr-6 align-top w-1/3">Evaluation Methodology</td>
+            <td class="py-3">{{ with .Params.eval_methodology }}{{ . }}{{ else }}&ndash;{{ end }}</td>
           </tr>
           <tr>
-            <td class="py-3 font-bold">Type of Study</td>
-            <td class="py-3">{{ .Params.evaluation___type_of_study }}</td>
+            <td class="py-3 font-bold pr-6 align-top w-1/3">Type of Study</td>
+            <td class="py-3">{{ with .Params.eval_study_type }}{{ . }}{{ else }}&ndash;{{ end }}</td>
           </tr>
           <tr>
-            <td class="py-3 font-bold">Number of Participants</td>
-            <td class="py-3">{{ .Params.evaluation___number_of_participants__n }}</td>
+            <td class="py-3 font-bold pr-6 align-top w-1/3">Number of Participants</td>
+            <td class="py-3">{{ with .Params.eval_participants_n }}{{ . }}{{ else }}&ndash;{{ end }}</td>
           </tr>
           <tr>
-            <td class="py-3 font-bold">Ethical Concerns</td>
-            <td class="py-3">
-              {{ with .Params.ethical_concerns }}
-                {{ . }}
-              {{ else }}
-                N/A
-              {{ end }}
-            </td>
+            <td class="py-3 font-bold pr-6 align-top w-1/3">Ethical Concerns</td>
+            <td class="py-3">{{ with .Params.ethics_concerns }}{{ . }}{{ else }}&ndash;{{ end }}</td>
           </tr>
           <tr>
-            <td class="py-3 font-bold">Consideration of Ethical Issues in Design Decisions</td>
-            <td class="py-3">
-              {{ with .Params.consideration_of_ethical_issues_in_design_descisions }}
-                {{ . }}
-              {{ else }}
-                N/A
-              {{ end }}
-            </td>
+            <td class="py-3 font-bold pr-6 align-top w-1/3">Consideration of Ethical Issues in Design Decisions</td>
+            <td class="py-3">{{ with .Params.ethics_in_design }}{{ . }}{{ else }}&ndash;{{ end }}</td>
           </tr>
           <tr>
-            <td class="py-3 font-bold">Ethical Issues Addressed</td>
-            <td class="py-3">
-              {{ with .Params.ethical_issues_addressed }}
-                {{ . }}
-              {{ else }}
-                N/A
-              {{ end }}
-            </td>
+            <td class="py-3 font-bold pr-6 align-top w-1/3">Ethical Issues Addressed</td>
+            <td class="py-3">{{ with .Params.ethics_addressed }}{{ . }}{{ else }}&ndash;{{ end }}</td>
           </tr>
         </tbody>
       </table>

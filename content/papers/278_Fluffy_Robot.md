@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "Fluffy Robot"
+short_description = "Fluffy Robot is a plush companion that communicates the owner's state to distant family members through movement."
+publication_year = "2025"
+publication_type = "Research Article"
+reference = "Mari Saito, Junko Yamaguchi, and Qiu Li. 2026. Concept Acceptance and Attitude Change of Fluffy Robot for Elderly Individuals: Approach for initial verification using principle prototypes based on human-centered design methods. In Proceedings of the 13th International Conference on Human-Agent Interaction (HAI '25). Association for Computing Machinery, New York, NY, USA, 58–66. https://doi.org/10.1145/3765766.3765778"
+tags = ["Object(s)", "Robot"]
+target_group = ["Older adults"]
+target_group_details = ""
+aim = "Allow distant family members to naturally feel each other's presence"
+psych_constructs = "Loneliness (Hawkley & Kocherginsky, 2018)"
+psych_constructs_refs = "Louise C. Hawkley and Masha Kocherginsky. 2018. Transitions in Loneliness Among Older Adults: A 5-Year Follow-Up in the National Social Life, Health, and Aging Project. Research on Aging 40, 4 (2018), 365–387. doi:10.1177/0164027517698965"
+constructs_without_ref = ""
+design_strategy = ["Awareness"]
+design_role = "Triggering imagination"
+design_form_factor = "Carried object/set-up"
+design_symmetry = "Symmetrical"
+design_input = ["No further details"]
+design_output = ["Object movement or object change"]
+design_synchronicity = "Synchronous"
+evaluation = "Yes"
+eval_methodology = "Mixed-method"
+eval_study_type = "Lab study: user confrontation"
+eval_experimental_design = "No"
+eval_duration = "One session"
+eval_participants_n = "18"
+eval_participants = "Individuals"
+eval_selection_criteria = "Older adults aged 65 and over with families living apart"
+eval_measurements = "Bertnek's questionnaire (Bertnek et al., 2009)"
+eval_measurements_refs = "C Bartneck, E Croft, D Kulic, and S Zoghbi. 2009. Measurement instruments for the anthropomorphism, Animacy, likeability, perceived intelligence, and perceived safety of robots. Int. J. Social Robotics 1, 1 (2009), 71–81."
+ethics_concerns = "Yes"
+ethics_in_design = "Yes"
+ethics_addressed = "Unilateral monitoring"
++++

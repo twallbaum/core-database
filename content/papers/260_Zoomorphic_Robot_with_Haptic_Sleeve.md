@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "Zoomorphic Robot with Haptic Sleeve"
+short_description = "The Zoomorphic Robot (Blossom) combined with a forearm-worn Haptic Sleeve, supports remote affective communication. The robot embodies a remote partner with expressive movements, and the sleeve delivers touch signals to convey affective cues."
+publication_year = "2026"
+publication_type = "Research Article"
+reference = "Amy O'Connell, Xin Zhu, Mina Kian, Warren Dao, Jonathan Gratch, Maja Mataric, and Heather Culbertson. 2026. Exploring Remote Affective Communication Through a Haptic Wearable and Socially Assistive Robot. In Proceedings of the Twentieth International Conference on Tangible, Embedded, and Embodied Interaction (TEI '26). Association for Computing Machinery, New York, NY, USA, Article 41, 1–13. https://doi.org/10.1145/3731459.3773338"
+tags = ["Telepresence system", "Robot", "Wearable", "Tangible interaction"]
+target_group = ["Any close relationship", "Colleagues, team"]
+target_group_details = "Remote communication partners"
+aim = "Enriching remote communication, social presence, and interpersonal closeness"
+psych_constructs = "Social Presence (Short et al. 1976; Oh et al., 2018; Kreijns et al., 2022)"
+psych_constructs_refs = "Karel Kreijns, Kate Xu, and Joshua Weidlich. 2022. Social presence: Conceptualization and measurement. Educational psychology review 34, 1 (2022), 139–170."
+constructs_without_ref = "Interpersonal Closeness"
+design_strategy = ["Genuine Conversation"]
+design_role = "Enriching existing technology"
+design_form_factor = "Telepresence system; Wearable – accessory"
+design_symmetry = "Symmetrical"
+design_input = ["Audio and video"]
+design_output = ["Object movement or object change", "Audio", "Touch – tactile"]
+design_synchronicity = "Synchronous"
+evaluation = "Yes"
+eval_methodology = "Qualitative"
+eval_study_type = "Lab study: user testing"
+eval_experimental_design = "Within-subjects design"
+eval_duration = "One session"
+eval_participants_n = "16"
+eval_participants = "Individuals"
+eval_selection_criteria = ""
+eval_measurements = "IOS – Inclusion of Other in the Self scale (Aron et al., 1992); NMSPI – Networked Minds Social Presence Inventory (Biocca & Harms, 2002); SUS – System Usability Scale (Lewis, 2018)"
+eval_measurements_refs = "Arthur Aron, Elaine N. Aron, and Danny Smollan. 1992. Inclusion of Other in the Self Scale and the structure of interpersonal closeness. J Pers Soc Psychol 63, 4 (October 1992), 596–612. https://doi.org/10.1037/0022-3514.63.4.596; Frank Biocca and Chad Harms. 2002. Defining and measuring social presence: Contribution to the networked minds theory and measure. Proceedings of PRESENCE 2002 (2002), 7–36.; James R Lewis. 2018. The system usability scale: past, present, and future. International Journal of Human–Computer Interaction 34, 7 (2018), 577–590."
+ethics_concerns = "No"
+ethics_in_design = ""
+ethics_addressed = ""
++++

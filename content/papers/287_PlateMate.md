@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "PlateMate"
+short_description = "PlateMate is a remote, joint cooking game for intimate partners. Using structured prompts from a shared virtual pet, it guides partners through asynchronous cooking tasks."
+publication_year = "2025"
+publication_type = "Short Paper"
+reference = "Wei-Lu Wang, Zeren Yan, Xian Zheng, Wuyou Zhang, Yufei Cao, and D. Scott McCrickard. 2025. PlateMate: Structured Guidance Design in Relatedness Technology for Remote Joint Activity. In Proceedings of the 37th Australian Conference on Human-Computer Interaction (OzCHI '25). Association for Computing Machinery, New York, NY, USA, 755–762. https://doi.org/10.1145/3764687.3769926"
+tags = ["Game", "Virtual pet", "Kitchen"]
+target_group = ["Family", "Friends, peers", "Romantic couples"]
+target_group_details = ""
+aim = "Provide a low-cost and flexible way to enjoy joint activities and create feelings of togetherness"
+psych_constructs = "Relationship Maintenance (Stafford & Canary, 1991)"
+psych_constructs_refs = "Laura Stafford and Daniel J Canary. 1991. Maintenance strategies and romantic relationship type, gender and relational characteristics. Journal of Social and Personal relationships 8, 2 (1991), 217–242."
+constructs_without_ref = "Togetherness; Relatedness"
+design_strategy = ["Joint Action", "Ritual Formation"]
+design_role = "Enabling complex practices"
+design_form_factor = "Smartphone or tablet"
+design_symmetry = "Symmetrical"
+design_input = ["Touch – non-typing via display", "Typing/text entry", "Media content: photos"]
+design_output = ["Virtual representation, activity", "Text", "Graphics, visuals, icons, animations"]
+design_synchronicity = "Asynchronous"
+evaluation = "Yes"
+eval_methodology = "Qualitative"
+eval_study_type = "Field study: in-home user testing"
+eval_experimental_design = "No"
+eval_duration = "One week to one month: two weeks"
+eval_participants_n = "17"
+eval_participants = "Real-life dyad(s)"
+eval_selection_criteria = ""
+eval_measurements = "No"
+eval_measurements_refs = ""
+ethics_concerns = "Yes"
+ethics_in_design = "Yes"
+ethics_addressed = "Interactional difficulties: instability, shallowness, unequal participation responsibilities; Kinkeeping role"
++++

@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "Closeness Atoms Toolbox"
+short_description = "Closeness Atoms Toolbox is a modular toolbox that allows to create personalized relatedness technologies by combining input and output components such as sensors, lights, sound, and displays."
+publication_year = "2026"
+publication_type = "Research Article"
+reference = "Chantal Butenberg, María del Mar Zumaya, Marc Hassenzahl, and Torben Wallbaum. 2026. Closeness Atoms: Towards more Personal Relatedness Technologies. In Proceedings of the 10th ACM International Symposium on Pervasive Displays (PerDis '26). Association for Computing Machinery, New York, NY, USA, Article 13, 1–10. https://doi.org/10.1145/3797993.3798002"
+tags = ["Toolbox"]
+target_group = ["Family", "Friends, peers", "Romantic couples"]
+target_group_details = "Young adults ind long-distance relationship"
+aim = "Foster relatedness in long-distance relationships"
+psych_constructs = "Relatedness (Ryan & Deci, 2000; Sheldon et al., 2001); Social Connectedness (van Bel et al., 2009)"
+psych_constructs_refs = "Richard M. Ryan and Edward L. Deci. 2000. Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. American Psychologist 55, 1, 68–78. https://doi.org/10.1037/0003-066X.55.1.68; Kennon M. Sheldon, Andrew J. Elliot, Youngmee Kim, and Tim Kasser. 2001. What is satisfying about satisfying events? Testing 10 candidate psychological needs. Journal of personality and social psychology 80, 2 (2001), 325; Daniel T. van Bel, Karin Smolders, Wijnand A IJsselsteijn, and Yvonne de Kort. 2009. Social connectedness: concept and measurement. 2009 Australasian Conference on Interactive Entertainment. https://doi.org/https://doi.org/10.3233/978-1-60750-034-6-67"
+constructs_without_ref = "Closeness"
+design_strategy = ["Awareness", "Expresssivity", "Ritual Formation", "Joint Action"]
+design_role = "Prompting for interaction; Enabling lightweight communication"
+design_form_factor = "Movable/semi-fixed object/set-up"
+design_symmetry = "Asymmetrical or Symmetrical"
+design_input = ["Behavioral data", "Gesture, non-touching", "Handwriting/drawing"]
+design_output = ["Audio, non-speech", "Handwriting/drawing", "Object movement or object change"]
+design_synchronicity = "Synchronous, one-way; Synchronous"
+evaluation = "Yes"
+eval_methodology = "Qualitative"
+eval_study_type = "Lab study: user confrontation"
+eval_experimental_design = "No"
+eval_duration = "One session"
+eval_participants_n = "7"
+eval_participants = "Individuals"
+eval_selection_criteria = "In long-distance relationship"
+eval_measurements = "No"
+eval_measurements_refs = ""
+ethics_concerns = "Yes"
+ethics_in_design = "No"
+ethics_addressed = "Privacy; Autonomy; Emotional pressure"
++++

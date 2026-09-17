@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "XR Table"
+short_description = "The XR Table allows people to have dinner together while physically apart by providing an immersive dining experience through volumetric video"
+publication_year = "2025"
+publication_type = "Research Article"
+reference = "Andrés Santos-Torres, Patricia de Torres Coll, Tamás Bukits, Ramón Perisé, and Sergio Cabrero Barros. 2025. The XR Table: Envisioning The Future of Remote Dining Experiences Using Immersive Telepresence. In Proceedings of the 2025 ACM Designing Interactive Systems Conference (DIS '25). Association for Computing Machinery, New York, NY, USA, 1674–1690. https://doi.org/10.1145/3715336.3735730"
+tags = ["Domestic object", "Dinner table", "Extended Reality (XR)", "Human-food interaction"]
+target_group = ["Any close relationship"]
+target_group_details = "No"
+aim = "Enhance digital commensality experiences"
+psych_constructs = "Social Presence (Skarbez et al., 2017)"
+psych_constructs_refs = "Richard Skarbez, Frederick P Brooks, Jr, and Mary C Whitton. 2017. A survey of presence and related concepts. ACM computing surveys (CSUR) 50, 6 (2017),\n1–39."
+constructs_without_ref = "Presence; Co-presence"
+design_strategy = ["Joint Action", "Ritual Formation"]
+design_role = "Enabling complex practices"
+design_form_factor = "Fixed object/set-up; Telepresence system"
+design_symmetry = "Symmetrical"
+design_input = ["Gesture, non-touching", "Audio and video"]
+design_output = ["Virtual representation, activity", "Audio and video"]
+design_synchronicity = "Synchronous"
+evaluation = "Yes"
+eval_methodology = "Qualitative"
+eval_study_type = "Field study: user testing in natural environment"
+eval_experimental_design = "No"
+eval_duration = "Three sessions"
+eval_participants_n = "6"
+eval_participants = "Individuals"
+eval_selection_criteria = "Commensality experts from a restaurant"
+eval_measurements = "No"
+eval_measurements_refs = ""
+ethics_concerns = "No"
+ethics_in_design = ""
+ethics_addressed = ""
++++

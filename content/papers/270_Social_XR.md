@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "Social XR"
+short_description = "Social XR is a mobile extended reality application for long-distance couples that combines bio-signal based non-verbal communication with contextual spatial interaction. It allows partners to express emotional states thorugh sensory feedback and to place virtual objects in each other's digitized living spaces."
+publication_year = "2025"
+publication_type = "Short Paper"
+reference = "Dezijian Zhou, Yuanyuan Deng, Anastasia Globa, Richard Davies, Yongquan 'Owen Hu, Ruo-Xuan Wu, Liya Fu, and Aaron Quigley. 2025. Social XR: Designing An Extended Reality Application for Interaction in Long-Distance Relationships. In Proceedings of the 36th Australasian Conference on Human-Computer Interaction (OzCHI '24). Association for Computing Machinery, New York, NY, USA, 844–852. https://doi.org/10.1145/3726986.3727035"
+tags = ["Application", "Extended Reality (XR)"]
+target_group = ["Romantic couples"]
+target_group_details = "Long-distance relationship"
+aim = "Enhance intimacy, emotional expression, and companionship"
+psych_constructs = "Intimacy (Miller, 2021); Love (Chapman 2008)"
+psych_constructs_refs = "Rowland Miller. 2021. Intimate Relationships. 9th ed. Columbus, OH: McGraw-Hill Education.; Gary Chapman. 2008. The Five Love Languages. Mumbai, India: Jaico Publishing House."
+constructs_without_ref = "Sense of Presence; Sense of Companionship; Emotional Connection"
+design_strategy = ["Expressivity", "Joint Action"]
+design_role = "Dissolving space and/or time"
+design_form_factor = "Fixed object/set-up; PC or laptop"
+design_symmetry = "Symmetrical"
+design_input = ["Physiological – heart rate", "Contextual data", "Gesture, non-touching"]
+design_output = ["Touch – vibration", "Graphics, visuals, icons, animations", "Light, colors", "Virtual representation, activity"]
+design_synchronicity = "Synchronous"
+evaluation = "Yes"
+eval_methodology = "Qualitative"
+eval_study_type = "Lab study: user testing"
+eval_experimental_design = "No"
+eval_duration = "One session"
+eval_participants_n = "7"
+eval_participants = "Individuals"
+eval_selection_criteria = "Internal participants from research team; five with LDR experience"
+eval_measurements = "NASA-TLX – Task Load Index (Hart & Lowell, 1988)"
+eval_measurements_refs = "Sandra G. Hart and Lowell E. Staveland. 1988. Development of NASA-TLX (Task Load Index): Results of empirical and theoretical research. Advances in Psychology 52 (1988), 139–183. doi:10.1016/S0166-4115(08)62386-9"
+ethics_concerns = "No"
+ethics_in_design = ""
+ethics_addressed = ""
++++

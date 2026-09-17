@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "Mixed Reality System"
+short_description = "The Mixed Reality System enables older adults to share personal memories by placing photos, 3D objects, and generated digital artifacts into a shared MR space, making storytelling feel more present and engaging."
+publication_year = "2025"
+publication_type = "Short Paper"
+reference = "Dezijian Zhou and Anastasia Globa. 2025. Social Connectedness in Older Adults: The Role of MR and Haptic Interaction in Remote Digital Storytelling. In Proceedings of the 37th Australian Conference on Human-Computer Interaction (OzCHI '25). Association for Computing Machinery, New York, NY, USA, 807–818. https://doi.org/10.1145/3764687.3769932"
+tags = ["Mixed Reality (MR)"]
+target_group = ["Older adults"]
+target_group_details = ""
+aim = "Enhance social connectedness among older adults"
+psych_constructs = "No"
+psych_constructs_refs = ""
+constructs_without_ref = "Social Connectedness; Social Connection; Co-Presence; Social Presence"
+design_strategy = ["Genuine Conversation", "Joint Action"]
+design_role = "Enabling complex practices"
+design_form_factor = "Movable/semi-fixed object/set-up"
+design_symmetry = "Symmetrical"
+design_input = ["Gesture, non-touching", "Audio and video", "Physical material: objects"]
+design_output = ["Virtual representation, activity", "Audio", "Graphics, visuals, icons, animations"]
+design_synchronicity = "Synchronous"
+evaluation = "Yes"
+eval_methodology = "Mixed-method"
+eval_study_type = "Lab study: user testing"
+eval_experimental_design = "Within-subjects design"
+eval_duration = "One session"
+eval_participants_n = "6"
+eval_participants = "Individuals"
+eval_selection_criteria = "Two older adults and four expertparticipants"
+eval_measurements = "UMUX-LITE – Usability Metric for User Experience (Lewis et al., 2013); UXIVE – Unified UX in Immersive Virtual Environments Questionnaire (Tcha-Tokey et al., 2018)"
+eval_measurements_refs = "James R. Lewis, Brad S. Utesch, and Deborah E. Maher. 2013. UMUX-LITE. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI ’13). doi:10.1145/2470654.2481287; Kévin Tcha-Tokey, Olivier Christmann, Émilie Loup-Escande, Guillaume Loup, and Simon Richir. 2018. Towards a Model of User Experience in Immersive Virtual Environments. Advances in Human-Computer Interaction (2018), 1–10. doi:10.1155/2018/7827286"
+ethics_concerns = "Yes"
+ethics_in_design = "Yes"
+ethics_addressed = "Accessibility"
++++

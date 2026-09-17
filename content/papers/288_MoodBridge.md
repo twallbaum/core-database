@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "MoodBridge"
+short_description = "MoodBridge is an LLM-based mobile communication aid for intimate relationships that uses Nonviolent Communication to transform emotional expressions of conflict into more reflective, partner-oriented messages. In situations where partners are not in the same location, MoodBridge allows them to share emotional states through visual \"organic bubbles,\" creating a sense of emotional presence without requiring direct conversation."
+publication_year = "2026"
+publication_type = "Extended Abstract"
+reference = "Xingyi Chen and Xuan Zhang. 2026. From Needs to Design: Bridging Intimate Gaps with LLM-Augmented Nonviolent Communication. In Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems (CHI EA '26). Association for Computing Machinery, New York, NY, USA, Article 322, 1–6. https://doi.org/10.1145/3772363.3798539"
+tags = ["Application", "Artificial Intelligence (AI)", "Messaging"]
+target_group = ["Romantic couples"]
+target_group_details = ""
+aim = "Bridge communication barriers of couples regarding perception, expression and memory"
+psych_constructs = "Nonviolent Communication (Rosenberg, 2015)"
+psych_constructs_refs = "Marshall B. Rosenberg. 2015. Nonviolent Communication: A Language of Life (3rd ed.). PuddleDancer Press, Encinitas, CA, USA."
+constructs_without_ref = "Intimate Communication"
+design_strategy = ["Awareness", "Genuine Conversation", "Expressivity"]
+design_role = "Intervening; Stimulating further interaction"
+design_form_factor = "Smartphone or tablet"
+design_symmetry = "Symmetrical"
+design_input = ["Typing/text entry", "Audio"]
+design_output = ["Graphics, visuals, icons, animations", "Light, colors", "Text"]
+design_synchronicity = "Asynchronous and synchronous"
+evaluation = "Yes"
+eval_methodology = "Mixed-method"
+eval_study_type = "Lab study: user confrontation"
+eval_experimental_design = "No"
+eval_duration = "One session"
+eval_participants_n = "9"
+eval_participants = "Individuals"
+eval_selection_criteria = "No further details"
+eval_measurements = "No"
+eval_measurements_refs = ""
+ethics_concerns = "Yes"
+ethics_in_design = "No"
+ethics_addressed = "Privacy; Agency; Authenticity"
++++

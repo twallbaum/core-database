@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "ActStream"
+short_description = "With ActStream, video-mediated interaction selectively reveals objects relevant to the remote partners' current activity while keeping unrelated parts of the environment hidden."
+publication_year = "2025"
+publication_type = "Short Paper"
+reference = "Kaiya Shimura, Kazuma Kano, Tahera Hossain, Shin Katayama, Kenta Urano, Shun Taguchi, Hideki Deguchi, Hiroyuki Sakai, Takuro Yonezawa, and Nobuo Kawaguchi. 2026. Real-time Activity-Aware Video Streaming While Preserving Privacy. In Companion of the 2025 ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp Companion '25). Association for Computing Machinery, New York, NY, USA, 236–240. https://doi.org/10.1145/3714394.3754399"
+tags = ["Video-mediated interaction", "Artificial Intelligence (AI)"]
+target_group = ["Any close relationship", "Colleagues, team"]
+target_group_details = "No"
+aim = "Enhance situational awareness by providing useful context without exposing unnecessary information"
+psych_constructs = "No"
+psych_constructs_refs = ""
+constructs_without_ref = "Situational awareness; Connection"
+design_strategy = ["Awareness"]
+design_role = "Prompting for interaction; Enriching existing technology"
+design_form_factor = "PC or laptop"
+design_symmetry = "Symmetrical"
+design_input = ["Video"]
+design_output = ["Video"]
+design_synchronicity = "Synchronous"
+evaluation = "No"
+eval_methodology = ""
+eval_study_type = ""
+eval_experimental_design = ""
+eval_duration = ""
+eval_participants_n = ""
+eval_participants = ""
+eval_selection_criteria = ""
+eval_measurements = ""
+eval_measurements_refs = ""
+ethics_concerns = "Yes"
+ethics_in_design = "Yes"
+ethics_addressed = "Privacy"
++++

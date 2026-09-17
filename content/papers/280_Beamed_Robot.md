@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "Beamed Robot"
+short_description = "Beamed Robot is a motion-capture-based telepresence robot system that allwos a person in one location to control a humanoid robot in another location in real time, enabling synchronized physical movement between people in different locations."
+publication_year = "2026"
+publication_type = "Extended Abstract"
+reference = "Mingyu Kang, Myeongul Jung, Nakyoung An, and Kwanguk Kim. 2026. Physical Synchrony through a Beamed Robot Enhances Social Closeness and Inter-Brain Synchrony. In Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems (CHI EA '26). Association for Computing Machinery, New York, NY, USA, Article 514, 1–7. https://doi.org/10.1145/3772363.3798892"
+tags = ["Robot", "Beaming system", "Telepresence system"]
+target_group = ["Mentor-mentee relationship", "Colleagues, team"]
+target_group_details = "Remote teacher and student"
+aim = "Enable physically mediated social engagement and enhance social closeness"
+psych_constructs = "Co-Presence (Biocca & Harms, 2002; Biocca et al., 2003);  Social Presence (Biocca & Harms, 2002; Biocca et al., 2003); Rapport (Tickle-Degnen & Rosenthal, 1990)"
+psych_constructs_refs = "Frank Biocca and Chad Harms. 2002. Defining and measuring social presence: Contribution to the Networked Minds Theory and Measure. Proceedings of PRESENCE 2002: 7–36; Frank Biocca, Chad Harms, and Judee K. Burgoon. 2003. Toward a More Robust Theory and Measure of Social Presence: Review and Suggested Criteria. Presence: Teleoperators and Virtual Environments 12, 5: 456–480. https://doi.org/10.1162/105474603322761270; Linda Tickle-Degnen and Robert Rosenthal. 1990. The Nature of Rapport and Its Nonverbal Correlates. Psychological Inquiry 1, 4: 285–293. https://doi.org/10.1207/s15327965pli0104_1"
+constructs_without_ref = "Social Closeness"
+design_strategy = ["Physicalness", "Joint Action"]
+design_role = "Enabling existing embodied interaction"
+design_form_factor = "Telepresence system; Wearable – accessory"
+design_symmetry = "Asymmetrical"
+design_input = ["Gesture, non-touching", "Object manipulation or object movement"]
+design_output = ["Object movement or object change"]
+design_synchronicity = "Synchronous"
+evaluation = "Yes"
+eval_methodology = "Quantitative"
+eval_study_type = "Lab study: user testing"
+eval_experimental_design = "Within-subjects design"
+eval_duration = "One session"
+eval_participants_n = "20"
+eval_participants = "Individuals"
+eval_selection_criteria = ""
+eval_measurements = "NMSPI – Networked Minds Social Presence Inventory (Biocca & Harms, 2002)"
+eval_measurements_refs = "Frank Biocca and Chad Harms. 2002. Defining and measuring social presence: Contribution to the Networked Minds Theory and Measure. Proceedings of PRESENCE\n2002: 7–36; Frank Biocca, Chad Harms, and Judee K. Burgoon. 2003. Toward a More Robust Theory and Measure of Social Presence: Review and Suggested Criteria. Presence:\nTeleoperators and Virtual Environments 12, 5: 456–480. https://doi.org/10.1162/105474603322761270"
+ethics_concerns = "No"
+ethics_in_design = "No"
+ethics_addressed = ""
++++

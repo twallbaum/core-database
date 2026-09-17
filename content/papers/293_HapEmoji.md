@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "HapEmoji"
+short_description = "HapEmoji is a wearable device that allows partners to send emotion-based haptic emojis during online meetings. It is worn on the forearm and produces dynamic pressure patterns."
+publication_year = "2025"
+publication_type = "Research Article"
+reference = "Zhou Fang, Liwen He, Ran Zhao, and Yun Wang. 2025. HapEmoji: Enhancing Emotional Experiences in Remote Collaboration through Haptic Communication. Proc. ACM Hum.-Comput. Interact. 9, 7, Article CSCW426 (November 2025), 37 pages. https://doi.org/10.1145/3757607"
+tags = ["Wearable", "Tangible interaction"]
+target_group = ["Colleagues, team"]
+target_group_details = "Remote collaboration"
+aim = "Restore a sense of emotional connectedness and responsiveness in remote settings"
+psych_constructs = "Social-Emotional Interactions (Kwon et al., 2014); Social Presence (Short et al., 1976; Kiesler & Cummings, 2002)"
+psych_constructs_refs = "Kyungbin Kwon, Ying-Hsiu Liu, and LaShaune P. Johnson. 2014. Group regulation and social-emotional interactions observed in computer supported collaborative learning: Comparison between good vs. poor collaborators. Comput. Educ. 78 (2014), 185–200; John Short, Ederyn Williams, and Bruce Christie. 1976. The social psychology of telecommunications; Sara Kiesler and Jonathon N Cummings. 2002. What do we know about proximity and distance in work groups? A legacy of research. Distributed work 1 (2002), 57–80."
+constructs_without_ref = "Emotional Connectedness"
+design_strategy = ["Expressivity", "Physicalness"]
+design_role = "Enriching existing technology"
+design_form_factor = "Wearable – accessory"
+design_symmetry = "Symmetrical"
+design_input = ["Touch – haptic"]
+design_output = ["Touch – haptic", "Graphics, visuals, icons, animations"]
+design_synchronicity = "Synchronous"
+evaluation = "Yes"
+eval_methodology = "Mixed-method"
+eval_study_type = "Lab study: user testing"
+eval_experimental_design = "Within-subjects design"
+eval_duration = "One session"
+eval_participants_n = "40"
+eval_participants = "Individuals"
+eval_selection_criteria = ""
+eval_measurements = "Emotional Dimension Scale (He et al., 2024); SUS – System Usability Scale (no reference); SUS – System Usability Scale (Brooke, 1996)"
+eval_measurements_refs = "Liwen He, Boxue Shan, Dangxiao Wang, and Yun Wang. 2024. Design of Interactive Prototyping Tools for Social Affective Haptic Interfaces. Packaging Engineering 45, 12 (2024), 56–66. doi:10.19554/j.cnki.1001-3563.2024.12.007; John Brooke. 1996. SUS: A quick and dirty usability scale. In Usability Evaluation in Industry, P. W. Jordan, B. Thomas, B. A. Weerdmesster and I. L. McClelland (eds.). Taylor & Francis, London, 189–194."
+ethics_concerns = "No"
+ethics_in_design = "No"
+ethics_addressed = ""
++++

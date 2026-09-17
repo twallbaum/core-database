@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "Online Tea Ceremony"
+short_description = "Online Tea Ceremony is an AI-mediated online ritual in which remote partners prepare tea and snacks in their own physical spaces, and are guided through a slow tea tasting."
+publication_year = "2026"
+publication_type = "Extended Abstract"
+reference = "Hsin-Ting Chung, Wei-Chen Chen, Si-Ying Chen, Rung-Huei Liang, Yu-Ting Cheng, and Chien-Hsiung Chen. 2026. Designing AI-Mediated Digital Rituals through the Translation of Wabi-Sabi Aesthetics. In Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems (CHI EA '26). Association for Computing Machinery, New York, NY, USA, Article 208, 1–5. https://doi.org/10.1145/3772363.3798961"
+tags = ["Tea/coffee", "Artificial Intelligence (AI)"]
+target_group = ["Any close relationship"]
+target_group_details = ""
+aim = "Establish online social interaction that embodies ritual qualities and fosters emotional connection"
+psych_constructs = "No"
+psych_constructs_refs = ""
+constructs_without_ref = "Emotional Connection; Intimacy"
+design_strategy = ["Joint Action", "Ritual Formation"]
+design_role = "Enriching existing technology; Prompting for interaction"
+design_form_factor = "PC or laptop; Smartphone or tablet"
+design_symmetry = "Symmetrical"
+design_input = ["Audio", "Typing/text entry"]
+design_output = ["Audio, non-speech", "Audio", "Text"]
+design_synchronicity = "Synchronous"
+evaluation = "Yes"
+eval_methodology = "Qualitative"
+eval_study_type = "Online survey: user testing"
+eval_experimental_design = "No"
+eval_duration = "One session"
+eval_participants_n = "3"
+eval_participants = "Real-life group(s)"
+eval_selection_criteria = ""
+eval_measurements = "No"
+eval_measurements_refs = ""
+ethics_concerns = "No"
+ethics_in_design = "No"
+ethics_addressed = ""
++++

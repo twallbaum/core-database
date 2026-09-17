@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "Haru in the Kitchen"
+short_description = "The social robot Haru mediates food practices and experiences for distant families."
+publication_year = "2025"
+publication_type = "Research Article"
+reference = "Aswati Panicker, Chia-Fang Chung, and Selma Šabanović. 2025. Haru in the Kitchen: Investigating Family Members’ Perceptions Toward a Social Robot Mediator of Food Experiences. In Proceedings of the 2025 ACM Designing Interactive Systems Conference (DIS '25). Association for Computing Machinery, New York, NY, USA, 222–235. https://doi.org/10.1145/3715336.3735818"
+tags = ["Robot", "Kitchen"]
+target_group = ["Family"]
+target_group_details = "Long-distance relationship"
+aim = "Enable socially rich interactions and support long-distance relationships"
+psych_constructs = "No"
+psych_constructs_refs = ""
+constructs_without_ref = "Connection; Togetherness"
+design_strategy = ["Awareness", "Joint Action", "Ritual Formation"]
+design_role = "Enabling complex practices"
+design_form_factor = "Telepresence system"
+design_symmetry = "Symmetrical"
+design_input = ["Behavioral data", "Audio and video", "Contextual Data", "Touch – Non-typing via Dispay"]
+design_output = ["Object movement or object change", "Audio and video", "Light, colors"]
+design_synchronicity = "Asynchronous and synchronous"
+evaluation = "Yes"
+eval_methodology = "Qualitative"
+eval_study_type = "Internet-mediated: interviews"
+eval_experimental_design = "No"
+eval_duration = "One session"
+eval_participants_n = "9"
+eval_participants = "Individuals"
+eval_selection_criteria = "Strong interest or habit in sharing food experiences with distant family members"
+eval_measurements = "No"
+eval_measurements_refs = ""
+ethics_concerns = "Yes"
+ethics_in_design = "No"
+ethics_addressed = "Privacy"
++++

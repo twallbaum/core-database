@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "Venus and Mars on Canvas"
+short_description = "Venus and Mars on Canvas is a collaborative drawing system designed for romantic couples. Partners co-create drawings in seperate spaces on a shared digital canvas. Based on their drawing behavior, the system generates reflection questions, and the couple recieves a final AI-generated report providing insights into their relationship."
+publication_year = "2026"
+publication_type = "Research Article"
+reference = "Hyunseon Won, JongHan Kim, Jihyun Kim, Taeeun Kim, and Jinyoung Han. 2026. Venus and Mars on Canvas: AI-Mediated Collaborative Drawing for Romantic Relationship Insight. In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI '26). Association for Computing Machinery, New York, NY, USA, Article 1297, 1–23. https://doi.org/10.1145/3772318.3791153"
+tags = ["Collaborative drawing", "Artificial Intelligence (AI)", "Behavioral data"]
+target_group = ["Romantic couples"]
+target_group_details = ""
+aim = "Providing insights into relationships to foster healthier relational dynamics; support meaningful human connection and deeper understanding"
+psych_constructs = "Mutual Understanding (Cupach & Metts, 1986; Gordon & Diamond, 2023; Ogolsky et al., 2017)"
+psych_constructs_refs = "William R Cupach and Sandra Metts. 1986. Accounts of relational dissolution: A comparison of marital and non-marital relationships. Communications Monographs 53, 4 (1986), 311–334.; Amie M Gordon and Emily Diamond. 2023. Feeling understood and appreciated in relationships: Where do these perceptions come from and why do they matter? Current Opinion in Psychology 53 (2023), 101687; Brian G Ogolsky, J Kale Monk, TeKisha M Rice, Jaclyn C Theisen, and Christopher R Maniotes. 2017. Relationship maintenance: A review of research on romantic relationships. Journal of Family Theory & Review 9, 3 (2017), 275–306."
+constructs_without_ref = "Connection; Intimacy; Closeness"
+design_strategy = ["Joint Action", "Expressivity"]
+design_role = "Stimulating further interaction; Intervening"
+design_form_factor = "PC or laptop; Smartphone or tablet"
+design_symmetry = "Symmetrical"
+design_input = ["Typing/text entry", "Handwriting/drawing", "Behavioral data", "Physiological – facial expression, other"]
+design_output = ["Handwriting/drawing", "Text"]
+design_synchronicity = "Synchronous"
+evaluation = "Yes"
+eval_methodology = "Mixed-method"
+eval_study_type = "Lab study: user testing"
+eval_experimental_design = "No"
+eval_duration = "One session"
+eval_participants_n = "40"
+eval_participants = "Real-life dyad(s)"
+eval_selection_criteria = "Romantic relationship"
+eval_measurements = "Self-Reflection (Grant et al., 2002); Partner Acceptance (McGill et al.; 2022); Relational Awareness (Daks et al., 2022); Perceived Ease of Use and Perceived Usefulness (Ramayah & Ignatius, 2005); Perceived Enjoyment and Intention to Use (Balog & Pribeanu, 2010); Concentration (Kautish & Kare, 2022); Non-Judging and Patience (McGill et al., 2022)"
+eval_measurements_refs = "Anthony M Grant, John Franklin, and Peter Langford. 2002. The self-reflection and insight scale: A new measure of private self-consciousness. Social Behavior and Personality: an international journal 30, 8 (2002), 821–835; Julianne McGill, Francesca Adler-Baeder, and Leah Burke. 2022. The mindfulness\nin couple relationships scale: Development and validation. Mindfulness 13, 9\n(2022), 2299–2314; Jennifer S Daks, Ronald D Rogge, and Frank D Fincham. 2021. Distinguishing the correlates of being mindfully vs. mindlessly coupled: Development and validation of the Attentive Awareness in Relationships Scale (AAIRS). Mindfulness 12, 6 (2021), 1361–1376; T Ramayah and Joshua Ignatius. 2005. Impact of perceived usefulness, perceived ease of use and perceived enjoyment on intention to shop online. ICFAI Journal of Systems Management (IJSM) 3, 3 (2005), 36–51; Alexandru Balog and Costin Pribeanu. 2010. The role of perceived enjoyment in the students’ acceptance of an augmented reality teaching platform: A structural equation modelling approach. Studies in Informatics and Control 19, 3 (2010),319–330; Pradeep Kautish and Arpita Khare. 2022. Investigating the moderating role of AI-enabled services on flow and awe experience. International Journal of Information Management 66 (2022), 102519; Julianne McGill, Francesca Adler-Baeder, and Leah Burke. 2022. The mindfulness in couple relationships scale: Development and validation. Mindfulness 13, 9(2022), 2299–2314."
+ethics_concerns = "Yes"
+ethics_in_design = "Yes"
+ethics_addressed = "Ethics of the use of AI; Control; Autonomy"
++++

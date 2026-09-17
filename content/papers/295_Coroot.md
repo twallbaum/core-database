@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2025-MAY-31/2024-JUN-01"
+name = "Coroot"
+short_description = "CoRoot is a collaborative planting system that allows grandparents and grandchildren to remotely care for each other's vegetables. The system consists of hardware that includes two smart watering devices and two ladles, and software that provides watering, recording, and reporting functions. Each participant can water their vegetables and then help each other finish the rest."
+publication_year = "2024"
+publication_type = "Research Article"
+reference = "Wenjie Xu, Rou Qiu, Ziang Xu, Yue Miao, and Fangtian Ying. 2024. CoRoot: A Collaborative Planting System to Support Connection between Grandparents and Young Adults. In Proceedings of the 2024 ACM Designing Interactive Systems Conference (DIS '24). Association for Computing Machinery, New York, NY, USA, 1453–1468. https://doi.org/10.1145/3643834.3661589"
+tags = ["IoT-enabled domestic object(s)", "Application", "Flower/plant"]
+target_group = ["Family – adult grandchildren and grandparent(s)"]
+target_group_details = "No"
+aim = "Facilitate intergenerational relationships; Connecting distant family members"
+psych_constructs = "No"
+psych_constructs_refs = "No"
+constructs_without_ref = "Connection"
+design_strategy = ["Ritual Formation", "Acts of Care"]
+design_role = "Stimulating further interaction"
+design_form_factor = "Movable/semi-fixed object/set-up; Smartphone or tablet"
+design_symmetry = "Symmetrical"
+design_input = ["Behavioral data", "Touch – non-typing via display"]
+design_output = ["Specific object activity", "Graphics, visuals, icons, animations"]
+design_synchronicity = "Asynchronous"
+evaluation = "Yes"
+eval_methodology = "Qualitative"
+eval_study_type = "Field study: in-home user testing"
+eval_experimental_design = "No"
+eval_duration = "One to three months: six weeks"
+eval_participants_n = "8"
+eval_participants = "Real-life dyad(s)"
+eval_selection_criteria = "Adult grandchildren and grandparents"
+eval_measurements = "No"
+eval_measurements_refs = ""
+ethics_concerns = "No"
+ethics_in_design = "No"
+ethics_addressed = ""
++++

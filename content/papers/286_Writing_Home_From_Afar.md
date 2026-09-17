@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "Writing Home From Afar"
+short_description = "Writing Home From Afar is a digital-sharing practice to help distant family members communicate more meaningfully. Outdoor activity entries act as conversation prompts."
+publication_year = "2025"
+publication_type = "Research Article"
+reference = "Wei-Lu Wang, Natalie Andrus, Taha Hassan, Jixiang Fan, Yusheng Cao, Joelle Asante, Morva Saaty, Derek Haqq, and D. Scott McCrickard. 2025. Writing Home From Afar: Connecting Distant Families through Sharing of Outdoor Experiences with Digital Diaries. Proc. ACM Hum.-Comput. Interact. 9, 7, Article CSCW527 (November 2025), 26 pages. https://doi.org/10.1145/3757708"
+tags = ["Application", "Digital diary"]
+target_group = ["Family"]
+target_group_details = ""
+aim = "Support nuanced family communication across distance and foster connections between distant family members"
+psych_constructs = "Relationship Maintenance (Stafford & Canary, 1991)"
+psych_constructs_refs = "Laura Stafford and Daniel J Canary. 1991. Maintenance strategies and romantic relationship type, gender and relational characteristics. Journal of Social and Personal relationships 8, 2 (1991), 217–242."
+constructs_without_ref = "Emotional Connection; Emotional Closeness; Emotional Presence"
+design_strategy = ["Genuine Conversation"]
+design_role = "Stimulating further interaction"
+design_form_factor = "Smartphone or tablet"
+design_symmetry = "Symmetrical"
+design_input = ["Media content: photos", "Text"]
+design_output = ["Text", "Media content"]
+design_synchronicity = "Asynchronous and synchronous"
+evaluation = "Yes"
+eval_methodology = "Qualitative"
+eval_study_type = "Field study: user testing in natural environment"
+eval_experimental_design = "No"
+eval_duration = "One week to one month: three weeks"
+eval_participants_n = "22"
+eval_participants = "Individuals"
+eval_selection_criteria = "Have distant family members"
+eval_measurements = "No"
+eval_measurements_refs = ""
+ethics_concerns = "Yes"
+ethics_in_design = "Yes"
+ethics_addressed = "Privacy; Intimacy; Autonomy; Authenticity"
++++

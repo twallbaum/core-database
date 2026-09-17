@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "SorryIMissedThis"
+short_description = "SorryIMissedThis is an AI-supported messaging system that visualizes relationship activity through a garden-inspired dashboard. It generates message prompts to help partners restart or continue meaningful conversations."
+publication_year = "2026"
+publication_type = "Extended Abstract"
+reference = "Jules Oreste Mpano, Mayan Wasu, Eshaan Govil, Ishaan Javali, Ching-Yi Tsai, Lauren W. Wang, and Parastoo Abtahi. 2026. SorryIMissedThis: Leveraging Conversation History to Support Sustained Remote Communication. In Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems (CHI EA '26). Association for Computing Machinery, New York, NY, USA, Article 609, 1–7. https://doi.org/10.1145/3772363.3799073"
+tags = ["Messaging", "Artificial Intelligence (AI)"]
+target_group = ["Friends, peers", "Family"]
+target_group_details = ""
+aim = "Reduce friction of restarting or sustaining conversations and support ongoing digital communication"
+psych_constructs = "Weak Ties (Granovetter, 1973, 1982)"
+psych_constructs_refs = "Mark Granovetter. 1982. The strength of weak ties: A network theory revisited. Sociological Theory 1 (1982), 201–233; Mark S. Granovetter. 1973. The strength of weak ties. Amer. J. Sociology 78, 6 (1973), 1360–1380."
+constructs_without_ref = "Connectedness; Relationship Maintenance"
+design_strategy = ["Genuine Conversation"]
+design_role = "Prompting for interaction"
+design_form_factor = "Smartphone or tablet"
+design_symmetry = "Symmetrical"
+design_input = ["Typing/text entry", "Behavioral data"]
+design_output = ["Text", "Graphics, visuals, icons, animations"]
+design_synchronicity = "Asynchronous and synchronous"
+evaluation = "Yes"
+eval_methodology = "Mixed-method"
+eval_study_type = "Field study: user testing in natural environment"
+eval_experimental_design = "Within-subjects design"
+eval_duration = "Three sessions"
+eval_participants_n = "15"
+eval_participants = "Individuals"
+eval_selection_criteria = ""
+eval_measurements = "No"
+eval_measurements_refs = ""
+ethics_concerns = "Yes"
+ethics_in_design = "Yes"
+ethics_addressed = "Ethics of the use of AI; Agency, Trust; Authenticity"
++++

@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "Onni"
+short_description = "Onni is a customizable haptic communication device that allows partners to co-create personalized touch gestures and feedback patterns. Using pressure input, vibrotactile output, breathing-like movement, and heartbeat-like cues, couples can develop their own private tactile rituals."
+publication_year = "2026"
+publication_type = "Research Article"
+reference = "Mengshi Yang, Tim Moesgen, Ruochen Hu, Yen Hang Zhou, Zhining Li, Min Hua, and Antti Salovaara. 2026. \"Our Secret Language\": Co-Creating and Ritualizing Affective Haptics in Long-Distance Relationships. In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI '26). Association for Computing Machinery, New York, NY, USA, Article 713, 1–22. https://doi.org/10.1145/3772318.3790278"
+tags = ["Object(s)", "Tangible interaction", "Biometric data"]
+target_group = ["Romantic couples"]
+target_group_details = "Long-distance relationship in different time zones; Long-distance relationship"
+aim = "Support couples in creating and experiencing shared haptic interactions; Maintain closeness at a distance"
+psych_constructs = "No"
+psych_constructs_refs = "No"
+constructs_without_ref = "Closeness, Presence; Intimacy"
+design_strategy = ["Physicalness"]
+design_role = "Enabling existing embodied interaction"
+design_form_factor = "Carried object/set-up"
+design_symmetry = "Symmetrical"
+design_input = ["Touch – haptic"]
+design_output = ["Touch – haptic", "Touch – vibration", "Touch – tactile", "Audio, non-speech"]
+design_synchronicity = "Asynchronous and synchronous"
+evaluation = "Yes"
+eval_methodology = "Qualitative"
+eval_study_type = "Lab study: user confrontation; Field study: in-home user testing"
+eval_experimental_design = "No"
+eval_duration = "One session; One week to one month: 7 days"
+eval_participants_n = "26"
+eval_participants = "Real-life dyad(s)"
+eval_selection_criteria = "In romantic long-distance relationship"
+eval_measurements = "No"
+eval_measurements_refs = ""
+ethics_concerns = "No"
+ethics_in_design = "No"
+ethics_addressed = "No"
++++

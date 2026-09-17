@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "Ga'u echo"
+short_description = "Ga'u echo is a wearable haptic device that translates physiological signals, such as heart beat and body temperature into tactile and thermal feedback."
+publication_year = "2025"
+publication_type = "Extended Abstract"
+reference = "Yiwei Zhao, Yuxuan Han, and Luyu Song. 2025. Ga’u echo:A Digital Shrine for Remote Haptic Emotional Connection. In Adjunct Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology (UIST Adjunct '25). Association for Computing Machinery, New York, NY, USA, Article 68, 1–3. https://doi.org/10.1145/3746058.3758978"
+tags = ["Wearable", "Biometric data", "Tangible interaction", "Temperature"]
+target_group = ["Any close relationship"]
+target_group_details = "No"
+aim = "Enable remote emotional presence; support individual emontinal regulation"
+psych_constructs = "No"
+psych_constructs_refs = ""
+constructs_without_ref = "Emotional Comfort; Interpersonal Connection; Emotional Connection"
+design_strategy = ["Physicalness"]
+design_role = "Enabling existing embodied interaction"
+design_form_factor = "Wearable – accessory"
+design_symmetry = "Asymmetrical"
+design_input = ["Physiological – heart rate", "Physiological – body temperature"]
+design_output = ["Touch – vibration", "Heat"]
+design_synchronicity = "Synchronous, one-way"
+evaluation = "No"
+eval_methodology = ""
+eval_study_type = ""
+eval_experimental_design = ""
+eval_duration = ""
+eval_participants_n = ""
+eval_participants = ""
+eval_selection_criteria = ""
+eval_measurements = ""
+eval_measurements_refs = ""
+ethics_concerns = "No"
+ethics_in_design = "No"
+ethics_addressed = ""
++++

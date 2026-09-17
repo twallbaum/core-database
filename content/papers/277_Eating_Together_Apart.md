@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "Eating Together Apart"
+short_description = "Eating Together Apart allows two people to share a meal together while physically apart in a shared virtual garden. This playful, socially connected remote meal experience combines avatars, real food, and synchronized bite-triggerd environmental changes."
+publication_year = "2025"
+publication_type = "Research Article"
+reference = "Khawla Alhasan, Khaled Alhasan, Carlos Velasco, Ferran Altarriba Bertran, Moneim Ali, and Alexandra Covaci. 2025. Eating together apart: Designing immersive, multisensory commensality experiences in Virtual Reality. In Proceedings of the 28th International Academic Mindtrek Conference (Mindtrek '25). Association for Computing Machinery, New York, NY, USA, 164–175. https://doi.org/10.1145/3757980.3757999"
+tags = ["Domestic object", "Dinner table", "Virtual Reality (VR)", "Human-food interaction"]
+target_group = ["Any close relationship"]
+target_group_details = ""
+aim = "Enhance digital commensality by supporting co-presence ans shared rituals"
+psych_constructs = "No"
+psych_constructs_refs = ""
+constructs_without_ref = "Social Connection; Emotional Connection; Co-Presence"
+design_strategy = ["Joint Action", "Ritual Formation"]
+design_role = "Dissolving space and/or time"
+design_form_factor = "Fixed object/set-up"
+design_symmetry = "Symmetrical"
+design_input = ["Gesture, non-touching", "Physical materials: food", "Audio"]
+design_output = ["Virtual representation, activity", "Audio", "Smell, scent", "Taste", "Text", "Touch – tactile"]
+design_synchronicity = "Synchronous"
+evaluation = "Yes"
+eval_methodology = "Qualitative"
+eval_study_type = "Lab study: user testing"
+eval_experimental_design = "No"
+eval_duration = "One session"
+eval_participants_n = "14"
+eval_participants = "Individuals"
+eval_selection_criteria = ""
+eval_measurements = "No"
+eval_measurements_refs = ""
+ethics_concerns = "Yes"
+ethics_in_design = "Yes"
+ethics_addressed = "Potential negative aspects and impacts of the technology: Authenticity"
++++

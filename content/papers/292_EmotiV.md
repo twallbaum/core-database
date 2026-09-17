@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "EmotiV"
+short_description = "EmotiV is a co-watching system that captures viewers' facial expressions and shares them as time-synced emotional reactions during remote video watching."
+publication_year = "2026"
+publication_type = "Research Article"
+reference = "Yusen Zhang, Edmond S. L. Ho, and Xianghua(Sharon) Ding. 2026. EmotiV: Exploring Automatic Emotion Sharing through Facial Expression Recognition (FER) for Online Co-Watching. In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI '26). Association for Computing Machinery, New York, NY, USA, Article 1000, 1–14. https://doi.org/10.1145/3772318.3791488"
+tags = ["Application", "Co-watching"]
+target_group = ["Any close relationship"]
+target_group_details = ""
+aim = "Fostering social togetherness and self-awareness and reflection"
+psych_constructs = "No"
+psych_constructs_refs = ""
+constructs_without_ref = "Togetherness; Connection; Social Presence"
+design_strategy = ["Joint Action", "Expressivity"]
+design_role = "Enriching existing technology"
+design_form_factor = "PC or laptop; TV"
+design_symmetry = "Symmetrical"
+design_input = ["Physiological – facial expression, other"]
+design_output = ["Graphics, visuals, icons, animations", "Light, colors"]
+design_synchronicity = "Synchronous"
+evaluation = "Yes"
+eval_methodology = "Mixed-method"
+eval_study_type = "Lab study: user testing"
+eval_experimental_design = "Within-subjects design"
+eval_duration = "One session"
+eval_participants_n = "20"
+eval_participants = "Individuals"
+eval_selection_criteria = ""
+eval_measurements = "No"
+eval_measurements_refs = ""
+ethics_concerns = "Yes"
+ethics_in_design = "Yes"
+ethics_addressed = "Privacy; Control; Discomfort with continuous emotion-monitoring; Self-presentation; Data"
++++

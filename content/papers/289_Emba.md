@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "Emba"
+short_description = "Emba is a wearable system consisting of a belt and wristband system for expectant couples. It uses haptic, visual, and auditory feedback to share pregnancy-related sensations and emotional signals across distance."
+publication_year = "2025"
+publication_type = "Short Paper"
+reference = "Xipei Ren, Yujia Wu, Zhiyu Li, Xiaoyu Zhang, and Shuzi Yin. 2025. Emba: A Wearable System to Enhance Emotional Connection between Couples during Pregnancy. In Proceedings of the Twelfth International Symposium of Chinese CHI (CHCHI '24). Association for Computing Machinery, New York, NY, USA, 669–674. https://doi.org/10.1145/3758871.3758932"
+tags = ["Wearable", "Belt", "Pregnancy"]
+target_group = ["Romantic couples"]
+target_group_details = "Expectant parents"
+aim = "Alleviate emotional alienation and enhance emotional connection between expectant parents"
+psych_constructs = "No"
+psych_constructs_refs = ""
+constructs_without_ref = "Emotional Connection; Intimacy"
+design_strategy = ["Physicalness"]
+design_role = "Enabling existing embodied interaction"
+design_form_factor = "Wearable – belt and wristband"
+design_symmetry = "Asymmetrical"
+design_input = ["Touch – haptic", "Physiological – pregnancy state"]
+design_output = ["Touch – haptic", "Light, colors", "Audio"]
+design_synchronicity = "Synchronous"
+evaluation = "Yes"
+eval_methodology = "Mixed-method"
+eval_study_type = "Lab study: user testing"
+eval_experimental_design = "No"
+eval_duration = "One session"
+eval_participants_n = "14"
+eval_participants = "Real-life dyad(s)"
+eval_selection_criteria = "Experience with prolonged separation from their partners"
+eval_measurements = "No"
+eval_measurements_refs = ""
+ethics_concerns = "No"
+ethics_in_design = ""
+ethics_addressed = ""
++++

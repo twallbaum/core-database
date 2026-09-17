@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "Connected Prayerwheel"
+short_description = "The Connected Prayerwheel is a pair of augmented Bhutanese prayer wheels designed to support everyday cultural connectedness between geographically separated family members. When one person turns their prayer wheel or plays Bhutanese songs or hymns, the paired device in the other home responds with an ambient light glow, creating a calm sense of shared presence through familiar cultural routines."
+publication_year = "2026"
+publication_type = "Extended Abstract"
+reference = "Tshering Dema, Chimi Om, Michael Esteban, and Margot Brereton. 2026. The Connected Prayerwheel: A Tangible Design Fostering Everyday Cultural Connectedness for Bhutanese families over Distance. In Proceedings of the Twentieth International Conference on Tangible, Embedded, and Embodied Interaction (TEI '26). Association for Computing Machinery, New York, NY, USA, Article 79, 1–10. https://doi.org/10.1145/3731459.3779339"
+tags = ["Object(s)", "Cultural artifact", "Prayer wheel"]
+target_group = ["Family – adult children and parent(s)"]
+target_group_details = "Bhutanese Buddhists"
+aim = "Foster everyday cultural connectedness"
+psych_constructs = "No"
+psych_constructs_refs = ""
+constructs_without_ref = "Cultural Connectedness; Cultural Connection; Spiritual Connection"
+design_strategy = ["Awareness", "Ritual Formation"]
+design_role = "Providing an individual experience"
+design_form_factor = "Movable/semi-fixed object/set-up"
+design_symmetry = "Symmetrical"
+design_input = ["Object manipulation or object movement"]
+design_output = ["Light, colors"]
+design_synchronicity = "Synchronous, one-way"
+evaluation = "Yes"
+eval_methodology = "Qualitative"
+eval_study_type = "Internet-mediated: interviews"
+eval_experimental_design = "No"
+eval_duration = "One session"
+eval_participants_n = "10"
+eval_participants = "Real-life dyad(s)"
+eval_selection_criteria = "Distributed parents and adult children in Bhutan and Australia"
+eval_measurements = ""
+eval_measurements_refs = "J"
+ethics_concerns = "No"
+ethics_in_design = ""
+ethics_addressed = ""
++++

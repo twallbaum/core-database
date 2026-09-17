@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "Embodied VR"
+short_description = "Embodied VR is designed to improve emotional communication and connection between college students and their parents across distance by combining VR scenes, avatars, facial emotion recognition, and emotional feedback"
+publication_year = "2025"
+publication_type = "Short Paper"
+reference = "Ke Huang and Zichun Guo. 2025. Embodied Emotional Communication: A Study on Parent-Child Communication Among College Students Using Virtual Reality Technology. In Proceedings of the Twelfth International Symposium of Chinese CHI (CHCHI '24). Association for Computing Machinery, New York, NY, USA, 609–616. https://doi.org/10.1145/3758871.3758922"
+tags = ["Virtual Reality (VR)"]
+target_group = ["Family – adult children and parent(s)"]
+target_group_details = "College students and their parents"
+aim = "Foster empathetic engagements, emotional experiences and optimise family cohesion and emotional wellbeing"
+psych_constructs = "No"
+psych_constructs_refs = ""
+constructs_without_ref = "Emotional Connection; Emotional Communication"
+design_strategy = ["Genuine Conversation"]
+design_role = "Enriching existing technology"
+design_form_factor = "PC or laptop; Smartphone or tablet"
+design_symmetry = "Symmetrical"
+design_input = ["Physiological – facial expression, other", "Audio", "Gesture", "Physical materials"]
+design_output = ["Virtual representation, activity", "Audio", "Graphics, visuals, icons, animations"]
+design_synchronicity = "Synchronous"
+evaluation = "Yes"
+eval_methodology = "Qualitative"
+eval_study_type = "No further details"
+eval_experimental_design = "No"
+eval_duration = "No further details"
+eval_participants_n = "6"
+eval_participants = "Real-life dyad(s)"
+eval_selection_criteria = "No further details"
+eval_measurements = "No"
+eval_measurements_refs = ""
+ethics_concerns = "No"
+ethics_in_design = "No"
+ethics_addressed = ""
++++

@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "Hugging Suit"
+short_description = "Hugging Suit is a wearable device designed to simulate hugs between people who are physically apart. It consists of two paired suits: one for giving hugs, one for receiving hugs."
+publication_year = "2025"
+publication_type = "Research Article"
+reference = "Russian (Ruo-Xuan) Wu, Luke Hespanhol, Marius Hoggenmüller, Hannes Waldschütz, and Eva Hornecker. 2025. Hugging Suit: Designing and Evaluating a Pneumatic System for Remote Haptic Experiences. In Proceedings of the 37th Australian Conference on Human-Computer Interaction (OzCHI '25). Association for Computing Machinery, New York, NY, USA, 136–149. https://doi.org/10.1145/3764687.3764723"
+tags = ["Wearable", "Clothing", "Tangible interaction"]
+target_group = ["Family", "Friends, peers", "Romantic couples"]
+target_group_details = "Long-distance relationship"
+aim = "Support intimacy over distance"
+psych_constructs = "No"
+psych_constructs_refs = ""
+constructs_without_ref = "Intimacy; Remote Intimacy; Closeness;"
+design_strategy = ["Physicalness"]
+design_role = "Enabling existing embodied interaction"
+design_form_factor = "Wearable – clothing"
+design_symmetry = "Asymmetrical"
+design_input = ["Touch – haptic"]
+design_output = ["Touch – haptic", "Touch – tactile"]
+design_synchronicity = "Synchronous, one-way"
+evaluation = "Yes"
+eval_methodology = "Mixed-method"
+eval_study_type = "Field study: user testing as part of an exhibition; Lab study: user testing"
+eval_experimental_design = "No"
+eval_duration = "One session"
+eval_participants_n = "71"
+eval_participants = "Individuals"
+eval_selection_criteria = ""
+eval_measurements = "No"
+eval_measurements_refs = ""
+ethics_concerns = "Yes"
+ethics_in_design = "No"
+ethics_addressed = "Privacy"
++++

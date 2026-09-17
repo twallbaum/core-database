@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "CoCo"
+short_description = "CoCo is a teddy bear that plays a voice note recorded on a matching keychain."
+publication_year = "2026"
+publication_type = "Research Article"
+reference = "Angelina Krupp, Daniel Ullrich, and Sarah Diefenbach. 2026. The Challenge to Design for Relatedness Experiences: An Explorative Investigation of Five Relatedness Technologies from a Psychological Needs Perspective. In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI '26). Association for Computing Machinery, New York, NY, USA, Article 1311, 1–20. https://doi.org/10.1145/3772318.3790727"
+tags = ["Object(s)", "Toy object", "Plush toy", "Key chain"]
+target_group = ["Family – children and parent(s)"]
+target_group_details = ""
+aim = "To create relatedness"
+psych_constructs = "Relatedness (Ryan & Deci, 2000; Hassenzahl et al., 2010)"
+psych_constructs_refs = "Richard M. Ryan and Edward L. Deci. 2000. Self-Determination Theory and the Facilitation of Intrinsic Motivation, Social Development, and Well-Being. American Psychologist 55, 1, 68–78. https://doi.org/10.1037/0003-066x.55.1.68; Marc Hassenzahl, Sarah Diefenbach, and Anja Göritz. 2010. Needs, affect, and interactive products – Facets of user experience. Interacting with Computers 22, 5, 353–362. https://doi.org/10.1016/j.intcom.2010.04.002"
+constructs_without_ref = "Connectedness; Closeness"
+design_strategy = ["Expressivity"]
+design_role = "Enabling lightweight communication"
+design_form_factor = "Carried object/set-up"
+design_symmetry = "Asymmetrical"
+design_input = ["Audio"]
+design_output = ["Audio"]
+design_synchronicity = "Asynchronous, one-way"
+evaluation = "Yes"
+eval_methodology = "Quantitative"
+eval_study_type = "Online survey: user confrontation"
+eval_experimental_design = "No"
+eval_duration = "One session"
+eval_participants_n = "221"
+eval_participants = "Individuals"
+eval_selection_criteria = "Random"
+eval_measurements = "TRI – Technologiy Readiness Index (Parasuraman & Colby, 2015); NA-TA –Need-based Assessment of Technology Acceptance (Krupp & Diefenbach, 2025); AttrakDiff (Hassenzahl et al., 2003)"
+eval_measurements_refs = "A. Parasuraman and Charles L. Colby. 2015. An Updated and Streamlined\nTechnology Readiness Index: TRI 2.0. Journal of Service Research 18, 1, 59–74.\nhttps://doi.org/10.1177/1094670514539730; Angelina Krupp and Sarah Diefenbach. 2025. Need-Based Assessment of Technology Acceptance (NA-TA) - German version (2025). Retrieved from: https://osf.io/qfyem/; Marc Hassenzahl, Michael Burmester, and Franz Koller. 2003. AttrakDiff: Ein Fragebogen zur Messung wahrgenommener hedonischer und pragmatischer\nQualität. In Mensch & Computer 2003, Gerd Szwillus and Jürgen Ziegler, Eds., 57. Vieweg+Teubner Verlag, Wiesbaden, 187–196. https://doi.org/10.1007/978-3-322-80058-9_19"
+ethics_concerns = "Yes"
+ethics_in_design = "No"
+ethics_addressed = "Autonomy"
++++

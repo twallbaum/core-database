@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "Remini"
+short_description = "Remini is a chatbot that helps loved ones collaboratively recall shared positive memories through conversational prompts."
+publication_year = "2025"
+publication_type = "Research Article"
+reference = "Zhuoqun Jiang, ShunYi Yeo, Wei Xuan, Donovan Seow, and Simon Tangi Perrault. 2025. Remini: Leveraging Chatbot-Mediated Mutual Reminiscence for Promoting Positive Affect and Feeling of Connectedness among Loved Ones. Proc. ACM Hum.-Comput. Interact. 9, 7, Article CSCW469 (November 2025), 43 pages. https://doi.org/10.1145/3757650"
+tags = ["Application", "Messaging", "Chatbot", "Artificial Intelligence (AI)"]
+target_group = ["Family", "Friends, peers", "Romantic couples"]
+target_group_details = ""
+aim = "Enhance human-human connection by facilitating in-depth reminiscence"
+psych_constructs = "Reminiscence (Bohlmeijer et al., 2007); Genuine Connection (Stepanova et al., 2022); Self-disclosure (Laurenceau et al., 1998)"
+psych_constructs_refs = "Ernst Bohlmeijer, Marte Roemer, Pim Cuijpers, and Filip Smit. 2007. The effects of reminiscence on psychological wellbeing in older adults: A meta-analysis. Aging and Mental Health 11, 3 (2007), 291–300. doi:10.1080/13607860600963547; Ekaterina R. Stepanova, John Desnoyers-Stewart, Kristina Höök, and Bernhard E. Riecke. 2022. Strategies for Fostering a Genuine Feeling of Connection in Technologically Mediated Systems. In Conference on Human Factors in Computing Systems. Association for Computing Machinery. https://doi.org/10.1145/3491102.3517580; Jean-Philippe Laurenceau, Lisa Feldman Barrett, and Paula R Pietromonaco. 1998. Intimacy as an interpersonal process: the importance of self-disclosure, partner disclosure, and perceived partner responsiveness in interpersonal exchanges. Journal of Personality and Social Psychology 74, 5 (1998), 1238. doi:10.1037//0022-3514.74.5.1238"
+constructs_without_ref = "Connection"
+design_strategy = ["Memories"]
+design_role = "Intervening"
+design_form_factor = "Smartphone or tablet"
+design_symmetry = "Symmetrical"
+design_input = ["Typing/text entry"]
+design_output = ["Text"]
+design_synchronicity = "Asynchronous and synchronous"
+evaluation = "Yes"
+eval_methodology = "Mixed-method"
+eval_study_type = "Internet-mediated: user testing"
+eval_experimental_design = "Between-subjects design; Within-subjects design"
+eval_duration = "One session"
+eval_participants_n = "48"
+eval_participants = "Real-life dyad(s)"
+eval_selection_criteria = ""
+eval_measurements = "PANAS – Positive and Negative Affect Schedule (Watson & Tellegen, 1988); PES – Perceived Emotional Synchrony (Dario et al., 2015); PRQC – Perceived Relationship Quality Components (Fletcher et al., 2000); IOS – Inclusion of Other in the Self scale (Aron et al., 1992); PPRS – Perceived Partner Responsiveness Scale (Reis et al., 2018)"
+eval_measurements_refs = "Lee Anna Clark Watson, David and Auke Tellegen. 1988. Development and validation of brief measures of positive and negative affect: The PANAS scales. Journal of Personality and Social Psychology 54, 6 (1988), 1063–1070. doi:10.1037/0022-3514.54.6.1063; Dario Páez, Bernard Rimé, Nekane Basabe, Anna Wlodarczyk, and Larraitz Zumeta. 2015. Psychosocial effects of perceived emotional synchrony in collective gatherings. Journal of Personality and Social Psychology 108, 5 (2015), 711–729. doi:10.1037/pspi0000014; Garth J. O. Fletcher, Jeffry A. Simpson, and Geoff Thomas. 2000. The Measurement of Perceived Relationship Quality Components: A Confirmatory Factor Analytic Approach. Personality and Social Psychology Bulletin 26, 3 (2000), 340–354. doi:10.1177/0146167200265007; Arthur Aron, Elaine N. Aron, and Danny Smollan. 1992. Inclusion of Other in the Self Scale and the structure of interpersonal closeness. J Pers Soc Psychol 63, 4 (October 1992), 596–612. https://doi.org/10.1037/0022-3514.63.4.596; Harry T. Reis, Dev Crasta, Ronald D. Rogge, Michael R. Maniaci und Cheryl L. Carmichael. Perceived Partner Responsiveness Scale. In The Sourcebook of Listening Research: Methodology and Measures, edited by Debra L. Worthington und Graham D. Bodie, 516–521. Hoboken, NJ: John Wiley & Sons, 2018."
+ethics_concerns = "Yes"
+ethics_in_design = "No"
+ethics_addressed = "Conversational authenticity; Relational dynamics; Affective influence; Anthropomorphism; Privacy; Autonomy"
++++

@@ -1,0 +1,37 @@
++++
+date = "2026-09-16T12:57:35.073890+01:00"
+draft = false
+corpus_version = "2026-MAY-31/2025-JUN-01"
+name = "SYMBIONT"
+short_description = "SYMBIONT is a soft object that enables people to engage in tactile communication."
+publication_year = "2025"
+publication_type = "Research Article"
+reference = "Mona Safari, Kate Hartman, and Nick Puckett. 2025. SOFT OBJECTS: Prototyping for Tactile Interpersonal Communication. In Proceedings of the 2025 ACM Designing Interactive Systems Conference (DIS '25). Association for Computing Machinery, New York, NY, USA, 331–346. https://doi.org/10.1145/3715336.3735440"
+tags = ["Cushion", "Object(s)", "Tangible interaction"]
+target_group = ["Any close relationship"]
+target_group_details = "No"
+aim = "Enhance physical presence and augment human-to-human communication through touch"
+psych_constructs = "No"
+psych_constructs_refs = ""
+constructs_without_ref = "Sense of Presence; Connection"
+design_strategy = ["Physicalness"]
+design_role = "Enabling existing embodied interaction"
+design_form_factor = "Movable/semi-fixed object/set-up"
+design_symmetry = "Symmetrical"
+design_input = ["Object manipulation or object movement", "Touch – haptic", "Touch – tactile"]
+design_output = ["Touch – vibration", "Touch – haptic", "Touch – tactile"]
+design_synchronicity = "Synchronous"
+evaluation = "No"
+eval_methodology = ""
+eval_study_type = ""
+eval_experimental_design = ""
+eval_duration = ""
+eval_participants_n = ""
+eval_participants = ""
+eval_selection_criteria = ""
+eval_measurements = ""
+eval_measurements_refs = ""
+ethics_concerns = "No"
+ethics_in_design = ""
+ethics_addressed = ""
++++
