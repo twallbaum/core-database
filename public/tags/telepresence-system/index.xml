@@ -1,68 +1,94 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Telepresence System on COmpendium of RElatedness Technologies (CORE) </title>
-    <link>https://core.thehxlab.com/tags/telepresence-system/</link>
-    <description>Recent content in Telepresence System on COmpendium of RElatedness Technologies (CORE) </description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 19 Nov 2025 17:40:54 +0100</lastBuildDate>
-    <atom:link href="https://core.thehxlab.com/tags/telepresence-system/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title></title>
-      <link>https://core.thehxlab.com/papers/255_multi-user_telepresence_robot_system/</link>
-      <pubDate>Wed, 19 Nov 2025 17:40:54 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/255_multi-user_telepresence_robot_system/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://core.thehxlab.com/papers/115_ma_petite_ch%C3%A9rie/</link>
-      <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/115_ma_petite_ch%C3%A9rie/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://core.thehxlab.com/papers/12_homemeld/</link>
-      <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/12_homemeld/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://core.thehxlab.com/papers/183_xrmas/</link>
-      <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/183_xrmas/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://core.thehxlab.com/papers/237_bewithme/</link>
-      <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/237_bewithme/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://core.thehxlab.com/papers/239_telepresence_home_setup/</link>
-      <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/239_telepresence_home_setup/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://core.thehxlab.com/papers/77_telegame_mediated_by_haru/</link>
-      <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/77_telegame_mediated_by_haru/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://core.thehxlab.com/papers/90_mobileportation/</link>
-      <pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
-      <guid>https://core.thehxlab.com/papers/90_mobileportation/</guid>
-      <description></description>
-    </item>
-  </channel>
+	<channel>
+		<title>Telepresence System on COmpendium of RElatedness Technologies (CORE) </title>
+		<link>https://core.thehxlab.com/tags/telepresence-system/</link>
+		<description>Recent content in Telepresence System on COmpendium of RElatedness Technologies (CORE) </description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 16 Sep 2026 12:57:35 +0100</lastBuildDate>
+		
+			<atom:link href="https://core.thehxlab.com/tags/telepresence-system/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title></title>
+				<link>https://core.thehxlab.com/papers/260_zoomorphic_robot_with_haptic_sleeve/</link>
+				<pubDate>Wed, 16 Sep 2026 12:57:35 +0100</pubDate>
+				<guid>https://core.thehxlab.com/papers/260_zoomorphic_robot_with_haptic_sleeve/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://core.thehxlab.com/papers/280_beamed_robot/</link>
+				<pubDate>Wed, 16 Sep 2026 12:57:35 +0100</pubDate>
+				<guid>https://core.thehxlab.com/papers/280_beamed_robot/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://core.thehxlab.com/papers/255_multi-user_telepresence_robot_system/</link>
+				<pubDate>Wed, 19 Nov 2025 17:40:54 +0100</pubDate>
+				<guid>https://core.thehxlab.com/papers/255_multi-user_telepresence_robot_system/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://core.thehxlab.com/papers/115_ma_petite_ch%C3%A9rie/</link>
+				<pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
+				<guid>https://core.thehxlab.com/papers/115_ma_petite_ch%C3%A9rie/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://core.thehxlab.com/papers/12_homemeld/</link>
+				<pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
+				<guid>https://core.thehxlab.com/papers/12_homemeld/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://core.thehxlab.com/papers/183_xrmas/</link>
+				<pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
+				<guid>https://core.thehxlab.com/papers/183_xrmas/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://core.thehxlab.com/papers/187_syn-leap/</link>
+				<pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
+				<guid>https://core.thehxlab.com/papers/187_syn-leap/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://core.thehxlab.com/papers/237_bewithme/</link>
+				<pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
+				<guid>https://core.thehxlab.com/papers/237_bewithme/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://core.thehxlab.com/papers/239_telepresence_home_setup/</link>
+				<pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
+				<guid>https://core.thehxlab.com/papers/239_telepresence_home_setup/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://core.thehxlab.com/papers/77_telegame_mediated_by_haru/</link>
+				<pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
+				<guid>https://core.thehxlab.com/papers/77_telegame_mediated_by_haru/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://core.thehxlab.com/papers/90_mobileportation/</link>
+				<pubDate>Fri, 15 Nov 2024 13:55:21 +0100</pubDate>
+				<guid>https://core.thehxlab.com/papers/90_mobileportation/</guid>
+				<description></description>
+			</item>
+	</channel>
 </rss>
